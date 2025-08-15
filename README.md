@@ -38,8 +38,10 @@ Forms also submit to Supabase for:
    - Click "New site from Git"
    - Choose GitHub and authorize Netlify
    - Select your repository
-   - Configure build settings (auto-detected from netlify.toml)
-   - For monorepos: Set base directory to the folder containing your project
+   - Configure build settings:
+     - **Build command**: `npm run build`
+     - **Publish directory**: `dist`
+     - **Base directory**: Leave empty if in repo root, or set subdirectory path for monorepos
 
 2. **Environment Variables**:
    Set these in your Netlify dashboard under Site settings > Environment variables:

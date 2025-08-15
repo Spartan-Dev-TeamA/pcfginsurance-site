@@ -42,6 +42,20 @@ This guide explains how to deploy the PCFG Insurance Services website using Netl
    - Update the `base` setting in `netlify.toml` to match
    - Ensure all paths in build commands are relative to the base directory
 
+### Netlify GitHub Setup Process:
+
+1. **Connect Repository to Netlify**
+2. **Configure Build Settings**:
+   - If your project is in the repository root: Leave base directory empty
+   - If your project is in a subdirectory: Set base directory to the folder path (e.g., `apps/insurance-site`)
+3. **Automatic Builds** - Every push to main branch triggers deployment
+4. **Deploy Previews** - Pull requests create preview deployments
+
+**Build Configuration:**
+- **Base Directory**: Set in Netlify UI based on your repository structure
+- **Build Command**: `npm run build`
+- **Publish Directory**: `dist`
+
 ### Environment Variables
 In Netlify dashboard, go to Site settings > Environment variables and add:
 
