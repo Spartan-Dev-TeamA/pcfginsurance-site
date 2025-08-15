@@ -1,0 +1,708 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Workers' Compensation Insurance - PCFG Insurance Services" description="Expert workers' compensation insurance for businesses across 15 states. Competitive rates, exceptional service, and specialized coverage for high-risk industries. Get your free quote today.">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-br from-navy-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Workers' Compensation Insurance</h1>
+          <p class="text-xl text-gray-600 mb-8">
+            Protect your employees and your business with comprehensive workers' compensation coverage. We specialize in high-risk industries and provide competitive rates across 15 states.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#quote-form" class="bg-navy-600 hover:bg-navy-700 text-white px-8 py-3 rounded-md font-semibold text-center transition-colors duration-200">
+              Get Free Quote
+            </a>
+            <a href="tel:877-717-7234" class="border-2 border-navy-600 text-navy-600 hover:bg-navy-600 hover:text-white px-8 py-3 rounded-md font-semibold text-center transition-colors duration-200">
+              Call (877) 717-7234
+            </a>
+          </div>
+        </div>
+        
+        <!-- Simplified Lead Form -->
+        <div id="quote-form" class="bg-white p-8 rounded-lg shadow-xl">
+          <h3 class="text-2xl font-semibold text-gray-900 mb-6">Get Your Workers' Comp Quote</h3>
+          <form id="workers-comp-form" class="space-y-4" name="workers-comp-quote" data-netlify="true" data-netlify-recaptcha="true">
+            <input type="hidden" name="form-name" value="workers-comp-quote" />
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent">
+              </div>
+              <div>
+                <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent">
+              </div>
+            </div>
+            
+            <div>
+              <label for="business-name" class="block text-sm font-medium text-gray-700 mb-1">Business Name *</label>
+              <input type="text" id="business-name" name="business-name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent">
+            </div>
+            
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+              <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent">
+            </div>
+            
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent">
+            </div>
+            
+            <div data-netlify-recaptcha="true"></div>
+            
+            <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-4 rounded-md transition-colors duration-200">
+              Get My Workers' Comp Quote
+            </button>
+            
+            <p class="text-xs text-gray-500 text-center">
+              By submitting this form, you agree to be contacted by PCFG Insurance Services regarding your workers' compensation needs.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Licensed States Banner -->
+  <section class="py-12 bg-navy-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-xl font-bold text-white mb-4">Workers' Comp Coverage Available In:</h2>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Alabama</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Arizona</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Florida</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Georgia</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Indiana</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Maryland</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Maine</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">New Jersey</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">New York</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">North Carolina</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Ohio</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Pennsylvania</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Tennessee</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Texas</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Virginia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- What is Workers' Compensation -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">What is Workers' Compensation?</h2>
+          <p class="text-lg text-gray-600 mb-6">
+            Workers' compensation insurance provides medical benefits and wage replacement to employees who are injured or become ill as a result of their job. It also protects employers from lawsuits related to workplace injuries.
+          </p>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Key Benefits for Employees:</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Medical expense coverage for work-related injuries
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Wage replacement during recovery period
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Disability benefits for permanent injuries
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Vocational rehabilitation services
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Death benefits for surviving family members
+              </li>
+            </ul>
+          </div>
+          <a href="#quote-form" class="bg-navy-600 hover:bg-navy-700 text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200">
+            Get Workers' Comp Quote
+          </a>
+        </div>
+        <div class="bg-gray-100 p-8 rounded-lg">
+          <div class="w-16 h-16 bg-navy-600 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-semibold text-gray-900 mb-4">Benefits for Employers</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Protection from employee lawsuits
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Compliance with state requirements
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Predictable insurance costs
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Improved employee morale and retention
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Access to safety and loss control resources
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Industries We Serve -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Industries We Specialize In</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          We have extensive experience providing workers' compensation coverage for high-risk industries across all our licensed states.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Construction -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Construction</h3>
+          <p class="text-gray-600 mb-4">
+            Specialized coverage for general contractors, subcontractors, and specialty trades with competitive rates for high-risk work.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• General contractors</li>
+            <li>• Electrical contractors</li>
+            <li>• Plumbing contractors</li>
+            <li>• Roofing contractors</li>
+            <li>• HVAC contractors</li>
+          </ul>
+        </div>
+        
+        <!-- Manufacturing -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Manufacturing</h3>
+          <p class="text-gray-600 mb-4">
+            Comprehensive coverage for manufacturing operations with focus on machinery-related risks and safety programs.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Heavy machinery operations</li>
+            <li>• Food processing</li>
+            <li>• Metal fabrication</li>
+            <li>• Chemical manufacturing</li>
+            <li>• Assembly operations</li>
+          </ul>
+        </div>
+        
+        <!-- Transportation -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a4 4 0 118 0v4m-4 8a2 2 0 11-4 0 2 2 0 014 0zm6 0a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Transportation</h3>
+          <p class="text-gray-600 mb-4">
+            Specialized workers' comp for trucking companies, delivery services, and logistics operations.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Long-haul trucking</li>
+            <li>• Local delivery services</li>
+            <li>• Warehouse operations</li>
+            <li>• Loading dock workers</li>
+            <li>• Fleet maintenance</li>
+          </ul>
+        </div>
+        
+        <!-- Healthcare -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Healthcare</h3>
+          <p class="text-gray-600 mb-4">
+            Tailored coverage for healthcare facilities with focus on lifting injuries and exposure risks.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Hospitals and clinics</li>
+            <li>• Nursing homes</li>
+            <li>• Home healthcare</li>
+            <li>• Medical laboratories</li>
+            <li>• Dental practices</li>
+          </ul>
+        </div>
+        
+        <!-- Retail -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l-1 12H6L5 9z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Retail & Hospitality</h3>
+          <p class="text-gray-600 mb-4">
+            Affordable coverage for retail stores, restaurants, and hospitality businesses with high employee turnover.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Retail stores</li>
+            <li>• Restaurants and bars</li>
+            <li>• Hotels and motels</li>
+            <li>• Grocery stores</li>
+            <li>• Entertainment venues</li>
+          </ul>
+        </div>
+        
+        <!-- Agriculture -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Agriculture</h3>
+          <p class="text-gray-600 mb-4">
+            Specialized coverage for farming operations with understanding of seasonal work and equipment risks.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Crop farming</li>
+            <li>• Livestock operations</li>
+            <li>• Dairy farms</li>
+            <li>• Agricultural processing</li>
+            <li>• Farm equipment operations</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- State Requirements -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">State Requirements & Compliance</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Workers' compensation requirements vary by state. We ensure your business stays compliant across all our licensed states.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- When Required -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">When It's Required</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Most states: 1+ employees</li>
+            <li>• Some states: 3-5+ employees</li>
+            <li>• Construction: Often 1+ employees</li>
+            <li>• Agriculture: Varies by state</li>
+            <li>• Domestic workers: State-specific rules</li>
+          </ul>
+        </div>
+        
+        <!-- Penalties -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Penalties for Non-Compliance</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Heavy fines and penalties</li>
+            <li>• Stop work orders</li>
+            <li>• Personal liability for claims</li>
+            <li>• Criminal charges (some states)</li>
+            <li>• Difficulty obtaining future coverage</li>
+          </ul>
+        </div>
+        
+        <!-- Benefits -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Compliance Benefits</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Legal protection from lawsuits</li>
+            <li>• Ability to bid on contracts</li>
+            <li>• Employee confidence and retention</li>
+            <li>• Predictable insurance costs</li>
+            <li>• Access to safety resources</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Cost Factors -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">What Affects Your Workers' Comp Costs?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Understanding these factors can help you manage your workers' compensation costs effectively.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-900 mb-6">Primary Cost Factors</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-8 h-8 bg-navy-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                <span class="text-white text-sm font-bold">1</span>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-900 mb-2">Industry Classification</h4>
+                <p class="text-gray-600">Each job type has a classification code with different risk levels and base rates.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-8 h-8 bg-navy-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                <span class="text-white text-sm font-bold">2</span>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-900 mb-2">Payroll Amount</h4>
+                <p class="text-gray-600">Premiums are calculated based on your total payroll for covered employees.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-8 h-8 bg-navy-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                <span class="text-white text-sm font-bold">3</span>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-900 mb-2">Claims History</h4>
+                <p class="text-gray-600">Your experience modification factor (EMR) adjusts rates based on past claims.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-8 h-8 bg-navy-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                <span class="text-white text-sm font-bold">4</span>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-900 mb-2">Safety Programs</h4>
+                <p class="text-gray-600">Effective safety programs can earn discounts and reduce claims frequency.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-900 mb-6">Ways to Reduce Costs</h3>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Implement Safety Training</h5>
+                  <p class="text-sm text-gray-600">Regular safety training reduces accidents and claims</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Return-to-Work Programs</h5>
+                  <p class="text-sm text-gray-600">Help injured employees return to work faster</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Accurate Job Classifications</h5>
+                  <p class="text-sm text-gray-600">Ensure employees are properly classified</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Drug-Free Workplace</h5>
+                  <p class="text-sm text-gray-600">Many states offer discounts for certified programs</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Regular Audits</h5>
+                  <p class="text-sm text-gray-600">Review payroll and classifications annually</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Shop for Coverage</h5>
+                  <p class="text-sm text-gray-600">Compare rates and services from multiple carriers</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Claims Process -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Workers' Comp Claims Process</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Understanding the claims process helps ensure injured employees get the care they need quickly and efficiently.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white text-xl font-bold">1</span>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Immediate Response</h3>
+          <p class="text-gray-600">Provide immediate medical attention and ensure employee safety.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white text-xl font-bold">2</span>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Report the Claim</h3>
+          <p class="text-gray-600">Report the injury to your insurance carrier within required timeframes.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white text-xl font-bold">3</span>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Investigation</h3>
+          <p class="text-gray-600">Insurance carrier investigates the claim and determines coverage.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white text-xl font-bold">4</span>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900 mb-2">Benefits Begin</h3>
+          <p class="text-gray-600">Medical treatment and wage replacement benefits begin for covered claims.</p>
+        </div>
+      </div>
+      
+      <div class="mt-16 bg-blue-50 p-8 rounded-lg border-l-4 border-blue-400">
+        <h3 class="text-xl font-semibold text-gray-900 mb-4">Important Reporting Requirements</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h4 class="font-semibold text-gray-900 mb-2">Employer Responsibilities:</h4>
+            <ul class="space-y-1 text-gray-600">
+              <li>• Report to carrier within 24-48 hours</li>
+              <li>• File state forms as required</li>
+              <li>• Provide first aid if needed</li>
+              <li>• Document the incident thoroughly</li>
+              <li>• Cooperate with investigation</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-gray-900 mb-2">Employee Responsibilities:</h4>
+            <ul class="space-y-1 text-gray-600">
+              <li>• Report injury immediately</li>
+              <li>• Seek authorized medical treatment</li>
+              <li>• Follow doctor's instructions</li>
+              <li>• Cooperate with investigation</li>
+              <li>• Return to work when able</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Why Choose PCFG -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose PCFG for Workers' Compensation?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Our expertise in workers' compensation insurance helps protect your business and employees across 15 states.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Industry Expertise</h3>
+          <p class="text-gray-600">Specialized knowledge of high-risk industries and their unique workers' comp needs.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Competitive Rates</h3>
+          <p class="text-gray-600">We shop multiple carriers to find you the best rates and coverage options available.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Claims Support</h3>
+          <p class="text-gray-600">Dedicated claims support to help you navigate the process and get employees back to work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="py-20 bg-navy-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">Protect Your Employees and Your Business</h2>
+      <p class="text-xl text-navy-100 mb-8 max-w-2xl mx-auto">
+        Get a competitive workers' compensation quote today. Our experts will help you find the right coverage at the best price across all our licensed states.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#quote-form" class="bg-white text-navy-600 hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+          Get Workers' Comp Quote
+        </a>
+        <a href="tel:877-717-7234" class="border-2 border-white text-white hover:bg-white hover:text-navy-600 px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+          Call (877) 717-7234
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</Layout>
+
+<script>
+  import { submitToSupabase } from '../utils/supabase.js';
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('workers-comp-form');
+    
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+        
+        console.log('Submitting workers comp lead data:', data);
+        
+        try {
+          // Send data to Supabase
+          await submitToSupabase(data, 'workers_comp_lead');
+          console.log('Supabase submission successful');
+          
+          // Show success message
+          alert('Thank you for your interest! We will contact you within 24 hours with your workers\' compensation quote.');
+          
+          // Pre-populate commercial quote form with workers comp data
+          const params = new URLSearchParams({
+            'name': `${data['first-name']} ${data['last-name']}`,
+            'business-name': data['business-name'],
+            'email': data['email'],
+            'phone': data['phone'],
+            'insurance-type': 'workers-comp'
+          });
+          
+          // Redirect to commercial quote form with pre-populated data
+          window.location.href = `/commercial-quote?${params.toString()}`;
+        } catch (error) {
+          console.error('Form submission failed:', error);
+          alert('There was an error submitting your form. Please try again or contact us directly at (877) 717-7234.');
+        }
+      });
+    }
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  });
+</script>

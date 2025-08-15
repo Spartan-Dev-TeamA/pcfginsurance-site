@@ -1,0 +1,637 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Business Owner's Policy (BOP) - PCFG Insurance Services" description="Comprehensive Business Owner's Policy (BOP) insurance combining general liability and property coverage for small to medium businesses across 15 states. Get your free quote today.">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-br from-navy-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Business Owner's Policy (BOP)</h1>
+          <p class="text-xl text-gray-600 mb-8">
+            Comprehensive protection combining general liability and property insurance in one convenient package. The perfect solution for small to medium-sized businesses looking for cost-effective coverage across 15 states.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#quote-form" class="bg-navy-600 hover:bg-navy-700 text-white px-8 py-3 rounded-md font-semibold text-center transition-colors duration-200">
+              Get Free Quote
+            </a>
+            <a href="tel:877-717-7234" class="border-2 border-navy-600 text-navy-600 hover:bg-navy-600 hover:text-white px-8 py-3 rounded-md font-semibold text-center transition-colors duration-200">
+              Call (877) 717-7234
+            </a>
+          </div>
+        </div>
+        
+        <!-- Simplified Lead Form -->
+        <div id="quote-form" class="bg-white p-8 rounded-lg shadow-xl">
+          <h3 class="text-2xl font-semibold text-gray-900 mb-6">Get Your BOP Quote</h3>
+          <form id="bop-form" class="space-y-4" name="bop-quote" data-netlify="true" data-netlify-recaptcha="true">
+            <input type="hidden" name="form-name" value="bop-quote" />
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent">
+              </div>
+              <div>
+                <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent">
+              </div>
+            </div>
+            
+            <div>
+              <label for="business-name" class="block text-sm font-medium text-gray-700 mb-1">Business Name *</label>
+              <input type="text" id="business-name" name="business-name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent">
+            </div>
+            
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+              <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent">
+            </div>
+            
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent">
+            </div>
+            
+            <div data-netlify-recaptcha="true"></div>
+            
+            <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-4 rounded-md transition-colors duration-200">
+              Get My BOP Quote
+            </button>
+            
+            <p class="text-xs text-gray-500 text-center">
+              By submitting this form, you agree to be contacted by PCFG Insurance Services regarding your Business Owner's Policy needs.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Licensed States Banner -->
+  <section class="py-12 bg-navy-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-xl font-bold text-white mb-4">BOP Coverage Available In:</h2>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Alabama</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Arizona</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Florida</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Georgia</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Indiana</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Maryland</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Maine</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">New Jersey</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">New York</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">North Carolina</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Ohio</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Pennsylvania</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Tennessee</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Texas</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Virginia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- What is a BOP -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">What is a Business Owner's Policy?</h2>
+          <p class="text-lg text-gray-600 mb-6">
+            A Business Owner's Policy (BOP) combines general liability insurance and commercial property insurance into a single, cost-effective package. It's designed specifically for small to medium-sized businesses to provide essential coverage at a more affordable rate than purchasing separate policies.
+          </p>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Key Components:</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                General liability coverage for third-party claims
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Property insurance for buildings and contents
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Business interruption coverage
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Equipment breakdown protection
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Additional expense coverage
+              </li>
+            </ul>
+          </div>
+          <a href="#quote-form" class="bg-navy-600 hover:bg-navy-700 text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200">
+            Get BOP Quote
+          </a>
+        </div>
+        <div class="bg-gray-100 p-8 rounded-lg">
+          <div class="w-16 h-16 bg-navy-600 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-semibold text-gray-900 mb-4">Why Choose a BOP?</h4>
+          <div class="bg-white p-4 rounded border-l-4 border-navy-600 mb-4">
+            <p class="text-sm text-gray-700">
+              <strong>Cost Savings:</strong> A BOP typically costs 10-20% less than purchasing separate policies for the same coverage.
+            </p>
+          </div>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Simplified insurance management
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Comprehensive protection in one policy
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Customizable for your specific business
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Fewer coverage gaps than separate policies
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Coverage Details -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">What's Covered in a BOP?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          A Business Owner's Policy provides comprehensive protection for your business with these key coverage components.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- General Liability -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">General Liability Coverage</h3>
+          <p class="text-gray-600 mb-4">
+            Protection against third-party claims for bodily injury, property damage, and personal and advertising injury.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Customer slip and fall injuries</li>
+            <li>• Property damage to others</li>
+            <li>• Product liability claims</li>
+            <li>• Advertising injury claims</li>
+            <li>• Legal defense costs</li>
+          </ul>
+        </div>
+        
+        <!-- Property Insurance -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Property Insurance</h3>
+          <p class="text-gray-600 mb-4">
+            Coverage for your business building, equipment, inventory, and other physical assets against covered perils.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Building coverage (owned or leased)</li>
+            <li>• Business personal property</li>
+            <li>• Inventory protection</li>
+            <li>• Equipment and fixtures</li>
+            <li>• Tenant improvements</li>
+          </ul>
+        </div>
+        
+        <!-- Business Interruption -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Business Interruption</h3>
+          <p class="text-gray-600 mb-4">
+            Replaces lost income and covers expenses when your business is temporarily unable to operate due to a covered loss.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Lost revenue replacement</li>
+            <li>• Ongoing operating expenses</li>
+            <li>• Payroll coverage</li>
+            <li>• Temporary relocation costs</li>
+            <li>• Extra expenses to resume operations</li>
+          </ul>
+        </div>
+        
+        <!-- Equipment Breakdown -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Equipment Breakdown</h3>
+          <p class="text-gray-600 mb-4">
+            Covers the cost to repair or replace equipment damaged due to mechanical or electrical breakdown.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Mechanical equipment failures</li>
+            <li>• Electrical system breakdowns</li>
+            <li>• Computer and technology failures</li>
+            <li>• HVAC system malfunctions</li>
+            <li>• Boiler and pressure vessel failures</li>
+          </ul>
+        </div>
+        
+        <!-- Data Breach -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Data Breach Coverage</h3>
+          <p class="text-gray-600 mb-4">
+            Basic protection for data breaches involving customer information (more comprehensive cyber coverage available as an add-on).
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Notification costs</li>
+            <li>• Credit monitoring services</li>
+            <li>• Public relations expenses</li>
+            <li>• Liability protection</li>
+            <li>• Legal consultation</li>
+          </ul>
+        </div>
+        
+        <!-- Additional Coverages -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Optional Enhancements</h3>
+          <p class="text-gray-600 mb-4">
+            Customize your BOP with additional coverages to meet your specific business needs.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Professional liability</li>
+            <li>• Employment practices liability</li>
+            <li>• Hired and non-owned auto</li>
+            <li>• Employee dishonesty</li>
+            <li>• Outdoor signs and property</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Ideal For Section -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Is a BOP Right for Your Business?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Business Owner's Policies are ideal for many small to medium-sized businesses with standard insurance needs.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-900 mb-6">Ideal For These Businesses</h3>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Retail Stores</h5>
+                  <p class="text-sm text-gray-600">Boutiques, specialty shops, and small retailers</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Restaurants & Food Service</h5>
+                  <p class="text-sm text-gray-600">Cafes, small restaurants, bakeries, and food trucks</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Professional Services</h5>
+                  <p class="text-sm text-gray-600">Consultants, accounting firms, and small law offices</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Small Contractors</h5>
+                  <p class="text-sm text-gray-600">Electricians, plumbers, and other trade contractors</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Service Businesses</h5>
+                  <p class="text-sm text-gray-600">Salons, spas, repair shops, and cleaning services</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Small Manufacturers</h5>
+                  <p class="text-sm text-gray-600">Small-scale production and assembly operations</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-900 mb-6">Eligibility Requirements</h3>
+          <div class="space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-navy-600">
+              <h4 class="text-lg font-semibold text-gray-900 mb-2">Business Size</h4>
+              <p class="text-gray-600">Typically for businesses with:</p>
+              <ul class="text-sm text-gray-600 mt-2 space-y-1">
+                <li>• Fewer than 100 employees</li>
+                <li>• Less than $5 million in annual revenue</li>
+                <li>• Small to medium-sized commercial locations</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-blue-600">
+              <h4 class="text-lg font-semibold text-gray-900 mb-2">Property Requirements</h4>
+              <p class="text-gray-600">Best for businesses with:</p>
+              <ul class="text-sm text-gray-600 mt-2 space-y-1">
+                <li>• Commercial space under 25,000 sq ft</li>
+                <li>• Standard construction types</li>
+                <li>• Moderate property values</li>
+              </ul>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-red-600">
+              <h4 class="text-lg font-semibold text-gray-900 mb-2">Not Typically Eligible</h4>
+              <p class="text-gray-600">BOPs are generally not available for:</p>
+              <ul class="text-sm text-gray-600 mt-2 space-y-1">
+                <li>• Large corporations</li>
+                <li>• High-risk manufacturing</li>
+                <li>• Apartment buildings</li>
+                <li>• Auto repair or dealerships</li>
+                <li>• Construction companies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- BOP vs. Separate Policies -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">BOP vs. Separate Policies</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Understanding the advantages of a Business Owner's Policy compared to purchasing separate insurance policies.
+        </p>
+      </div>
+      
+      <div class="overflow-hidden bg-white rounded-lg shadow-lg">
+        <table class="min-w-full divide-y divide-gray-200">
+          <thead class="bg-navy-600">
+            <tr>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">Feature</th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">Business Owner's Policy</th>
+              <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-white uppercase tracking-wider">Separate Policies</th>
+            </tr>
+          </thead>
+          <tbody class="bg-white divide-y divide-gray-200">
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Cost</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <span class="text-green-600 font-medium">Lower</span> - Bundle discount of 10-20%
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <span class="text-red-600 font-medium">Higher</span> - Full price for each policy
+              </td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Coverage Integration</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <span class="text-green-600 font-medium">Seamless</span> - Designed to work together
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <span class="text-red-600 font-medium">Potential gaps</span> - May have overlaps or gaps
+              </td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Administration</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <span class="text-green-600 font-medium">Simple</span> - One policy, one renewal date
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <span class="text-red-600 font-medium">Complex</span> - Multiple policies to manage
+              </td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Customization</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <span class="text-yellow-600 font-medium">Moderate</span> - Some flexibility with endorsements
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <span class="text-green-600 font-medium">High</span> - Complete flexibility for each policy
+              </td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Claims Process</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <span class="text-green-600 font-medium">Streamlined</span> - Single claims process
+              </td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                <span class="text-yellow-600 font-medium">Variable</span> - Different processes per policy
+              </td>
+            </tr>
+            <tr class="bg-gray-50">
+              <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Best For</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Small to medium businesses with standard needs</td>
+              <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">Larger businesses with complex or specialized needs</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Why Choose PCFG -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose PCFG for Your Business Owner's Policy?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Our expertise in small business insurance helps you find the right BOP coverage at competitive rates across 15 states.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Small Business Expertise</h3>
+          <p class="text-gray-600">We understand the unique needs and challenges of small businesses across various industries.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Competitive Pricing</h3>
+          <p class="text-gray-600">We shop multiple top-rated carriers to find you the best BOP coverage at the most affordable rates.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Personalized Service</h3>
+          <p class="text-gray-600">Dedicated agents who take the time to understand your business and customize your BOP accordingly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="py-20 bg-navy-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">Protect Your Business with a Comprehensive BOP</h2>
+      <p class="text-xl text-navy-100 mb-8 max-w-2xl mx-auto">
+        Get a competitive Business Owner's Policy quote today. Our experts will help you find the right coverage to protect your business across all our licensed states.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#quote-form" class="bg-white text-navy-600 hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+          Get BOP Quote
+        </a>
+        <a href="tel:877-717-7234" class="border-2 border-white text-white hover:bg-white hover:text-navy-600 px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+          Call (877) 717-7234
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</Layout>
+
+<script>
+  import { submitToSupabase } from '../utils/supabase.js';
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('bop-form');
+    
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+        
+        console.log('Submitting BOP lead data:', data);
+        
+        try {
+          // Send data to Supabase
+          await submitToSupabase(data, 'bop_lead');
+          console.log('Supabase submission successful');
+          
+          // Show success message
+          alert('Thank you for your interest! We will contact you within 24 hours with your Business Owner\'s Policy quote.');
+          
+          // Pre-populate commercial quote form with BOP data
+          const params = new URLSearchParams({
+            'name': `${data['first-name']} ${data['last-name']}`,
+            'business-name': data['business-name'],
+            'email': data['email'],
+            'phone': data['phone'],
+            'insurance-type': 'bop'
+          });
+          
+          // Redirect to commercial quote form with pre-populated data
+          window.location.href = `/commercial-quote?${params.toString()}`;
+        } catch (error) {
+          console.error('Form submission failed:', error);
+          alert('There was an error submitting your form. Please try again or contact us directly at (877) 717-7234.');
+        }
+      });
+    }
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  });
+</script>

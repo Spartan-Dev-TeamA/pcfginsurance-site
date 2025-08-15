@@ -1,0 +1,10 @@
+# Netlify redirects file
+
+# Form submissions
+/forms/* /thank-you 200
+
+# Admin panel
+/admin /admin/index.html 200
+
+# Fallback for SPA routing
+/* /index.html 200

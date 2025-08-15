@@ -1,0 +1,700 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Commercial Auto Insurance - PCFG Insurance Services" description="Comprehensive commercial auto insurance for fleets and business vehicles across 15 states. Competitive rates, exceptional service, and specialized coverage for all vehicle types. Get your free quote today.">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-br from-navy-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Commercial Auto Insurance</h1>
+          <p class="text-xl text-gray-600 mb-8">
+            Keep your fleet protected with comprehensive commercial vehicle insurance. From single vehicles to large fleets, we provide coverage that keeps your business moving across 15 states.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#quote-form" class="bg-navy-600 hover:bg-navy-700 text-white px-8 py-3 rounded-md font-semibold text-center transition-colors duration-200">
+              Get Free Quote
+            </a>
+            <a href="tel:877-717-7234" class="border-2 border-navy-600 text-navy-600 hover:bg-navy-600 hover:text-white px-8 py-3 rounded-md font-semibold text-center transition-colors duration-200">
+              Call (877) 717-7234
+            </a>
+          </div>
+        </div>
+        
+        <!-- Simplified Lead Form -->
+        <div id="quote-form" class="bg-white p-8 rounded-lg shadow-xl">
+          <h3 class="text-2xl font-semibold text-gray-900 mb-6">Get Your Commercial Auto Quote</h3>
+          <form id="commercial-auto-form" class="space-y-4" name="commercial-auto-quote" data-netlify="true" data-netlify-recaptcha="true">
+            <input type="hidden" name="form-name" value="commercial-auto-quote" />
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First Name *</label>
+                <input type="text" id="first-name" name="first-name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent">
+              </div>
+              <div>
+                <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last Name *</label>
+                <input type="text" id="last-name" name="last-name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent">
+              </div>
+            </div>
+            
+            <div>
+              <label for="business-name" class="block text-sm font-medium text-gray-700 mb-1">Business Name *</label>
+              <input type="text" id="business-name" name="business-name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent">
+            </div>
+            
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+              <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent">
+            </div>
+            
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy-500 focus:border-transparent">
+            </div>
+            
+            <div data-netlify-recaptcha="true"></div>
+            
+            <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-3 px-4 rounded-md transition-colors duration-200">
+              Get My Commercial Auto Quote
+            </button>
+            
+            <p class="text-xs text-gray-500 text-center">
+              By submitting this form, you agree to be contacted by PCFG Insurance Services regarding your commercial auto insurance needs.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Licensed States Banner -->
+  <section class="py-12 bg-navy-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-xl font-bold text-white mb-4">Commercial Auto Coverage Available In:</h2>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Alabama</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Arizona</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Florida</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Georgia</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Indiana</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Maryland</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Maine</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">New Jersey</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">New York</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">North Carolina</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Ohio</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Pennsylvania</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Tennessee</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Texas</span>
+          <span class="bg-white text-navy-600 px-3 py-1 rounded-full text-sm font-medium">Virginia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- What is Commercial Auto Insurance -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">What is Commercial Auto Insurance?</h2>
+          <p class="text-lg text-gray-600 mb-6">
+            Commercial auto insurance provides coverage for vehicles used for business purposes. It protects your business from financial losses due to accidents, theft, vandalism, and other covered events involving your commercial vehicles.
+          </p>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Key Coverage Types:</h3>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Liability coverage for bodily injury and property damage
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Collision coverage for vehicle damage from accidents
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Comprehensive coverage for theft, vandalism, and weather
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Uninsured/underinsured motorist protection
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Medical payments and personal injury protection
+              </li>
+            </ul>
+          </div>
+          <a href="#quote-form" class="bg-navy-600 hover:bg-navy-700 text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200">
+            Get Commercial Auto Quote
+          </a>
+        </div>
+        <div class="bg-gray-100 p-8 rounded-lg">
+          <div class="w-16 h-16 bg-navy-600 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a4 4 0 118 0v4m-4 8a2 2 0 11-4 0 2 2 0 014 0zm6 0a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-semibold text-gray-900 mb-4">Why You Need Commercial Auto</h4>
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Personal auto policies don't cover business use
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Higher liability limits for business risks
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Protection for specialized vehicles and equipment
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Coverage for hired and non-owned vehicles
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-navy-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+              Business interruption protection
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Vehicle Types We Cover -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Vehicle Types We Cover</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          From single vehicles to large fleets, we provide comprehensive coverage for all types of commercial vehicles across all our licensed states.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Delivery Vehicles -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a4 4 0 118 0v4m-4 8a2 2 0 11-4 0 2 2 0 014 0zm6 0a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Delivery Vehicles</h3>
+          <p class="text-gray-600 mb-4">
+            Comprehensive coverage for delivery trucks, vans, and specialized delivery vehicles.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Box trucks and cargo vans</li>
+            <li>• Refrigerated trucks</li>
+            <li>• Package delivery vehicles</li>
+            <li>• Food delivery vehicles</li>
+            <li>• Courier vehicles</li>
+          </ul>
+        </div>
+        
+        <!-- Service Vehicles -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Service Vehicles</h3>
+          <p class="text-gray-600 mb-4">
+            Specialized coverage for service trucks and vans with tools and equipment.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• HVAC service vehicles</li>
+            <li>• Plumbing trucks</li>
+            <li>• Electrical service vans</li>
+            <li>• Landscaping trucks</li>
+            <li>• Repair service vehicles</li>
+          </ul>
+        </div>
+        
+        <!-- Heavy Equipment -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Heavy Equipment</h3>
+          <p class="text-gray-600 mb-4">
+            Coverage for construction equipment and heavy machinery used in business operations.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Dump trucks</li>
+            <li>• Excavators</li>
+            <li>• Bulldozers</li>
+            <li>• Cranes</li>
+            <li>• Concrete mixers</li>
+          </ul>
+        </div>
+        
+        <!-- Company Cars -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Company Cars</h3>
+          <p class="text-gray-600 mb-4">
+            Professional coverage for company-owned passenger vehicles and executive transportation.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Executive vehicles</li>
+            <li>• Sales team cars</li>
+            <li>• Company fleet vehicles</li>
+            <li>• Employee transportation</li>
+            <li>• Rental car coverage</li>
+          </ul>
+        </div>
+        
+        <!-- Specialty Vehicles -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Specialty Vehicles</h3>
+          <p class="text-gray-600 mb-4">
+            Customized coverage for unique business vehicles and specialized transportation needs.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Food trucks</li>
+            <li>• Mobile workshops</li>
+            <li>• Emergency vehicles</li>
+            <li>• Tow trucks</li>
+            <li>• Mobile medical units</li>
+          </ul>
+        </div>
+        
+        <!-- Trailers -->
+        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-200">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Trailers & Equipment</h3>
+          <p class="text-gray-600 mb-4">
+            Protection for trailers, attachments, and mobile equipment used in your business.
+          </p>
+          <ul class="text-sm text-gray-600 space-y-1">
+            <li>• Cargo trailers</li>
+            <li>• Equipment trailers</li>
+            <li>• Semi-trailers</li>
+            <li>• Utility trailers</li>
+            <li>• Mobile equipment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Coverage Options -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Comprehensive Coverage Options</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Protect your business vehicles with comprehensive coverage options tailored to your specific needs and risks.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-900 mb-6">Standard Coverage</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="w-8 h-8 bg-navy-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                <span class="text-white text-sm font-bold">1</span>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-900 mb-2">Liability Coverage</h4>
+                <p class="text-gray-600">Protects against bodily injury and property damage claims from accidents involving your commercial vehicles.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-8 h-8 bg-navy-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                <span class="text-white text-sm font-bold">2</span>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-900 mb-2">Collision Coverage</h4>
+                <p class="text-gray-600">Covers damage to your vehicles from collisions with other vehicles or objects.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-8 h-8 bg-navy-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                <span class="text-white text-sm font-bold">3</span>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-900 mb-2">Comprehensive Coverage</h4>
+                <p class="text-gray-600">Protects against theft, vandalism, fire, weather damage, and other non-collision losses.</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="w-8 h-8 bg-navy-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                <span class="text-white text-sm font-bold">4</span>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-900 mb-2">Medical Payments</h4>
+                <p class="text-gray-600">Covers medical expenses for you and your passengers regardless of fault.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-900 mb-6">Additional Protection</h3>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Uninsured/Underinsured Motorist</h5>
+                  <p class="text-sm text-gray-600">Protection when the other driver has no or insufficient insurance</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Hired and Non-Owned Auto</h5>
+                  <p class="text-sm text-gray-600">Coverage for rental vehicles and employee-owned vehicles used for business</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Cargo Insurance</h5>
+                  <p class="text-sm text-gray-600">Protection for goods and materials being transported</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Motor Truck Cargo</h5>
+                  <p class="text-sm text-gray-600">Specialized coverage for trucking and transportation companies</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Rental Reimbursement</h5>
+                  <p class="text-sm text-gray-600">Covers rental vehicle costs while your vehicle is being repaired</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <div>
+                  <h5 class="font-semibold text-gray-900">Roadside Assistance</h5>
+                  <p class="text-sm text-gray-600">24/7 emergency roadside service for breakdowns and accidents</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Cost Factors -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">What Affects Your Commercial Auto Rates?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Understanding these factors can help you manage your commercial auto insurance costs effectively.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Vehicle Factors -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a4 4 0 118 0v4m-4 8a2 2 0 11-4 0 2 2 0 014 0zm6 0a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Vehicle Factors</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Vehicle type and size</li>
+            <li>• Age and value of vehicles</li>
+            <li>• Safety features and equipment</li>
+            <li>• Number of vehicles in fleet</li>
+            <li>• Vehicle usage and mileage</li>
+          </ul>
+        </div>
+        
+        <!-- Driver Factors -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Driver Factors</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Driving records and experience</li>
+            <li>• Age of drivers</li>
+            <li>• Number of drivers</li>
+            <li>• Training and certifications</li>
+            <li>• Violation and accident history</li>
+          </ul>
+        </div>
+        
+        <!-- Business Factors -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Business Factors</h3>
+          <ul class="space-y-2 text-gray-600">
+            <li>• Type of business and industry</li>
+            <li>• Geographic operating area</li>
+            <li>• Claims history</li>
+            <li>• Safety programs in place</li>
+            <li>• Credit score and financial stability</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="mt-12 bg-white p-8 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-6 text-center">Ways to Reduce Your Commercial Auto Costs</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <h4 class="text-lg font-semibold text-gray-900 mb-4">Fleet Management</h4>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Implement driver training programs
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Install safety equipment and telematics
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Regular vehicle maintenance
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Monitor driver behavior and performance
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold text-gray-900 mb-4">Policy Management</h4>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Choose appropriate deductibles
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Bundle with other business insurance
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Review coverage annually
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                Work with experienced agents
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Why Choose PCFG -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Why Choose PCFG for Commercial Auto Insurance?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Our expertise in commercial auto insurance helps protect your fleet and business operations across 15 states.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Fleet Expertise</h3>
+          <p class="text-gray-600">Specialized knowledge of commercial vehicle risks and fleet management best practices.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Competitive Rates</h3>
+          <p class="text-gray-600">We shop multiple carriers to find you the best rates and coverage options for your fleet.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Claims Support</h3>
+          <p class="text-gray-600">Dedicated claims support to minimize downtime and get your vehicles back on the road quickly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="py-20 bg-navy-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">Protect Your Fleet and Keep Your Business Moving</h2>
+      <p class="text-xl text-navy-100 mb-8 max-w-2xl mx-auto">
+        Get a competitive commercial auto insurance quote today. Our experts will help you find the right coverage for your vehicles and business operations across all our licensed states.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#quote-form" class="bg-white text-navy-600 hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+          Get Commercial Auto Quote
+        </a>
+        <a href="tel:877-717-7234" class="border-2 border-white text-white hover:bg-white hover:text-navy-600 px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+          Call (877) 717-7234
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</Layout>
+
+<script>
+  import { submitToSupabase } from '../utils/supabase.js';
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('commercial-auto-form');
+    
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+        
+        console.log('Submitting commercial auto lead data:', data);
+        
+        try {
+          // Send data to Supabase
+          await submitToSupabase(data, 'commercial_auto_lead');
+          console.log('Supabase submission successful');
+          
+          // Show success message
+          alert('Thank you for your interest! We will contact you within 24 hours with your commercial auto insurance quote.');
+          
+          // Pre-populate commercial quote form with commercial auto data
+          const params = new URLSearchParams({
+            'name': `${data['first-name']} ${data['last-name']}`,
+            'business-name': data['business-name'],
+            'email': data['email'],
+            'phone': data['phone'],
+            'insurance-type': 'commercial-auto'
+          });
+          
+          // Redirect to commercial quote form with pre-populated data
+          window.location.href = `/commercial-quote?${params.toString()}`;
+        } catch (error) {
+          console.error('Form submission failed:', error);
+          alert('There was an error submitting your form. Please try again or contact us directly at (877) 717-7234.');
+        }
+      });
+    }
+    
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  });
+</script>

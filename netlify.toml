@@ -1,0 +1,64 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+[[forms]]
+  name = "quick-quote"
+  
+[[forms]]
+  name = "contact"
+  
+[[forms]]
+  name = "commercial-auto-quote"
+  
+[[forms]]
+  name = "workers-comp-quote"
+  
+[[forms]]
+  name = "general-liability-quote"
+  
+[[forms]]
+  name = "bop-quote"
+  
+[[forms]]
+  name = "personal-lines-quote"
+  
+[[forms]]
+  name = "claim-report"
+  
+[[forms]]
+  name = "career-application"
+
+# Form handling redirects
+[[redirects]]
+  from = "/forms/*"
+  to = "/thank-you"
+  status = 200
+  force = false
+
+# Admin panel redirect
+[[redirects]]
+  from = "/admin"
+  to = "/admin/index.html"
+  status = 200
+
+# SPA fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[context.production.environment]
+  NODE_VERSION = "18"
+
+[context.deploy-preview.environment]
+  NODE_VERSION = "18"
+
+[context.branch-deploy.environment]
+  NODE_VERSION = "18"

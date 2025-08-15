@@ -1,0 +1,163 @@
+---
+---
+
+<div class="bg-white p-6 rounded-lg shadow-lg">
+  <h3 class="text-xl font-semibold text-neutral-dark mb-4 font-heading">Get Your Free Quote</h3>
+  <form id="quote-form" class="space-y-4" name="quick-quote" data-netlify="true" data-netlify-recaptcha="true">
+    <input type="hidden" name="form-name" value="quick-quote" />
+    <div>
+      <label for="name" class="block text-sm font-medium text-neutral-dark mb-1">Full Name *</label>
+      <input type="text" id="name" name="name" required class="w-full px-3 py-3 border border-neutral-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+    </div>
+    
+    <div>
+      <label for="email" class="block text-sm font-medium text-neutral-dark mb-1">Email Address *</label>
+      <input type="email" id="email" name="email" required class="w-full px-3 py-3 border border-neutral-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+    </div>
+    
+    <div>
+      <label for="phone" class="block text-sm font-medium text-neutral-dark mb-1">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" required class="w-full px-3 py-3 border border-neutral-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+    </div>
+    
+    <div>
+      <label for="business-name" class="block text-sm font-medium text-neutral-dark mb-1">Business Name</label>
+      <input type="text" id="business-name" name="business-name" class="w-full px-3 py-3 border border-neutral-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+    </div>
+    
+    <div>
+      <label for="insurance-type" class="block text-sm font-medium text-neutral-dark mb-1">Type of Insurance Needed *</label>
+      <select id="insurance-type" name="insurance-type" required class="w-full px-3 py-3 border border-neutral-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+        <option value="">Select Insurance Type</option>
+        <optgroup label="Business Insurance">
+          <option value="workers-comp">Workers' Compensation</option>
+          <option value="commercial-auto">Commercial Auto</option>
+          <option value="general-liability">General Liability</option>
+          <option value="bop">Business Owner's Policy</option>
+          <option value="cyber-liability">Cyber Liability</option>
+          <option value="professional-liability">Professional Liability</option>
+        </optgroup>
+        <optgroup label="Personal Insurance">
+          <option value="auto-insurance">Auto Insurance</option>
+          <option value="home-insurance">Homeowners Insurance</option>
+          <option value="renters-insurance">Renters Insurance</option>
+          <option value="condo-insurance">Condo Insurance</option>
+          <option value="life-insurance">Life Insurance</option>
+          <option value="umbrella-insurance">Umbrella Insurance</option>
+          <option value="motorcycle-insurance">Motorcycle Insurance</option>
+          <option value="boat-insurance">Boat Insurance</option>
+          <option value="rv-insurance">RV Insurance</option>
+        </optgroup>
+        <optgroup label="Employee Benefits">
+          <option value="group-health">Group Health Insurance</option>
+          <option value="dental-vision">Dental & Vision</option>
+          <option value="group-life">Group Life Insurance</option>
+          <option value="disability">Disability Insurance</option>
+          <option value="voluntary-benefits">Voluntary Benefits</option>
+          <option value="retirement-plans">Retirement Plans</option>
+          <option value="annuities">Annuities</option>
+        </optgroup>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    
+    <div>
+      <label for="message" class="block text-sm font-medium text-neutral-dark mb-1">Additional Details</label>
+      <textarea id="message" name="message" rows="3" class="w-full px-3 py-3 border border-neutral-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Tell us about your insurance needs..."></textarea>
+    </div>
+    
+    <div data-netlify-recaptcha="true"></div>
+    
+    <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-4 rounded-lg transition-colors duration-200 text-lg shadow-md">
+      Get Free Quote
+    </button>
+    
+    <!-- Quote Form CTAs -->
+    <div class="mt-4 space-y-3">
+      <div class="p-4 bg-neutral-light rounded-lg border-l-4 border-primary">
+        <p class="text-sm text-neutral-dark mb-2">
+          <strong>Need comprehensive business coverage?</strong>
+        </p>
+        <a href="/commercial-quote" class="text-primary hover:text-primary-dark font-medium text-sm flex items-center">
+          Complete our detailed commercial quote form
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="p-4 bg-neutral-light rounded-lg border-l-4 border-primary">
+        <p class="text-sm text-neutral-dark mb-2">
+          <strong>Looking for personal insurance?</strong>
+        </p>
+        <a href="/personal-lines-quote" class="text-primary hover:text-primary-dark font-medium text-sm flex items-center">
+          Get a personalized quote for auto, home, or renters
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+  import { submitToSupabase } from '../utils/supabase.js';
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('quote-form');
+    
+    if (form) {
+      form.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+        
+        console.log('Submitting quote form data:', data);
+        
+        try {
+          // Send data to Supabase
+          await submitToSupabase(data, 'quick_quote_form');
+          console.log('Supabase submission successful');
+          
+          // Show success toast if available
+          if (window.showToast) {
+            window.showToast('Quote request submitted successfully!', 'success');
+          }
+          
+          // Check if this is a business insurance request
+          const businessTypes = ['workers-comp', 'commercial-auto', 'general-liability', 'bop', 'cyber-liability', 'professional-liability'];
+          const personalTypes = ['auto-insurance', 'home-insurance', 'renters-insurance', 'condo-insurance', 'life-insurance', 'umbrella-insurance', 'motorcycle-insurance', 'boat-insurance', 'rv-insurance'];
+          
+          if (businessTypes.includes(data['insurance-type'])) {
+            // Redirect to detailed commercial quote form
+            const params = new URLSearchParams(data);
+            window.location.href = `/commercial-quote?${params.toString()}`;
+            return;
+          } else if (personalTypes.includes(data['insurance-type'])) {
+            // Redirect to personal lines quote form
+            const params = new URLSearchParams(data);
+            window.location.href = `/personal-lines-quote?${params.toString()}`;
+            return;
+          }
+          
+          // For other types, show success message
+          alert('Thank you for your interest! We will contact you within 24 hours with your free quote.');
+          
+          // Reset form
+          form.reset();
+        } catch (error) {
+          console.error('Form submission failed:', error);
+          
+          // Show error toast if available
+          if (window.showToast) {
+            window.showToast('There was an error submitting your form.', 'error');
+          }
+          
+          alert('There was an error submitting your form. Please try again or contact us directly at (877) 717-7234.');
+        }
+      });
+    }
+  });
+</script>
