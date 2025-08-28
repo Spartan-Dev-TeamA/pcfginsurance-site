@@ -1,0 +1,331 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Business Insurance Services - PCFG Insurance Services" description="Comprehensive business insurance services including workers' compensation, commercial auto, general liability, cyber liability, and more for businesses in New York.">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-br from-navy-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Business Insurance Services</h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Comprehensive protection solutions tailored to your business needs and industry requirements.
+        </p>
+        <div class="mt-8">
+          <a href="/commercial-quote" class="bg-navy-600 hover:bg-navy-700 text-white px-8 py-3 rounded-md font-semibold transition-colors duration-200 inline-block">
+            Request a Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Services Grid -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Workers' Compensation -->
+      <div id="workers-comp" class="mb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Workers' Compensation</h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Protect your employees and your business with comprehensive workers' compensation coverage. We specialize in high-risk industries and provide competitive rates with exceptional service.
+            </p>
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Industries We Serve:</h3>
+              <ul class="grid grid-cols-2 gap-2 text-gray-600">
+                <li>• Construction</li>
+                <li>• Manufacturing</li>
+                <li>• Transportation</li>
+                <li>• Healthcare</li>
+                <li>• Retail</li>
+                <li>• Professional Services</li>
+              </ul>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/commercial-quote" class="bg-navy-600 hover:bg-navy-700 text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200 text-center">
+                Request a Quote
+              </a>
+              <a href="/workers-compensation" class="border-2 border-navy-600 text-navy-600 hover:bg-navy-600 hover:text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200 text-center">
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div class="bg-gray-100 p-8 rounded-lg">
+            <div class="w-16 h-16 bg-navy-600 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-900 mb-4">Key Benefits</h4>
+            <ul class="space-y-2 text-gray-600">
+              <li>• Medical expense coverage</li>
+              <li>• Lost wage replacement</li>
+              <li>• Disability benefits</li>
+              <li>• Return-to-work programs</li>
+              <li>• Legal protection</li>
+              <li>• Claims management support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Commercial Auto -->
+      <div id="commercial-auto" class="mb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="bg-gray-100 p-8 rounded-lg order-2 lg:order-1">
+            <div class="w-16 h-16 bg-navy-600 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a4 4 0 118 0v4m-4 8a2 2 0 11-4 0 2 2 0 014 0zm6 0a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-900 mb-4">Coverage Options</h4>
+            <ul class="space-y-2 text-gray-600">
+              <li>• Liability coverage</li>
+              <li>• Physical damage protection</li>
+              <li>• Cargo insurance</li>
+              <li>• Uninsured motorist coverage</li>
+              <li>• Medical payments</li>
+              <li>• Rental reimbursement</li>
+            </ul>
+          </div>
+          <div class="order-1 lg:order-2">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Commercial Auto Insurance</h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Keep your fleet protected with comprehensive commercial vehicle insurance. From single vehicles to large fleets, we provide coverage that keeps your business moving.
+            </p>
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Vehicle Types Covered:</h3>
+              <ul class="grid grid-cols-2 gap-2 text-gray-600">
+                <li>• Delivery trucks</li>
+                <li>• Service vans</li>
+                <li>• Company cars</li>
+                <li>• Heavy equipment</li>
+                <li>• Trailers</li>
+                <li>• Specialty vehicles</li>
+              </ul>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/commercial-quote" class="bg-navy-600 hover:bg-navy-700 text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200 text-center">
+                Request a Quote
+              </a>
+              <a href="/commercial-auto" class="border-2 border-navy-600 text-navy-600 hover:bg-navy-600 hover:text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200 text-center">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- General Liability -->
+      <div id="general-liability" class="mb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">General Liability Insurance</h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Essential protection against third-party claims for bodily injury, property damage, and personal injury. Safeguard your business from unexpected lawsuits and claims.
+            </p>
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">What's Covered:</h3>
+              <ul class="space-y-2 text-gray-600">
+                <li>• Bodily injury claims</li>
+                <li>• Property damage</li>
+                <li>• Personal and advertising injury</li>
+                <li>• Products liability</li>
+                <li>• Completed operations</li>
+                <li>• Legal defense costs</li>
+              </ul>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/commercial-quote" class="bg-navy-600 hover:bg-navy-700 text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200 text-center">
+                Request a Quote
+              </a>
+              <a href="/general-liability" class="border-2 border-navy-600 text-navy-600 hover:bg-navy-600 hover:text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200 text-center">
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div class="bg-gray-100 p-8 rounded-lg">
+            <div class="w-16 h-16 bg-navy-600 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-900 mb-4">Why You Need It</h4>
+            <p class="text-gray-600 mb-4">
+              Even the most careful businesses can face unexpected claims. General liability insurance provides the financial protection you need to keep your business running.
+            </p>
+            <div class="bg-white p-4 rounded border-l-4 border-navy-600">
+              <p class="text-sm text-gray-600">
+                <strong>Did you know?</strong> The average general liability claim costs over $15,000, but can reach into the millions for serious incidents.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Business Owner's Policy -->
+      <div id="bop" class="mb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="bg-gray-100 p-8 rounded-lg order-2 lg:order-1">
+            <div class="w-16 h-16 bg-navy-600 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-900 mb-4">BOP Includes</h4>
+            <ul class="space-y-2 text-gray-600">
+              <li>• General liability coverage</li>
+              <li>• Commercial property insurance</li>
+              <li>• Business interruption coverage</li>
+              <li>• Equipment breakdown protection</li>
+              <li>• Crime coverage options</li>
+              <li>• Additional expense coverage</li>
+            </ul>
+          </div>
+          <div class="order-1 lg:order-2">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Business Owner's Policy (BOP)</h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Comprehensive protection combining general liability and property insurance in one convenient package. Perfect for small to medium-sized businesses looking for cost-effective coverage.
+            </p>
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Ideal For:</h3>
+              <ul class="grid grid-cols-2 gap-2 text-gray-600">
+                <li>• Retail stores</li>
+                <li>• Restaurants</li>
+                <li>• Professional offices</li>
+                <li>• Small manufacturers</li>
+                <li>• Service businesses</li>
+                <li>• Contractors</li>
+              </ul>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <a href="/commercial-quote" class="bg-navy-600 hover:bg-navy-700 text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200 text-center">
+                Request a Quote
+              </a>
+              <a href="/business-owners-policy" class="border-2 border-navy-600 text-navy-600 hover:bg-navy-600 hover:text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200 text-center">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Additional Services Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Property Insurance -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Property Insurance</h3>
+          <p class="text-gray-600 mb-4">Comprehensive coverage for your business property, equipment, and inventory against fire, theft, and natural disasters.</p>
+          <a href="/commercial-quote" class="text-navy-600 hover:text-navy-700 font-medium">Request Quote →</a>
+        </div>
+        
+        <!-- Cyber Liability -->
+        <div id="cyber-liability" class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Cyber Liability Insurance</h3>
+          <p class="text-gray-600 mb-4">Protect your business from cyber threats, data breaches, and technology failures in our increasingly digital world.</p>
+          <a href="/commercial-quote" class="text-navy-600 hover:text-navy-700 font-medium">Request Quote →</a>
+        </div>
+        
+        <!-- Professional Liability -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">E&O and Professional Liability</h3>
+          <p class="text-gray-600 mb-4">Coverage for professionals against claims of errors, omissions, or negligence in their professional services.</p>
+          <a href="/commercial-quote" class="text-navy-600 hover:text-navy-700 font-medium">Request Quote →</a>
+        </div>
+        
+        <!-- Umbrella Insurance -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h4a2 2 0 002-2V9a2 2 0 00-2-2H7a2 2 0 00-2 2v6a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Umbrella Insurance</h3>
+          <p class="text-gray-600 mb-4">Additional liability protection that goes beyond your standard policies to provide extra peace of mind.</p>
+          <a href="/commercial-quote" class="text-navy-600 hover:text-navy-700 font-medium">Request Quote →</a>
+        </div>
+        
+        <!-- Bonds -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Surety Bonds</h3>
+          <p class="text-gray-600 mb-4">Contract bonds, license bonds, and other surety solutions to meet your business and regulatory requirements.</p>
+          <a href="/commercial-quote" class="text-navy-600 hover:text-navy-700 font-medium">Request Quote →</a>
+        </div>
+        
+        <!-- Directors & Officers -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Directors & Officers</h3>
+          <p class="text-gray-600 mb-4">Protect your company's leadership from personal liability for management decisions and corporate actions.</p>
+          <a href="/commercial-quote" class="text-navy-600 hover:text-navy-700 font-medium">Request Quote →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Employee Benefits CTA -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-navy-600 rounded-lg p-8 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Looking for Employee Benefits?</h2>
+        <p class="text-xl text-navy-100 mb-8 max-w-2xl mx-auto">
+          Attract and retain top talent with comprehensive employee benefit packages including health insurance, dental, vision, life insurance, and retirement plans.
+        </p>
+        <a href="/employee-benefits" class="bg-white text-navy-600 hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+          Explore Employee Benefits
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="py-20 bg-navy-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">Ready to Protect Your Business?</h2>
+      <p class="text-xl text-navy-100 mb-8 max-w-2xl mx-auto">
+        Get a personalized quote for any of our business insurance services. Our experts will help you find the right coverage at the right price.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/commercial-quote" class="bg-white text-navy-600 hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+          Get Free Quote
+        </a>
+        <a href="tel:877-717-7234" class="border-2 border-white text-white hover:bg-white hover:text-navy-600 px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+          Call (877) 717-7234
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</Layout>

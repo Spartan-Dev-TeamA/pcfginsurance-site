@@ -1,0 +1,79 @@
+---
+interface Props {
+  text: string;
+  href?: string;
+  type?: "button" | "submit" | "reset";
+  variant?: "primary" | "secondary" | "outline" | "text";
+  size?: "sm" | "md" | "lg";
+  fullWidth?: boolean;
+  icon?: string;
+  iconPosition?: "left" | "right";
+  onClick?: string;
+}
+
+const {
+  text,
+  href,
+  type = "button",
+  variant = "primary",
+  size = "md",
+  fullWidth = false,
+  icon,
+  iconPosition = "right",
+  onClick,
+} = Astro.props;
+
+// Variant styles
+const variantClasses = {
+  primary: "bg-primary hover:bg-primary-dark text-white",
+  secondary: "bg-neutral-light hover:bg-neutral-200 text-neutral-dark",
+  outline: "border-2 border-primary text-primary hover:bg-primary-50",
+  text: "text-primary hover:text-primary-dark hover:underline",
+};
+
+// Size styles
+const sizeClasses = {
+  sm: "px-3 py-2 text-sm",
+  md: "px-6 py-3",
+  lg: "px-8 py-4 text-lg",
+};
+
+const classes = [
+  variantClasses[variant],
+  sizeClasses[size],
+  fullWidth ? "w-full" : "",
+  "rounded-lg font-semibold transition-colors duration-200 inline-flex items-center justify-center",
+];
+---
+
+{
+  href ? (
+    <a href={href} class={classes.join(" ")} onclick={onClick}>
+      {icon && iconPosition === "left" && (
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={icon}></path>
+        </svg>
+      )}
+      {text}
+      {icon && iconPosition === "right" && (
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={icon}></path>
+        </svg>
+      )}
+    </a>
+  ) : (
+    <button type={type} class={classes.join(" ")} onclick={onClick}>
+      {icon && iconPosition === "left" && (
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={icon}></path>
+        </svg>
+      )}
+      {text}
+      {icon && iconPosition === "right" && (
+        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={icon}></path>
+        </svg>
+      )}
+    </button>
+  )
+}

@@ -1,0 +1,48 @@
+---
+interface Props {
+  title: string;
+  body: string;
+  href?: string;
+  icon?: string;
+  color?: string;
+}
+
+const { 
+  title, 
+  body, 
+  href, 
+  icon = "M13 10V3L4 14h7v7l9-11h-7z", 
+  color = "primary" 
+} = Astro.props;
+
+const colorClasses = {
+  primary: "bg-primary-50 text-primary",
+  secondary: "bg-neutral-light text-neutral-dark",
+  highlight: "bg-highlight-light text-highlight",
+  success: "bg-green-50 text-green-600",
+  warning: "bg-yellow-50 text-yellow-600",
+  danger: "bg-red-50 text-red-600",
+};
+
+const bgColor = colorClasses[color] || colorClasses.primary;
+---
+
+<div class="card hover:shadow-lg transition-all duration-200">
+  <div class="p-6">
+    <div class={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${bgColor}`}>
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={icon}></path>
+      </svg>
+    </div>
+    <h3 class="text-xl font-semibold text-neutral-dark mb-2 font-heading">{title}</h3>
+    <p class="text-neutral-dark mb-4">{body}</p>
+    {href && (
+      <a href={href} class="text-primary hover:text-primary-dark font-medium flex items-center">
+        Learn More
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    )}
+  </div>
+</div>
