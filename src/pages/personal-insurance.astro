@@ -1,0 +1,348 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Personal Insurance - PCFG Insurance Services" description="Comprehensive personal insurance coverage including auto, home, life, umbrella, and recreational vehicle insurance for individuals and families in New York.">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-br from-navy-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Personal Insurance</h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Protecting you and your family with comprehensive personal insurance coverage tailored to your lifestyle and needs.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Personal Insurance Services -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Auto Insurance -->
+      <div id="auto-insurance" class="mb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Auto Insurance</h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Comprehensive auto insurance coverage to protect you, your family, and your vehicles on the road. From liability to comprehensive coverage, we've got you covered.
+            </p>
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Coverage Options:</h3>
+              <ul class="space-y-2 text-gray-600">
+                <li>• Liability coverage (required by NY state)</li>
+                <li>• Collision and comprehensive</li>
+                <li>• Uninsured/underinsured motorist</li>
+                <li>• Personal injury protection (PIP)</li>
+                <li>• Rental car reimbursement</li>
+                <li>• Roadside assistance</li>
+              </ul>
+            </div>
+            <a href="/contact" class="bg-navy-600 hover:bg-navy-700 text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200">
+              Get Auto Quote
+            </a>
+          </div>
+          <div class="bg-gray-100 p-8 rounded-lg">
+            <div class="w-16 h-16 bg-navy-600 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3a4 4 0 118 0v4m-4 8a2 2 0 11-4 0 2 2 0 014 0zm6 0a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-900 mb-4">Money-Saving Tips</h4>
+            <ul class="space-y-2 text-gray-600">
+              <li>• Multi-car discounts</li>
+              <li>• Safe driver discounts</li>
+              <li>• Bundling with home insurance</li>
+              <li>• Good student discounts</li>
+              <li>• Anti-theft device discounts</li>
+              <li>• Defensive driving course credits</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Homeowners Insurance -->
+      <div id="home-insurance" class="mb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="bg-gray-100 p-8 rounded-lg order-2 lg:order-1">
+            <div class="w-16 h-16 bg-navy-600 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-900 mb-4">What's Protected</h4>
+            <ul class="space-y-2 text-gray-600">
+              <li>• Dwelling coverage</li>
+              <li>• Personal property</li>
+              <li>• Liability protection</li>
+              <li>• Additional living expenses</li>
+              <li>• Medical payments to others</li>
+              <li>• Detached structures</li>
+            </ul>
+          </div>
+          <div class="order-1 lg:order-2">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Homeowners Insurance</h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Protect your most valuable investment with comprehensive homeowners insurance. Coverage for your home, belongings, and liability protection for your family.
+            </p>
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Coverage Types:</h3>
+              <ul class="grid grid-cols-1 gap-2 text-gray-600">
+                <li>• <strong>HO-3:</strong> Most comprehensive homeowners policy</li>
+                <li>• <strong>HO-5:</strong> Premium coverage with open perils</li>
+                <li>• <strong>HO-6:</strong> Condo insurance</li>
+                <li>• <strong>HO-4:</strong> Renters insurance</li>
+                <li>• <strong>HO-8:</strong> Older home coverage</li>
+              </ul>
+            </div>
+            <a href="/contact" class="bg-navy-600 hover:bg-navy-700 text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200">
+              Get Home Quote
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Life Insurance -->
+      <div id="life-insurance" class="mb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Life Insurance</h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Secure your family's financial future with life insurance coverage. Whether you need term life for temporary needs or permanent coverage for lifelong protection.
+            </p>
+            <div class="mb-6">
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Types Available:</h3>
+              <div class="space-y-4">
+                <div class="border-l-4 border-navy-600 pl-4">
+                  <h4 class="font-semibold text-gray-900">Term Life Insurance</h4>
+                  <p class="text-gray-600">Affordable coverage for specific time periods (10, 20, 30 years)</p>
+                </div>
+                <div class="border-l-4 border-navy-600 pl-4">
+                  <h4 class="font-semibold text-gray-900">Whole Life Insurance</h4>
+                  <p class="text-gray-600">Permanent coverage with cash value accumulation</p>
+                </div>
+                <div class="border-l-4 border-navy-600 pl-4">
+                  <h4 class="font-semibold text-gray-900">Universal Life Insurance</h4>
+                  <p class="text-gray-600">Flexible premiums and death benefits with investment options</p>
+                </div>
+              </div>
+            </div>
+            <a href="/contact" class="bg-navy-600 hover:bg-navy-700 text-white px-6 py-3 rounded-md font-semibold transition-colors duration-200">
+              Get Life Quote
+            </a>
+          </div>
+          <div class="bg-gray-100 p-8 rounded-lg">
+            <div class="w-16 h-16 bg-navy-600 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-900 mb-4">How Much Do You Need?</h4>
+            <p class="text-gray-600 mb-4">
+              A general rule of thumb is 10-12 times your annual income, but your needs depend on:
+            </p>
+            <ul class="space-y-2 text-gray-600">
+              <li>• Outstanding debts and mortgages</li>
+              <li>• Children's education costs</li>
+              <li>• Final expenses</li>
+              <li>• Income replacement needs</li>
+              <li>• Existing savings and investments</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Additional Personal Lines Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Umbrella Insurance -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h4a2 2 0 002-2V9a2 2 0 00-2-2H7a2 2 0 00-2 2v6a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Personal Umbrella</h3>
+          <p class="text-gray-600 mb-4">
+            Extra liability protection that goes beyond your auto and home insurance limits. Affordable coverage for major lawsuit protection.
+          </p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-1">
+            <li>• $1M - $5M+ coverage limits</li>
+            <li>• Covers auto and home liability</li>
+            <li>• Legal defense costs included</li>
+            <li>• Worldwide coverage</li>
+          </ul>
+          <a href="/contact" class="text-navy-600 hover:text-navy-700 font-medium">Get Quote →</a>
+        </div>
+        
+        <!-- Renters Insurance -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Renters Insurance</h3>
+          <p class="text-gray-600 mb-4">
+            Affordable protection for your personal belongings and liability coverage when renting an apartment or home.
+          </p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-1">
+            <li>• Personal property coverage</li>
+            <li>• Liability protection</li>
+            <li>• Additional living expenses</li>
+            <li>• Medical payments to others</li>
+          </ul>
+          <a href="/contact" class="text-navy-600 hover:text-navy-700 font-medium">Get Quote →</a>
+        </div>
+        
+        <!-- Condo Insurance -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Condo Insurance</h3>
+          <p class="text-gray-600 mb-4">
+            Specialized coverage for condo owners, protecting your unit, belongings, and providing liability coverage.
+          </p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-1">
+            <li>• Interior unit coverage</li>
+            <li>• Personal property protection</li>
+            <li>• Loss assessment coverage</li>
+            <li>• Liability protection</li>
+          </ul>
+          <a href="/contact" class="text-navy-600 hover:text-navy-700 font-medium">Get Quote →</a>
+        </div>
+        
+        <!-- Motorcycle Insurance -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Motorcycle Insurance</h3>
+          <p class="text-gray-600 mb-4">
+            Comprehensive coverage for your motorcycle, including liability, collision, comprehensive, and uninsured motorist protection.
+          </p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-1">
+            <li>• Liability coverage (required)</li>
+            <li>• Collision and comprehensive</li>
+            <li>• Uninsured motorist coverage</li>
+            <li>• Custom parts and equipment</li>
+          </ul>
+          <a href="/contact" class="text-navy-600 hover:text-navy-700 font-medium">Get Quote →</a>
+        </div>
+        
+        <!-- Boat Insurance -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Boat & Watercraft</h3>
+          <p class="text-gray-600 mb-4">
+            Protect your boat, yacht, or personal watercraft with comprehensive marine insurance coverage.
+          </p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-1">
+            <li>• Hull and machinery coverage</li>
+            <li>• Liability protection</li>
+            <li>• Medical payments</li>
+            <li>• Uninsured boater coverage</li>
+          </ul>
+          <a href="/contact" class="text-navy-600 hover:text-navy-700 font-medium">Get Quote →</a>
+        </div>
+        
+        <!-- RV Insurance -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">RV & Motorhome</h3>
+          <p class="text-gray-600 mb-4">
+            Specialized coverage for recreational vehicles, motorhomes, travel trailers, and fifth wheels.
+          </p>
+          <ul class="text-sm text-gray-600 mb-4 space-y-1">
+            <li>• Liability and collision coverage</li>
+            <li>• Personal belongings protection</li>
+            <li>• Vacation liability coverage</li>
+            <li>• Emergency expenses coverage</li>
+          </ul>
+          <a href="/contact" class="text-navy-600 hover:text-navy-700 font-medium">Get Quote →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Bundle Savings Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Save More with Multi-Policy Discounts</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Bundle your personal insurance policies and save up to 25% on your premiums while simplifying your coverage.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Save Money</h3>
+          <p class="text-gray-600">Multi-policy discounts can save you hundreds of dollars annually on your insurance premiums.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Simplify Management</h3>
+          <p class="text-gray-600">One agent, one renewal date, one payment - managing your insurance has never been easier.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-16 h-16 bg-navy-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Better Protection</h3>
+          <p class="text-gray-600">Coordinated coverage ensures no gaps in protection and better claims handling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="py-20 bg-navy-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">Protect What Matters Most to Your Family</h2>
+      <p class="text-xl text-navy-100 mb-8 max-w-2xl mx-auto">
+        Get personalized quotes for all your personal insurance needs. Our experts will help you find the right coverage at the best price.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="bg-white text-navy-600 hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+          Get Personal Insurance Quote
+        </a>
+        <a href="tel:877-717-7234" class="border-2 border-white text-white hover:bg-white hover:text-navy-600 px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+          Call (877) 717-7234
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</Layout>

@@ -1,0 +1,545 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Security Vulnerability Disclosure Policy - PCFG Insurance Services" description="Security vulnerability disclosure policy for PCFG Insurance Services. Guidelines for security researchers, reporting process, and responsible disclosure procedures.">
+  <Header />
+  
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-br from-navy-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Security Vulnerability Disclosure Policy</h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Guidelines for security researchers and our commitment to maintaining a secure environment for our users.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Main Content -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Purpose -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+        <div class="bg-navy-600 px-8 py-6">
+          <h2 class="text-2xl font-semibold text-white">Purpose</h2>
+        </div>
+        <div class="px-8 py-8">
+          <p class="text-lg text-gray-700 leading-relaxed">
+            This policy provides security researchers with guidelines for conducting security testing and reporting vulnerabilities. We at PCFG Insurance value the contributions of the security research community in helping us maintain a secure environment for our users.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Scope -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+        <div class="bg-navy-600 px-8 py-6">
+          <h2 class="text-2xl font-semibold text-white">Scope</h2>
+        </div>
+        <div class="px-8 py-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- In-Scope -->
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <svg class="w-6 h-6 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                In-Scope Systems and Services
+              </h3>
+              <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-400">
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start">
+                    <svg class="w-4 h-4 text-green-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Primary domain (pcfginsurance.com) and all subdomains
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-4 h-4 text-green-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Mobile applications (iOS and Android)
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-4 h-4 text-green-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Public-facing APIs
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-4 h-4 text-green-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Web applications and services
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-4 h-4 text-green-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                    Production infrastructure
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <!-- Out-of-Scope -->
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <svg class="w-6 h-6 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Out-of-Scope Systems
+              </h3>
+              <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-400">
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start">
+                    <svg class="w-4 h-4 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    Third-party services and applications not owned by PCFG Insurance
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-4 h-4 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    Physical security testing
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-4 h-4 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    Social engineering attacks
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-4 h-4 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    Denial of Service (DoS) testing
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-4 h-4 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    Systems or services hosted by our vendors
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-4 h-4 text-red-600 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                    Employee or customer personal accounts
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Safe Harbor -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+        <div class="bg-green-600 px-8 py-6">
+          <h2 class="text-2xl font-semibold text-white">Safe Harbor</h2>
+        </div>
+        <div class="px-8 py-8">
+          <p class="text-lg text-gray-700 leading-relaxed mb-6">
+            We support good-faith security research and will not initiate legal action against researchers who:
+          </p>
+          <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-400">
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Follow this policy
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Make good-faith efforts to avoid privacy violations, data destruction, or service interruption
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Do not exploit vulnerabilities beyond the minimum necessary to demonstrate the issue
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-green-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Do not disclose vulnerabilities to third parties prior to our remediation
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Guidelines for Testing -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+        <div class="bg-blue-600 px-8 py-6">
+          <h2 class="text-2xl font-semibold text-white">Guidelines for Testing</h2>
+        </div>
+        <div class="px-8 py-8">
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Security researchers MUST:</h3>
+          <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-400">
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Only test against test accounts you own
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Not modify, delete, or store any data
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Not disclose vulnerabilities to third parties prior to our remediation
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Not use automated testing tools that may impact system availability
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Cease testing and notify us immediately if you encounter sensitive data
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Reporting Process -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+        <div class="bg-purple-600 px-8 py-6">
+          <h2 class="text-2xl font-semibold text-white">Reporting Process</h2>
+        </div>
+        <div class="px-8 py-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Submission Channels -->
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Submit reports through one of these channels:</h3>
+              <div class="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-400 mb-6">
+                <ul class="space-y-3 text-gray-700">
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-purple-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 002 2z"></path>
+                    </svg>
+                    <div>
+                      <strong>Email:</strong> security@pcfginsurance.com<br>
+                      <span class="text-sm text-gray-600">(PGP key available)</span>
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-purple-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                    </svg>
+                    <div>
+                      <strong>Security reporting platform:</strong> email
+                    </div>
+                  </li>
+                  <li class="flex items-start">
+                    <svg class="w-5 h-5 text-purple-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                    </svg>
+                    <div>
+                      <strong>Bug bounty platform:</strong> (if applicable)
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <!-- Report Requirements -->
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Include in your report:</h3>
+              <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gray-400">
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Detailed description of the vulnerability</li>
+                  <li>• Step-by-step reproduction instructions</li>
+                  <li>• Proof of concept (if applicable)</li>
+                  <li>• Impact assessment</li>
+                  <li>• Screenshots or videos demonstrating the issue</li>
+                  <li>• Discovery date</li>
+                  <li>• Your contact information</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Response Timeline -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+        <div class="bg-orange-600 px-8 py-6">
+          <h2 class="text-2xl font-semibold text-white">Response Timeline</h2>
+        </div>
+        <div class="px-8 py-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-400 text-center">
+              <div class="text-2xl font-bold text-orange-600 mb-2">24 Hours</div>
+              <div class="text-gray-700 font-medium">Initial Response</div>
+            </div>
+            <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-400 text-center">
+              <div class="text-2xl font-bold text-blue-600 mb-2">5 Days</div>
+              <div class="text-gray-700 font-medium">Status Updates</div>
+              <div class="text-sm text-gray-600">(Every 5 business days)</div>
+            </div>
+            <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-400 text-center">
+              <div class="text-2xl font-bold text-green-600 mb-2">3 Days</div>
+              <div class="text-gray-700 font-medium">Vulnerability Triage</div>
+            </div>
+            <div class="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-400 text-center">
+              <div class="text-lg font-bold text-purple-600 mb-2">Based on Severity</div>
+              <div class="text-gray-700 font-medium">Fix Implementation</div>
+            </div>
+          </div>
+          
+          <div class="mt-8">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Fix Implementation Timeline:</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div class="bg-red-100 p-4 rounded-lg text-center">
+                <div class="text-lg font-bold text-red-700">Critical</div>
+                <div class="text-red-600">7 days</div>
+              </div>
+              <div class="bg-orange-100 p-4 rounded-lg text-center">
+                <div class="text-lg font-bold text-orange-700">High</div>
+                <div class="text-orange-600">14 days</div>
+              </div>
+              <div class="bg-yellow-100 p-4 rounded-lg text-center">
+                <div class="text-lg font-bold text-yellow-700">Medium</div>
+                <div class="text-yellow-600">30 days</div>
+              </div>
+              <div class="bg-green-100 p-4 rounded-lg text-center">
+                <div class="text-lg font-bold text-green-700">Low</div>
+                <div class="text-green-600">90 days</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Severity Classifications -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+        <div class="bg-gray-800 px-8 py-6">
+          <h2 class="text-2xl font-semibold text-white">Severity Classifications</h2>
+        </div>
+        <div class="px-8 py-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Critical & High -->
+            <div class="space-y-6">
+              <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+                <h3 class="text-lg font-semibold text-red-800 mb-3">Critical</h3>
+                <ul class="space-y-2 text-red-700">
+                  <li>• Remote code execution</li>
+                  <li>• Access to production databases</li>
+                  <li>• Exposure of authentication credentials</li>
+                  <li>• Privilege escalation to admin</li>
+                </ul>
+              </div>
+              
+              <div class="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-500">
+                <h3 class="text-lg font-semibold text-orange-800 mb-3">High</h3>
+                <ul class="space-y-2 text-orange-700">
+                  <li>• SQL injection</li>
+                  <li>• Authentication bypass</li>
+                  <li>• Cross-site scripting (stored)</li>
+                  <li>• Direct object references exposing sensitive data</li>
+                </ul>
+              </div>
+            </div>
+            
+            <!-- Medium & Low -->
+            <div class="space-y-6">
+              <div class="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+                <h3 class="text-lg font-semibold text-yellow-800 mb-3">Medium</h3>
+                <ul class="space-y-2 text-yellow-700">
+                  <li>• Cross-site scripting (reflected)</li>
+                  <li>• Cross-site request forgery</li>
+                  <li>• Server misconfiguration</li>
+                  <li>• Information disclosure</li>
+                </ul>
+              </div>
+              
+              <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+                <h3 class="text-lg font-semibold text-green-800 mb-3">Low</h3>
+                <ul class="space-y-2 text-green-700">
+                  <li>• Missing security headers</li>
+                  <li>• SSL/TLS configuration issues</li>
+                  <li>• Clickjacking</li>
+                  <li>• Non-sensitive information disclosure</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Rewards and Recognition -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+        <div class="bg-yellow-600 px-8 py-6">
+          <h2 class="text-2xl font-semibold text-white">Rewards and Recognition</h2>
+        </div>
+        <div class="px-8 py-8">
+          <h3 class="text-xl font-semibold text-gray-900 mb-4">Acknowledgment</h3>
+          <div class="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400">
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                </svg>
+                Researchers will be credited on our security acknowledgments page (with permission)
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-yellow-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+                </svg>
+                Detailed findings may be published after remediation (in coordination with the researcher)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Disclosure Policy -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+        <div class="bg-indigo-600 px-8 py-6">
+          <h2 class="text-2xl font-semibold text-white">Disclosure Policy</h2>
+        </div>
+        <div class="px-8 py-8">
+          <div class="bg-indigo-50 p-6 rounded-lg border-l-4 border-indigo-400">
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Please provide 90 days for remediation before any disclosure
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+                Coordinate disclosure timing with our security team
+              </li>
+              <li class="flex items-start">
+                <svg class="w-5 h-5 text-indigo-600 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+                Public disclosure must exclude sensitive details that could harm users
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact Information -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+        <div class="bg-navy-600 px-8 py-6">
+          <h2 class="text-2xl font-semibold text-white">Contact Information</h2>
+        </div>
+        <div class="px-8 py-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-navy-50 p-6 rounded-lg border-l-4 border-navy-600 text-center">
+              <svg class="w-8 h-8 text-navy-600 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 002 2z"></path>
+              </svg>
+              <h3 class="font-semibold text-gray-900 mb-2">Security Team Email</h3>
+              <p class="text-gray-700">security@pcfginsurance.com</p>
+            </div>
+            
+            <div class="bg-navy-50 p-6 rounded-lg border-l-4 border-navy-600 text-center">
+              <svg class="w-8 h-8 text-navy-600 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
+              </svg>
+              <h3 class="font-semibold text-gray-900 mb-2">PGP Key</h3>
+              <p class="text-gray-700">https://pcfginsurance.com/pgp-key.txt</p>
+            </div>
+            
+            <div class="bg-navy-50 p-6 rounded-lg border-l-4 border-navy-600 text-center">
+              <svg class="w-8 h-8 text-navy-600 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <h3 class="font-semibold text-gray-900 mb-2">Emergency Contact</h3>
+              <p class="text-gray-700">+1 (877) 717-7234</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Policy Updates -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <div class="bg-gray-600 px-8 py-6">
+          <h2 class="text-2xl font-semibold text-white">Policy Updates</h2>
+        </div>
+        <div class="px-8 py-8">
+          <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-gray-400">
+            <p class="text-gray-700 leading-relaxed">
+              This policy was last updated on <strong>December 13, 2024</strong>. We reserve the right to update this policy at any time. Major changes will be announced through our security mailing list.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Related Information -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Related Information</h2>
+        <p class="text-xl text-gray-600">Learn more about our commitment to security and transparency</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Privacy Policy</h3>
+          <p class="text-gray-600 mb-4">Learn how we protect and handle your personal information.</p>
+          <a href="/privacy" class="text-navy-600 hover:text-navy-700 font-medium">View Policy →</a>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Terms of Service</h3>
+          <p class="text-gray-600 mb-4">Review our complete terms of service and usage policies.</p>
+          <a href="/terms" class="text-navy-600 hover:text-navy-700 font-medium">Read Terms →</a>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+          <div class="w-12 h-12 bg-navy-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-navy-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Contact Us</h3>
+          <p class="text-gray-600 mb-4">Have questions about our security practices? We're here to help.</p>
+          <a href="/contact" class="text-navy-600 hover:text-navy-700 font-medium">Get in Touch →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <Footer />
+</Layout>
