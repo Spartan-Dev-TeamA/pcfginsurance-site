@@ -691,8 +691,28 @@
           } else {
             const field = form.querySelector(`[name="${key}"]`);
             if (field) {
-              if (field.type === 'radio') {
-                if (field.value === data[key]) field.checked = true;
+             if (field instanceof HTMLInputElement) {
+               if (field.type === 'radio') {
+                 if (field.value === data[key]) field.checked = true;
+               } else {
+                 field.value = data[key];
+               }
+             } else if (field instanceof HTMLSelectElement || field instanceof HTMLTextAreaElement) {
+               field.value = data[key];
+             }
+           }
+         }
+       });
+       
+       showStep(currentStep);
+     } catch (e) {
+       console.error('Error loading saved progress:', e);
+     }
+   } else {
+     showStep(1);
+   }
+ });
+</script>
               } else {
                 field.value = data[key];
               }
