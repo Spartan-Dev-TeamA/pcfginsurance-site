@@ -4,11 +4,11 @@
 This document outlines the local SEO implementation for PCFG Insurance Services, a veteran-owned insurance agency based in Parish, NY, serving 15 states.
 
 ## Business Information (NAP)
-- **Name**: PCFG Insurance Services
-- **Address**: PO Box 609, Parish, NY 13131
+- **Name**: PCFG Insurance Services  
+- **Primary Market**: Syracuse, Rochester, Buffalo, Albany, Central/Western/Upstate New York
 - **Phone**: (877) 717-7234
 - **Email**: info@pcfginsurance.com
-- **Service Area**: 15 states (AL, AZ, FL, GA, IN, MD, ME, NJ, NY, NC, OH, PA, TN, TX, VA)
+- **Service Area**: Central New York + 14 additional states (AL, AZ, FL, GA, IN, MD, ME, NJ, NC, OH, PA, TN, TX, VA)
 
 ## Components Created
 
@@ -104,11 +104,17 @@ Consider creating pages for major service areas:
 - `/texas-insurance` - TX business insurance needs
 
 ### Local Keywords to Target
-- "Parish NY insurance agency"
-- "Oswego County insurance"
-- "Central New York business insurance"
-- "Syracuse area insurance agent"
-- "Veteran owned insurance Parish NY"
+- "Syracuse NY insurance agency"
+- "Rochester NY insurance agent" 
+- "Buffalo NY business insurance"
+- "Albany NY insurance company"
+- "Central New York insurance"
+- "Western New York insurance"
+- "Upstate New York insurance"
+- "Syracuse area workers compensation"
+- "Rochester commercial auto insurance"
+- "Buffalo general liability insurance"
+- "Veteran owned insurance Central NY"
 - "[State] workers compensation insurance"
 - "[City] commercial auto insurance"
 
