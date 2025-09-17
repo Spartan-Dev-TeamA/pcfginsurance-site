@@ -1,0 +1,207 @@
+---
+interface Props {
+  currentPage?: string;
+  variant?: 'sidebar' | 'footer' | 'inline' | 'related';
+  title?: string;
+  maxLinks?: number;
+}
+
+const { 
+  currentPage = '',
+  variant = 'sidebar',
+  title = 'Related Services',
+  maxLinks = 6
+} = Astro.props;
+
+// Comprehensive internal link structure
+const linkCategories = {
+  business: {
+    title: 'Business Insurance',
+    links: [
+      { text: 'Workers\' Compensation Insurance', href: '/workers-compensation', keywords: ['workers comp', 'work comp', 'employee injury'] },
+      { text: 'Commercial Auto Insurance', href: '/commercial-auto', keywords: ['fleet insurance', 'business vehicles', 'commercial vehicle'] },
+      { text: 'General Liability Insurance', href: '/general-liability', keywords: ['business liability', 'third party claims', 'lawsuit protection'] },
+      { text: 'Business Owner\'s Policy (BOP)', href: '/business-owners-policy', keywords: ['BOP insurance', 'small business package', 'bundled coverage'] },
+      { text: 'Cyber Liability Insurance', href: '/services#cyber-liability', keywords: ['data breach protection', 'cyber security insurance'] },
+      { text: 'Professional Liability Insurance', href: '/services', keywords: ['E&O insurance', 'errors omissions', 'professional indemnity'] }
+    ]
+  },
+  personal: {
+    title: 'Personal Insurance',
+    links: [
+      { text: 'Personal Auto Insurance', href: '/personal-insurance#auto-insurance', keywords: ['car insurance', 'vehicle coverage', 'auto policy'] },
+      { text: 'Homeowners Insurance', href: '/personal-insurance#home-insurance', keywords: ['home insurance', 'property coverage', 'dwelling protection'] },
+      { text: 'Renters Insurance', href: '/personal-insurance', keywords: ['tenant insurance', 'apartment coverage', 'personal property'] },
+      { text: 'Life Insurance', href: '/life-insurance', keywords: ['term life', 'whole life', 'life coverage'] },
+      { text: 'Umbrella Insurance', href: '/personal-insurance', keywords: ['excess liability', 'additional protection', 'umbrella policy'] }
+    ]
+  },
+  benefits: {
+    title: 'Employee Benefits',
+    links: [
+      { text: 'Group Health Insurance', href: '/employee-benefits#group-health', keywords: ['employee health', 'group medical', 'health benefits'] },
+      { text: 'Dental & Vision Insurance', href: '/employee-benefits#dental-vision', keywords: ['dental coverage', 'vision benefits', 'eye care'] },
+      { text: 'Group Life Insurance', href: '/employee-benefits#life-disability', keywords: ['employee life insurance', 'group term life'] },
+      { text: 'Retirement Plans', href: '/employee-benefits#retirement', keywords: ['401k plans', 'retirement benefits', 'pension plans'] },
+      { text: 'Health Insurance Plans', href: '/health-insurance', keywords: ['MVP plans', 'MEC plans', 'health coverage'] },
+      { text: 'Annuities', href: '/annuities', keywords: ['retirement annuities', 'fixed annuities', 'variable annuities'] }
+    ]
+  },
+  services: {
+    title: 'Client Services',
+    links: [
+      { text: 'Request Certificate of Insurance', href: '/client-services#certificate-request', keywords: ['COI request', 'insurance certificate', 'proof of coverage'] },
+      { text: 'Report an Insurance Claim', href: '/client-services#report-claim', keywords: ['file claim', 'claim reporting', 'insurance claim'] },
+      { text: 'Make a Payment', href: 'https://seppay.com/s/al?a=V18tksWZD3qgVTD1z2TO%2BA', keywords: ['pay premium', 'online payment', 'bill pay'], external: true },
+      { text: 'Client Portal Access', href: 'https://www6.nowcerts.com/Login.aspx?AgencyId=bd4cf416-6b8c-4c9b-8a76-d54654fbaf81&ShowAgencyLogo=true', keywords: ['policy documents', 'account access'], external: true }
+    ]
+  },
+  quotes: {
+    title: 'Get Quotes',
+    links: [
+      { text: 'Commercial Insurance Quote', href: '/commercial-quote', keywords: ['business quote', 'commercial coverage quote', 'business insurance quote'] },
+      { text: 'Personal Lines Quote', href: '/personal-lines-quote', keywords: ['personal insurance quote', 'auto home quote', 'individual coverage'] },
+      { text: 'Quick Quote Form', href: '/#quote-form', keywords: ['fast quote', 'instant quote', 'free quote'] }
+    ]
+  },
+  industries: {
+    title: 'Industries We Serve',
+    links: [
+      { text: 'Construction Insurance', href: '/industries', keywords: ['contractor insurance', 'construction coverage', 'builder insurance'] },
+      { text: 'Healthcare Insurance', href: '/industries', keywords: ['medical practice insurance', 'healthcare coverage'] },
+      { text: 'Transportation Insurance', href: '/industries', keywords: ['trucking insurance', 'fleet coverage', 'logistics insurance'] },
+      { text: 'Manufacturing Insurance', href: '/industries', keywords: ['factory insurance', 'industrial coverage'] },
+      { text: 'Professional Services Insurance', href: '/industries', keywords: ['consultant insurance', 'professional coverage'] }
+    ]
+  }
+};
+
+// Smart link selection based on current page
+function getRelevantLinks(currentPage: string, maxLinks: number) {
+  let relevantLinks: any[] = [];
+  
+  // Business insurance pages
+  if (currentPage.includes('workers-compensation') || currentPage.includes('commercial') || currentPage.includes('general-liability') || currentPage.includes('business-owners-policy')) {
+    relevantLinks = [...linkCategories.business.links, ...linkCategories.industries.links];
+  }
+  // Personal insurance pages
+  else if (currentPage.includes('personal-insurance') || currentPage.includes('life-insurance')) {
+    relevantLinks = [...linkCategories.personal.links, ...linkCategories.quotes.links];
+  }
+  // Employee benefits pages
+  else if (currentPage.includes('employee-benefits') || currentPage.includes('health-insurance') || currentPage.includes('annuities')) {
+    relevantLinks = [...linkCategories.benefits.links, ...linkCategories.business.links];
+  }
+  // Service pages
+  else if (currentPage.includes('client-services') || currentPage.includes('industries')) {
+    relevantLinks = [...linkCategories.services.links, ...linkCategories.business.links];
+  }
+  // Quote pages
+  else if (currentPage.includes('quote')) {
+    relevantLinks = [...linkCategories.business.links, ...linkCategories.personal.links];
+  }
+  // Homepage and other pages
+  else {
+    relevantLinks = [
+      ...linkCategories.business.links.slice(0, 2),
+      ...linkCategories.personal.links.slice(0, 2),
+      ...linkCategories.benefits.links.slice(0, 2)
+    ];
+  }
+  
+  // Filter out current page and limit results
+  return relevantLinks
+    .filter(link => !currentPage.includes(link.href.replace('/', '')))
+    .slice(0, maxLinks);
+}
+
+const relevantLinks = getRelevantLinks(currentPage, maxLinks);
+---
+
+{variant === 'sidebar' && (
+  <aside class={`bg-white p-6 rounded-lg shadow-lg ${className}`} role="complementary" aria-labelledby="related-links-heading">
+    <h3 id="related-links-heading" class="text-xl font-semibold text-gray-900 mb-4 font-heading">{title}</h3>
+    <nav aria-label="Related services navigation">
+      <ul class="space-y-3">
+        {relevantLinks.map(link => (
+          <li>
+            <a 
+              href={link.href} 
+              class="text-primary hover:text-primary-dark transition-colors duration-200 flex items-center group"
+              {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+            >
+              <svg class="w-4 h-4 mr-2 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+              {link.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </aside>
+)}
+
+{variant === 'footer' && (
+  <div class={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ${className}`}>
+    {Object.entries(linkCategories).slice(0, 3).map(([key, category]) => (
+      <div>
+        <h4 class="text-lg font-semibold text-white mb-3">{category.title}</h4>
+        <ul class="space-y-2">
+          {category.links.slice(0, 4).map(link => (
+            <li>
+              <a 
+                href={link.href} 
+                class="text-gray-300 hover:text-primary-light transition-colors"
+                {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+              >
+                {link.text}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+)}
+
+{variant === 'inline' && (
+  <div class={`flex flex-wrap gap-2 ${className}`}>
+    {relevantLinks.slice(0, 4).map(link => (
+      <a 
+        href={link.href} 
+        class="bg-primary-50 text-primary hover:bg-primary-100 px-3 py-1 rounded-full text-sm font-medium transition-colors duration-200"
+        {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+      >
+        {link.text}
+      </a>
+    ))}
+  </div>
+)}
+
+{variant === 'related' && (
+  <section class={`py-12 bg-gray-50 ${className}`} role="region" aria-labelledby="related-content-heading">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 id="related-content-heading" class="text-2xl font-bold text-gray-900 mb-8 text-center">{title}</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {relevantLinks.map(link => (
+          <a 
+            href={link.href} 
+            class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-1 group"
+            {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+          >
+            <div class="flex items-center justify-between mb-3">
+              <h3 class="text-lg font-semibold text-gray-900 group-hover:text-primary transition-colors">{link.text}</h3>
+              <svg class="w-5 h-5 text-gray-400 group-hover:text-primary group-hover:translate-x-1 transition-all duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+            </div>
+            <p class="text-gray-600 text-sm">
+              {link.keywords.slice(0, 3).join(' • ')}
+            </p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

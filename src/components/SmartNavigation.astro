@@ -1,0 +1,112 @@
+---
+interface Props {
+  currentPath: string;
+  className?: string;
+}
+
+const { currentPath, className = '' } = Astro.props;
+
+// Smart navigation suggestions based on user journey
+const navigationPaths = {
+  '/': {
+    next: ['/services', '/contact', '/commercial-quote'],
+    related: ['/about', '/personal-insurance', '/employee-benefits']
+  },
+  '/services': {
+    next: ['/commercial-quote', '/workers-compensation', '/commercial-auto'],
+    related: ['/general-liability', '/business-owners-policy', '/industries']
+  },
+  '/workers-compensation': {
+    next: ['/commercial-quote', '/commercial-auto', '/general-liability'],
+    related: ['/industries', '/services', '/client-services']
+  },
+  '/commercial-auto': {
+    next: ['/commercial-quote', '/workers-compensation', '/general-liability'],
+    related: ['/business-owners-policy', '/services', '/industries']
+  },
+  '/general-liability': {
+    next: ['/commercial-quote', '/business-owners-policy', '/workers-compensation'],
+    related: ['/commercial-auto', '/services', '/industries']
+  },
+  '/business-owners-policy': {
+    next: ['/commercial-quote', '/general-liability', '/services'],
+    related: ['/workers-compensation', '/commercial-auto', '/industries']
+  },
+  '/personal-insurance': {
+    next: ['/personal-lines-quote', '/life-insurance', '/contact'],
+    related: ['/annuities', '/health-insurance', '/services']
+  },
+  '/employee-benefits': {
+    next: ['/health-insurance', '/contact', '/annuities'],
+    related: ['/services', '/life-insurance', '/personal-insurance']
+  },
+  '/contact': {
+    next: ['/commercial-quote', '/personal-lines-quote', '/services'],
+    related: ['/about', '/client-services', '/careers']
+  }
+};
+
+const currentNav = navigationPaths[currentPath] || navigationPaths['/'];
+
+// Page titles for better anchor text
+const pageTitles = {
+  '/': 'Home',
+  '/services': 'Business Insurance Services',
+  '/personal-insurance': 'Personal Insurance',
+  '/employee-benefits': 'Employee Benefits',
+  '/workers-compensation': 'Workers\' Compensation Insurance',
+  '/commercial-auto': 'Commercial Auto Insurance',
+  '/general-liability': 'General Liability Insurance',
+  '/business-owners-policy': 'Business Owner\'s Policy (BOP)',
+  '/life-insurance': 'Life Insurance',
+  '/health-insurance': 'Health Insurance',
+  '/annuities': 'Annuities',
+  '/commercial-quote': 'Commercial Insurance Quote',
+  '/personal-lines-quote': 'Personal Lines Quote',
+  '/contact': 'Contact Us',
+  '/about': 'About Us',
+  '/industries': 'Industries We Serve',
+  '/client-services': 'Client Services',
+  '/careers': 'Careers'
+};
+---
+
+<nav class={`smart-navigation ${className}`} role="navigation" aria-label="Suggested next steps">
+  <!-- Next Steps (High Priority) -->
+  <div class="mb-6">
+    <h3 class="text-lg font-semibold text-gray-900 mb-4">Next Steps</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {currentNav.next.map(path => (
+        <a 
+          href={path}
+          class="block p-4 bg-primary text-white rounded-lg hover:bg-primary-dark transition-all duration-200 transform hover:-translate-y-1 shadow-md hover:shadow-lg text-center"
+        >
+          <div class="font-semibold">{pageTitles[path]}</div>
+          <div class="text-sm opacity-90 mt-1">
+            {path.includes('quote') ? 'Get your free quote' : 
+             path.includes('contact') ? 'Speak with an expert' :
+             'Learn more'}
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+  
+  <!-- Related Pages (Medium Priority) -->
+  <div>
+    <h4 class="text-md font-medium text-gray-700 mb-3">You Might Also Be Interested In</h4>
+    <div class="flex flex-wrap gap-2">
+      {currentNav.related.map(path => (
+        <a 
+          href={path}
+          class="inline-flex items-center px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-colors duration-200 text-sm"
+        >
+          {pageTitles[path]}
+          <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      ))}
+    </div>
+  </div>
+</nav>

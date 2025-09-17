@@ -1,0 +1,144 @@
+---
+interface Props {
+  pageType: 'business' | 'personal' | 'benefits' | 'service' | 'quote' | 'general';
+  currentService?: string;
+  className?: string;
+}
+
+const { pageType, currentService, className = '' } = Astro.props;
+
+// Contextual linking based on page type and user journey
+const contextualLinks = {
+  business: {
+    primary: [
+      { text: 'Get Commercial Quote', href: '/commercial-quote', priority: 'high', cta: true },
+      { text: 'Workers\' Compensation', href: '/workers-compensation', priority: 'high' },
+      { text: 'Commercial Auto Insurance', href: '/commercial-auto', priority: 'high' },
+      { text: 'General Liability Coverage', href: '/general-liability', priority: 'high' }
+    ],
+    secondary: [
+      { text: 'Business Owner\'s Policy', href: '/business-owners-policy', priority: 'medium' },
+      { text: 'Employee Benefits', href: '/employee-benefits', priority: 'medium' },
+      { text: 'Industries We Serve', href: '/industries', priority: 'low' },
+      { text: 'Client Services', href: '/client-services', priority: 'low' }
+    ]
+  },
+  personal: {
+    primary: [
+      { text: 'Get Personal Quote', href: '/personal-lines-quote', priority: 'high', cta: true },
+      { text: 'Auto Insurance', href: '/personal-insurance#auto-insurance', priority: 'high' },
+      { text: 'Homeowners Insurance', href: '/personal-insurance#home-insurance', priority: 'high' },
+      { text: 'Life Insurance', href: '/life-insurance', priority: 'high' }
+    ],
+    secondary: [
+      { text: 'Renters Insurance', href: '/personal-insurance', priority: 'medium' },
+      { text: 'Umbrella Insurance', href: '/personal-insurance', priority: 'medium' },
+      { text: 'Annuities', href: '/annuities', priority: 'medium' },
+      { text: 'Contact Us', href: '/contact', priority: 'low' }
+    ]
+  },
+  benefits: {
+    primary: [
+      { text: 'Group Health Insurance', href: '/employee-benefits#group-health', priority: 'high' },
+      { text: 'Health Insurance Plans', href: '/health-insurance', priority: 'high' },
+      { text: 'Retirement Plans', href: '/employee-benefits#retirement', priority: 'high' },
+      { text: 'Dental & Vision Coverage', href: '/employee-benefits#dental-vision', priority: 'high' }
+    ],
+    secondary: [
+      { text: 'Annuities for Retirement', href: '/annuities', priority: 'medium' },
+      { text: 'Business Insurance', href: '/services', priority: 'medium' },
+      { text: 'Contact Benefits Specialist', href: '/contact', priority: 'low', cta: true }
+    ]
+  },
+  service: {
+    primary: [
+      { text: 'Request Certificate', href: '/client-services#certificate-request', priority: 'high' },
+      { text: 'Report a Claim', href: '/client-services#report-claim', priority: 'high' },
+      { text: 'Make Payment', href: 'https://seppay.com/s/al?a=V18tksWZD3qgVTD1z2TO%2BA', priority: 'high', external: true },
+      { text: 'Client Portal', href: 'https://www6.nowcerts.com/Login.aspx?AgencyId=bd4cf416-6b8c-4c9b-8a76-d54654fbaf81&ShowAgencyLogo=true', priority: 'high', external: true }
+    ],
+    secondary: [
+      { text: 'Business Insurance', href: '/services', priority: 'medium' },
+      { text: 'Personal Insurance', href: '/personal-insurance', priority: 'medium' },
+      { text: 'Contact Support', href: '/contact', priority: 'low' }
+    ]
+  },
+  quote: {
+    primary: [
+      { text: 'Commercial Quote', href: '/commercial-quote', priority: 'high', cta: true },
+      { text: 'Personal Lines Quote', href: '/personal-lines-quote', priority: 'high', cta: true },
+      { text: 'Business Insurance Services', href: '/services', priority: 'high' },
+      { text: 'Personal Insurance Options', href: '/personal-insurance', priority: 'high' }
+    ],
+    secondary: [
+      { text: 'Employee Benefits', href: '/employee-benefits', priority: 'medium' },
+      { text: 'Industries We Serve', href: '/industries', priority: 'medium' },
+      { text: 'About Our Agency', href: '/about', priority: 'low' }
+    ]
+  },
+  general: {
+    primary: [
+      { text: 'Business Insurance', href: '/services', priority: 'high' },
+      { text: 'Personal Insurance', href: '/personal-insurance', priority: 'high' },
+      { text: 'Employee Benefits', href: '/employee-benefits', priority: 'high' },
+      { text: 'Get Free Quote', href: '/contact', priority: 'high', cta: true }
+    ],
+    secondary: [
+      { text: 'About Us', href: '/about', priority: 'medium' },
+      { text: 'Industries', href: '/industries', priority: 'medium' },
+      { text: 'Client Services', href: '/client-services', priority: 'medium' },
+      { text: 'Careers', href: '/careers', priority: 'low' }
+    ]
+  }
+};
+
+const links = contextualLinks[pageType] || contextualLinks.general;
+---
+
+<div class={`contextual-links ${className}`}>
+  <!-- Primary Links (High Priority) -->
+  <div class="mb-6">
+    <h3 class="text-lg font-semibold text-gray-900 mb-3 font-heading">Recommended for You</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      {links.primary.map(link => (
+        <a 
+          href={link.href}
+          class={`block p-4 rounded-lg transition-all duration-200 ${
+            link.cta 
+              ? 'bg-primary text-white hover:bg-primary-dark shadow-md hover:shadow-lg transform hover:-translate-y-1' 
+              : 'bg-gray-50 text-gray-900 hover:bg-gray-100 border border-gray-200 hover:border-primary'
+          }`}
+          {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+        >
+          <div class="flex items-center justify-between">
+            <span class="font-medium">{link.text}</span>
+            <svg class="w-4 h-4 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+  
+  <!-- Secondary Links (Medium Priority) -->
+  <div>
+    <h4 class="text-md font-medium text-gray-700 mb-3">You Might Also Need</h4>
+    <div class="flex flex-wrap gap-2">
+      {links.secondary.map(link => (
+        <a 
+          href={link.href}
+          class="inline-flex items-center px-3 py-1 rounded-full text-sm bg-primary-50 text-primary hover:bg-primary-100 transition-colors duration-200"
+          {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+        >
+          {link.text}
+          {link.external && (
+            <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          )}
+        </a>
+      ))}
+    </div>
+  </div>
+</div>
