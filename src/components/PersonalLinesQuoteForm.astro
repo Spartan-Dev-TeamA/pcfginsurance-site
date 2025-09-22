@@ -1,36 +1,40 @@
 <div id="personal-lines-quote-form-container" class="bg-white rounded-lg shadow-lg overflow-hidden">
   <!-- your full form markup (unchanged) -->
-  <!-- ... I’m leaving the form and styles exactly as you pasted ... -->
 </div>
 
 <style>
-  /* keep your same CSS */
+  .form-step { display: none; }
+  .form-step.active { display: block; animation: fadeIn 0.3s ease-in-out; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  .step-indicator.active .w-8 { background-color: #ea580c; color: white; }
+  .step-indicator.completed .w-8 { background-color: #16a34a; color: white; }
+  .step-indicator.active span { color: #111827; font-weight: 600; }
+  .step-indicator.completed span { color: #16a34a; font-weight: 600; }
+  .insurance-type-card input:checked + div { border-color: #ea580c; background-color: #fff7ed; }
+  .insurance-type-card:hover div { border-color: #ea580c; }
 </style>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     let currentStep = 1;
     const totalSteps = 5;
-    
+
     const form = document.getElementById('personal-lines-quote-form');
     const nextBtn = document.getElementById('next-btn');
     const prevBtn = document.getElementById('prev-btn');
     const submitBtn = document.getElementById('submit-btn');
     const saveProgressBtn = document.getElementById('save-progress-btn');
     const clearFormBtn = document.getElementById('clear-form-btn');
-    
-    // Update progress indicators
+
     function updateProgress() {
       const progressPercentage = (currentStep / totalSteps) * 100;
       document.getElementById('progress-bar').style.width = progressPercentage + '%';
-      document.getElementById('current-step-number').textContent = currentStep;
+      document.getElementById('current-step-number').textContent = String(currentStep);
       document.getElementById('progress-percentage').textContent = String(Math.round(progressPercentage));
-      
-      // Update step indicators
+
       for (let i = 1; i <= totalSteps; i++) {
         const indicator = document.getElementById(`step-${i}-indicator`);
         const circle = indicator ? indicator.querySelector('.w-8') : null;
-        
         if (!indicator || !circle) continue;
 
         if (i < currentStep) {
@@ -40,40 +44,36 @@
         } else if (i === currentStep) {
           indicator.className = 'flex items-center step-indicator active';
           circle.className = 'w-8 h-8 rounded-full bg-orange-600 text-white flex items-center justify-center text-sm font-medium';
-          circle.textContent = i;
+          circle.textContent = String(i);
         } else {
           indicator.className = 'flex items-center step-indicator';
           circle.className = 'w-8 h-8 rounded-full bg-gray-300 text-gray-600 flex items-center justify-center text-sm font-medium';
-          circle.textContent = i;
+          circle.textContent = String(i);
         }
       }
     }
-    
-    // Show/hide steps
+
     function showStep(step) {
       document.querySelectorAll('.form-step').forEach(s => s.classList.remove('active'));
       const stepElement = document.getElementById(`step-${step}`);
       if (stepElement) stepElement.classList.add('active');
-      
-      // Update button visibility
+
       prevBtn.classList.toggle('hidden', step === 1);
       nextBtn.classList.toggle('hidden', step === totalSteps);
       submitBtn.classList.toggle('hidden', step !== totalSteps);
-      
+
       updateProgress();
-      
+
       if (step === 4) updateInsuranceDetails();
       if (step === 5) populateReviewContent();
     }
-    
-    // Validate current step
+
     function validateStep(step) {
       const stepElement = document.getElementById(`step-${step}`);
       if (!stepElement) return true;
 
       const requiredFields = stepElement.querySelectorAll('input[required], select[required]');
       let isValid = true;
-      
       requiredFields.forEach(field => {
         if (!field.value.trim()) {
           field.classList.add('border-red-500');
@@ -82,7 +82,7 @@
           field.classList.remove('border-red-500');
         }
       });
-      
+
       if (step === 3) {
         const insuranceTypes = document.querySelectorAll('input[name="insurance-types"]:checked');
         if (insuranceTypes.length === 0) {
@@ -90,55 +90,48 @@
           isValid = false;
         }
       }
-      
       return isValid;
     }
-    
+
     function updateInsuranceDetails() {
-      const autoSelected = document.querySelector('input[name="insurance-types"][value="auto"]').checked;
-      const homeSelected = document.querySelector('input[name="insurance-types"][value="home"]').checked;
-      
+      const autoSelected = document.querySelector('input[name="insurance-types"][value="auto"]')?.checked;
+      const homeSelected = document.querySelector('input[name="insurance-types"][value="home"]')?.checked;
       document.getElementById('auto-details').classList.toggle('hidden', !autoSelected);
       document.getElementById('home-details').classList.toggle('hidden', !homeSelected);
     }
-    
+
     function populateReviewContent() {
       const reviewContent = document.getElementById('review-content');
       const formData = new FormData(form);
       const data = Object.fromEntries(formData);
       const insuranceTypes = Array.from(document.querySelectorAll('input[name="insurance-types"]:checked')).map(cb => cb.value);
-      
-      let reviewHTML = `
+
+      const html = `
         <div class="bg-white border border-gray-200 rounded-lg p-6">
           <h4 class="text-lg font-semibold text-gray-900 mb-4">Personal Information</h4>
           <div class="grid grid-cols-2 gap-4 text-sm">
-            <div><strong>Name:</strong> ${data['first-name']} ${data['last-name']}</div>
-            <div><strong>Email:</strong> ${data['email']}</div>
-            <div><strong>Phone:</strong> ${data['phone']}</div>
+            <div><strong>Name:</strong> ${data['first-name'] || ''} ${data['last-name'] || ''}</div>
+            <div><strong>Email:</strong> ${data['email'] || ''}</div>
+            <div><strong>Phone:</strong> ${data['phone'] || ''}</div>
             <div><strong>Date of Birth:</strong> ${data['date-of-birth'] || 'Not provided'}</div>
           </div>
         </div>
-        
         <div class="bg-white border border-gray-200 rounded-lg p-6">
           <h4 class="text-lg font-semibold text-gray-900 mb-4">Address</h4>
           <div class="text-sm">
-            <p>${data['street-address']}</p>
-            <p>${data['city']}, ${data['state']} ${data['zip-code']}</p>
+            <p>${data['street-address'] || ''}</p>
+            <p>${data['city'] || ''}, ${data['state'] || ''} ${data['zip-code'] || ''}</p>
           </div>
         </div>
-        
         <div class="bg-white border border-gray-200 rounded-lg p-6">
           <h4 class="text-lg font-semibold text-gray-900 mb-4">Insurance Types</h4>
           <div class="flex flex-wrap gap-2">
-            ${insuranceTypes.map(type => `<span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">${type.charAt(0).toUpperCase() + type.slice(1)}</span>`).join('')}
+            ${insuranceTypes.map(type => `<span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm font-medium">${type}</span>`).join('')}
           </div>
-        </div>
-      `;
-      
-      reviewContent.innerHTML = reviewHTML;
+        </div>`;
+      reviewContent.innerHTML = html;
     }
-    
-    // Handle insurance type card clicks
+
     document.querySelectorAll('.insurance-type-card').forEach(card => {
       card.addEventListener('click', function() {
         const checkbox = this.querySelector('input[type="checkbox"]');
@@ -146,43 +139,37 @@
         checkbox.dispatchEvent(new Event('change'));
       });
     });
-    
-    // Navigation
-    nextBtn.addEventListener('click', function() {
+
+    nextBtn.addEventListener('click', () => {
       if (validateStep(currentStep) && currentStep < totalSteps) {
         currentStep++;
         showStep(currentStep);
       }
     });
-    
-    prevBtn.addEventListener('click', function() {
+
+    prevBtn.addEventListener('click', () => {
       if (currentStep > 1) {
         currentStep--;
         showStep(currentStep);
       }
     });
-    
-    // Save progress
+
     saveProgressBtn.addEventListener('click', function() {
       const formData = new FormData(form);
       const data = Object.fromEntries(formData);
-      const insuranceTypes = Array.from(document.querySelectorAll('input[name="insurance-types"]:checked')).map(cb => cb.value);
-      data['insurance-types'] = insuranceTypes;
+      data['insurance-types'] = Array.from(document.querySelectorAll('input[name="insurance-types"]:checked')).map(cb => cb.value);
       data['current-step'] = currentStep;
-      
       localStorage.setItem('personalLinesQuoteProgress', JSON.stringify(data));
-      
-      const originalText = this.textContent;
+      const original = this.textContent;
       this.textContent = 'Saved!';
       this.classList.add('bg-green-100', 'text-green-700');
       setTimeout(() => {
-        this.textContent = originalText;
+        this.textContent = original;
         this.classList.remove('bg-green-100', 'text-green-700');
       }, 2000);
     });
-    
-    // Clear form
-    clearFormBtn.addEventListener('click', function() {
+
+    clearFormBtn.addEventListener('click', () => {
       if (confirm('Are you sure you want to clear all form data?')) {
         form.reset();
         localStorage.removeItem('personalLinesQuoteProgress');
@@ -191,38 +178,35 @@
         document.querySelectorAll('input[name="insurance-types"]').forEach(cb => cb.checked = false);
       }
     });
-    
-    // Submit
+
     form.addEventListener('submit', function(e) {
       e.preventDefault();
-      if (validateStep(currentStep)) {
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData);
-        const insuranceTypes = Array.from(document.querySelectorAll('input[name="insurance-types"]:checked')).map(cb => cb.value);
-        data['insurance-types'] = insuranceTypes;
-        const event = new CustomEvent('personalLinesQuoteSubmit', { detail: data });
-        document.dispatchEvent(event);
-      }
+      if (!validateStep(currentStep)) return;
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData);
+      data['insurance-types'] = Array.from(document.querySelectorAll('input[name="insurance-types"]:checked')).map(cb => cb.value);
+      const event = new CustomEvent('personalLinesQuoteSubmit', { detail: data });
+      document.dispatchEvent(event);
     });
-    
-    // Load saved progress
-    const savedProgress = localStorage.getItem('personalLinesQuoteProgress');
-    if (savedProgress) {
+
+    const saved = localStorage.getItem('personalLinesQuoteProgress');
+    if (saved) {
       try {
-        const data = JSON.parse(savedProgress);
+        const data = JSON.parse(saved);
         Object.keys(data).forEach(key => {
           if (key === 'insurance-types' && Array.isArray(data[key])) {
-            data[key].forEach(value => {
-              const checkbox = document.querySelector(`input[name="insurance-types"][value="${value}"]`);
-              if (checkbox) checkbox.checked = true;
+            data[key].forEach(v => {
+              const cb = document.querySelector(`input[name="insurance-types"][value="${v}"]`);
+              if (cb) cb.checked = true;
             });
           } else if (key === 'current-step') {
-            currentStep = parseInt(data[key]) || 1;
+            const stepNum = parseInt(data[key], 10);
+            currentStep = stepNum >= 1 && stepNum <= totalSteps ? stepNum : 1;
           } else {
             const field = form.querySelector(`[name="${key}"]`);
             if (field) {
-              if (field.type === 'radio') {
-                if (field.value === data[key]) field.checked = true;
+              if (field.type === 'radio' && field.value === data[key]) {
+                field.checked = true;
               } else {
                 field.value = data[key];
               }
@@ -230,8 +214,8 @@
           }
         });
         showStep(currentStep);
-      } catch (e) {
-        console.error('Error loading saved progress:', e);
+      } catch (err) {
+        console.error('Error loading saved progress:', err);
         showStep(1);
       }
     } else {
