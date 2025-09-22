@@ -3,278 +3,53 @@
 
 <div class="bg-white p-6 rounded-lg shadow-lg" role="complementary" aria-labelledby="quote-form-heading">
   <h3 id="quote-form-title" class="text-xl font-semibold text-neutral-dark mb-4 font-heading">Get Your Free Quote</h3>
-  <form id="quote-form" class="space-y-4" name="quick-quote" data-netlify="true" data-netlify-recaptcha="true">
-    <input type="hidden" name="form-name" value="quick-quote" />
-    <input type="hidden" id="user-location-state" name="user-location-state" value="" />
-    <input type="hidden" id="user-location-city" name="user-location-city" value="" />
-    <div>
-      <label for="name" class="block text-sm font-medium text-neutral-dark mb-1">Full Name *</label>
-      <input type="text" id="name" name="name" required aria-describedby="name-help" class="w-full px-3 py-3 border border-neutral-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-      <div id="name-help" class="sr-only">Enter your full name for the quote</div>
-    </div>
-    
-    <div>
-      <label for="email" class="block text-sm font-medium text-neutral-dark mb-1">Email Address *</label>
-      <input type="email" id="email" name="email" required aria-describedby="email-help" class="w-full px-3 py-3 border border-neutral-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-      <div id="email-help" class="sr-only">Enter your email address to receive your quote</div>
-    </div>
-    
-    <div>
-      <label for="phone" class="block text-sm font-medium text-neutral-dark mb-1">Phone Number *</label>
-      <input type="tel" id="phone" name="phone" required aria-describedby="phone-help" class="w-full px-3 py-3 border border-neutral-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-      <div id="phone-help" class="sr-only">Enter your phone number for contact</div>
-    </div>
-    
-    <div>
-      <label for="business-name" class="block text-sm font-medium text-neutral-dark mb-1">Business Name</label>
-      <input type="text" id="business-name" name="business-name" class="w-full px-3 py-3 border border-neutral-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-    </div>
-    
-    <div>
-      <label for="insurance-type" class="block text-sm font-medium text-neutral-dark mb-1">Type of Insurance Needed *</label>
-      <select id="insurance-type" name="insurance-type" required class="w-full px-3 py-3 border border-neutral-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-        <option value="">Select Insurance Type</option>
-        <optgroup label="Business Insurance">
-          <option value="workers-comp">Workers' Compensation</option>
-          <option value="commercial-auto">Commercial Auto</option>
-          <option value="general-liability">General Liability</option>
-          <option value="bop">Business Owner's Policy</option>
-          <option value="cyber-liability">Cyber Liability</option>
-          <option value="professional-liability">Professional Liability</option>
-        </optgroup>
-        <optgroup label="Personal Insurance">
-          <option value="auto-insurance">Auto Insurance</option>
-          <option value="home-insurance">Homeowners Insurance</option>
-          <option value="renters-insurance">Renters Insurance</option>
-          <option value="condo-insurance">Condo Insurance</option>
-          <option value="life-insurance">Life Insurance</option>
-          <option value="umbrella-insurance">Umbrella Insurance</option>
-          <option value="motorcycle-insurance">Motorcycle Insurance</option>
-          <option value="boat-insurance">Boat Insurance</option>
-          <option value="rv-insurance">RV Insurance</option>
-        </optgroup>
-        <optgroup label="Employee Benefits">
-          <option value="group-health">Group Health Insurance</option>
-          <option value="dental-vision">Dental & Vision</option>
-          <option value="group-life">Group Life Insurance</option>
-          <option value="disability">Disability Insurance</option>
-          <option value="voluntary-benefits">Voluntary Benefits</option>
-          <option value="retirement-plans">Retirement Plans</option>
-          <option value="annuities">Annuities</option>
-        </optgroup>
-        <option value="other">Other</option>
-      </select>
-    </div>
-    
-    <div>
-      <label for="message" class="block text-sm font-medium text-neutral-dark mb-1">Additional Details</label>
-      <textarea id="message" name="message" rows="3" aria-describedby="message-help" class="w-full px-3 py-3 border border-neutral-400 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Tell us about your insurance needs..."></textarea>
-      <div id="message-help" class="sr-only">Provide additional details about your insurance needs</div>
-    </div>
-    
-    <div data-netlify-recaptcha="true"></div>
-    
-    <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-4 rounded-lg transition-colors duration-200 text-lg shadow-md" aria-describedby="submit-help">
-      <span id="quote-cta-text">Get Free Quote</span>
-    </button>
-    <div id="submit-help" class="sr-only">Submit form to receive your free insurance quote</div>
-    
-    <!-- Quote Form CTAs -->
-    <div class="mt-4 space-y-3">
-      <div class="p-4 bg-neutral-light rounded-lg border-l-4 border-primary">
-        <p class="text-sm text-neutral-dark mb-2">
-          <strong>Need comprehensive business coverage?</strong>
-        </p>
-        <a href="/commercial-quote" class="text-primary hover:text-primary-dark font-medium text-sm flex items-center">
-          Complete our detailed commercial quote form
-          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
-      
-      <div class="p-4 bg-neutral-light rounded-lg border-l-4 border-primary">
-        <p class="text-sm text-neutral-dark mb-2">
-          <strong>Looking for personal insurance?</strong>
-        </p>
-        <a href="/personal-lines-quote" class="text-primary hover:text-primary-dark font-medium text-sm flex items-center">
-          Get a personalized quote for auto, home, or renters
-          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </form>
-</div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Initialize location-aware quote form
-    initializeLocationAwareForm();
-    
-    const form = document.getElementById('quote-form');
-    
-    if (form) {
-      form.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        
-        console.log('=== QUOTE FORM SUBMISSION STARTED ===');
-        
-        // Show loading state
-        const submitButton = form.querySelector('button[type="submit"]');
-        const originalButtonText = submitButton.textContent;
-        submitButton.disabled = true;
-        submitButton.textContent = 'Submitting...';
-        
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData);
-        
-        console.log('Form data collected:', data);
-        
-        // Check if Supabase utilities are available
-        console.log('Checking Supabase utilities...');
-        console.log('window.submitToSupabase exists:', typeof window.submitToSupabase);
-        
-        // Import Supabase utilities directly if not available globally
-        if (!window.submitToSupabase) {
-          console.log('Loading Supabase utilities...');
-          try {
-            const supabaseModule = await import('/src/utils/supabase.js');
-            console.log('Supabase module loaded:', supabaseModule);
-            
-            if (supabaseModule.submitToSupabase) {
-              window.submitToSupabase = supabaseModule.submitToSupabase;
-              console.log('submitToSupabase function assigned to window');
-            } else {
-              console.error('submitToSupabase function not found in module');
-            }
-          } catch (importError) {
-            console.error('Failed to import Supabase utilities:', importError);
-          }
-        }
-        
-        try {
-          if (window.submitToSupabase) {
-            console.log('Submitting to Supabase...');
-            const result = await window.submitToSupabase(data, 'quick_quote_form');
-            console.log('Supabase submission result:', result);
-          } else {
-            console.warn('Supabase utilities not available, skipping database submission');
-          }
-          
-          // Show success feedback
-          submitButton.textContent = 'Success!';
-          submitButton.className = submitButton.className.replace('bg-primary', 'bg-green-600');
-          
-          // Wait a moment to show success state
-          await new Promise(resolve => setTimeout(resolve, 1000));
-          
-          console.log('Determining redirect based on insurance type:', data['insurance-type']);
-          
-          // Check if this is a business insurance request for smart routing
-          const businessTypes = ['workers-comp', 'commercial-auto', 'general-liability', 'bop', 'cyber-liability', 'professional-liability'];
-          const personalTypes = ['auto-insurance', 'home-insurance', 'renters-insurance', 'condo-insurance', 'life-insurance', 'umbrella-insurance', 'motorcycle-insurance', 'boat-insurance', 'rv-insurance'];
-          
-          if (businessTypes.includes(data['insurance-type'])) {
-            // Redirect to detailed commercial quote form with pre-filled data
-            const params = new URLSearchParams({
-              'name': data['name'],
-              'business-name': data['business-name'],
-              'email': data['email'],
-              'phone': data['phone'],
-              'insurance-type': data['insurance-type']
-            });
-            console.log('Redirecting to commercial quote with params:', params.toString());
-            window.location.href = `/commercial-quote?${params.toString()}`;
-            return;
-          } else if (personalTypes.includes(data['insurance-type'])) {
-            // Redirect to personal lines quote form with pre-filled data
-            const params = new URLSearchParams({
-              'first-name': data['name'].split(' ')[0] || data['name'],
-              'last-name': data['name'].split(' ').slice(1).join(' ') || '',
-              'email': data['email'],
-              'phone': data['phone'],
-              'insurance-type': data['insurance-type']
-            });
-            console.log('Redirecting to personal lines quote with params:', params.toString());
-            window.location.href = `/personal-lines-quote?${params.toString()}`;
-            return;
-          }
-          
-          // For other types or employee benefits, show success message and stay on page
-          console.log('No specific redirect, showing success message');
-          alert('Thank you for your interest! We will contact you within 24 hours with your free quote.');
-          
-          // Reset form
-          form.reset();
-          
-        } catch (error) {
-          console.error('=== FORM SUBMISSION ERROR ===');
-          console.error('Error:', error);
-          console.error('Error message:', error.message);
-          console.error('Error stack:', error.stack);
-          alert('There was an error submitting your form. Please try again or contact us directly at (877) 717-7234.');
-        } finally {
-          // Reset button state
-          console.log('Resetting button state');
-          submitButton.disabled = false;
-          submitButton.textContent = originalButtonText;
-          submitButton.className = submitButton.className.replace('bg-green-600', 'bg-primary');
-        }
-      });
-    }
-  });
   
-  /**
-   * Initialize location-aware form content
-   */
-  async function initializeLocationAwareForm() {
-    try {
-      // Wait for location utilities to load
-      let attempts = 0;
-      while (!window.locationUtils && attempts < 50) {
-        await new Promise(resolve => setTimeout(resolve, 100));
-        attempts++;
-      }
-      
-      if (!window.locationUtils) {
-        console.warn('Location utilities not available for form personalization');
-        return;
-      }
-      
-      // Get user location content
-      const locationContent = await window.locationUtils.getUserLocationContent();
-      
-      if (locationContent) {
-        // Update form title
-        const formTitle = document.getElementById('quote-form-title');
-        if (formTitle && locationContent.state && locationContent.state !== 'Multiple States') {
-          formTitle.textContent = `Get Your Free ${locationContent.state} Insurance Quote`;
-        }
-        
-        // Update CTA button text
-        const ctaText = document.getElementById('quote-cta-text');
-        if (ctaText && locationContent.ctaText) {
-          ctaText.textContent = locationContent.ctaText;
-        }
-        
-        // Store location data in hidden fields for form submission
-        const stateField = document.getElementById('user-location-state');
-        const cityField = document.getElementById('user-location-city');
-        
-        if (stateField && locationContent.state) {
-          stateField.value = locationContent.state;
-        }
-        
-        if (cityField && locationContent.city) {
-          cityField.value = locationContent.city;
-        }
-        
-        console.log('Quote form personalized for:', locationContent);
-      }
-    } catch (error) {
-      console.error('Failed to initialize location-aware form:', error);
-    }
-  }
-</script>
+  <div style="min-height: 829px;">
+    <iframe
+      src="https://link.spartan-crm.com/widget/form/UV1qTHSIBceltbbTZ7nP"
+      style="width:100%;height:100%;border:none;border-radius:3px"
+      id="inline-UV1qTHSIBceltbbTZ7nP" 
+      data-layout="{'id':'INLINE'}"
+      data-trigger-type="alwaysShow"
+      data-trigger-value=""
+      data-activation-type="alwaysActivated"
+      data-activation-value=""
+      data-deactivation-type="neverDeactivate"
+      data-deactivation-value=""
+      data-form-name="Quote Request - Website"
+      data-height="829"
+      data-layout-iframe-id="inline-UV1qTHSIBceltbbTZ7nP"
+      data-form-id="UV1qTHSIBceltbbTZ7nP"
+      title="Quote Request - Website"
+    >
+    </iframe>
+    <script src="https://link.spartan-crm.com/js/form_embed.js"></script>
+  </div>
+  
+  <!-- Quote Form CTAs -->
+  <div class="mt-4 space-y-3">
+    <div class="p-4 bg-neutral-light rounded-lg border-l-4 border-primary">
+      <p class="text-sm text-neutral-dark mb-2">
+        <strong>Need comprehensive business coverage?</strong>
+      </p>
+      <a href="/commercial-quote" class="text-primary hover:text-primary-dark font-medium text-sm flex items-center">
+        Complete our detailed commercial quote form
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+    
+    <div class="p-4 bg-neutral-light rounded-lg border-l-4 border-primary">
+      <p class="text-sm text-neutral-dark mb-2">
+        <strong>Looking for personal insurance?</strong>
+      </p>
+      <a href="/personal-lines-quote" class="text-primary hover:text-primary-dark font-medium text-sm flex items-center">
+        Get a personalized quote for auto, home, or renters
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
