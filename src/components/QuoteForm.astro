@@ -5,82 +5,81 @@
     <input type="hidden" id="user-location-state" name="user-location-state" value="" />
     <input type="hidden" id="user-location-city" name="user-location-city" value="" />
 
-    <!-- form inputs unchanged -->
-    <!-- ... keep everything you had in your markup here ... -->
+    <!-- keep your existing form fields here -->
 
     <div data-netlify-recaptcha="true"></div>
     <button type="submit" class="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-4 px-4 rounded-lg transition-colors duration-200 text-lg shadow-md">
       <span id="quote-cta-text">Get Free Quote</span>
     </button>
-
-    <!-- extra CTAs unchanged -->
   </form>
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', () => {
     initializeLocationAwareForm();
 
     const form = document.getElementById('quote-form');
     if (!form) return;
 
-    form.addEventListener('submit', async function(e) {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
       console.log('=== QUOTE FORM SUBMISSION STARTED ===');
 
       const submitButton = form.querySelector('button[type="submit"]');
+      if (!submitButton) return;
       const originalButtonText = submitButton.textContent;
+
       submitButton.disabled = true;
       submitButton.textContent = 'Submitting...';
 
       const formData = new FormData(form);
-      const data = Object.fromEntries(formData);
+      const data = Object.fromEntries(formData.entries());
 
       console.log('Form data collected:', data);
 
-      if (!window.submitToSupabase) {
-        try {
+      try {
+        // Lazy load supabase util if not cached
+        if (!window.submitToSupabase) {
           const supabaseModule = await import('/src/utils/supabase.js');
-          if (supabaseModule.submitToSupabase) {
+          if (supabaseModule && supabaseModule.submitToSupabase) {
             window.submitToSupabase = supabaseModule.submitToSupabase;
           }
-        } catch (importError) {
-          console.error('Failed to import Supabase utilities:', importError);
         }
-      }
 
-      try {
-        if (window.submitToSupabase) {
+        if (typeof window.submitToSupabase === 'function') {
           await window.submitToSupabase(data, 'quick_quote_form');
         }
 
         submitButton.textContent = 'Success!';
-        submitButton.className = submitButton.className.replace('bg-primary', 'bg-green-600');
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        submitButton.classList.replace('bg-primary', 'bg-green-600');
+        await new Promise((resolve) => setTimeout(resolve, 1000));
 
+        // Routing
         const businessTypes = ['workers-comp', 'commercial-auto', 'general-liability', 'bop', 'cyber-liability', 'professional-liability'];
         const personalTypes = ['auto-insurance', 'home-insurance', 'renters-insurance', 'condo-insurance', 'life-insurance', 'umbrella-insurance', 'motorcycle-insurance', 'boat-insurance', 'rv-insurance'];
 
         if (businessTypes.includes(data['insurance-type'])) {
           const params = new URLSearchParams({
-            'name': String(data['name'] || ''),
-            'business-name': String(data['business-name'] || ''),
-            'email': String(data['email'] || ''),
-            'phone': String(data['phone'] || ''),
-            'insurance-type': String(data['insurance-type'] || '')
+            name: data['name'] || '',
+            'business-name': data['business-name'] || '',
+            email: data['email'] || '',
+            phone: data['phone'] || '',
+            'insurance-type': data['insurance-type'] || ''
           });
           window.location.href = `/commercial-quote?${params.toString()}`;
           return;
-        } else if (personalTypes.includes(data['insurance-type'])) {
-          const fullName = String(data['name'] || '');
+        }
+
+        if (personalTypes.includes(data['insurance-type'])) {
+          const fullName = data['name'] || '';
           const firstName = fullName.split(' ')[0] || fullName;
           const lastName = fullName.split(' ').slice(1).join(' ') || '';
           const params = new URLSearchParams({
             'first-name': firstName,
             'last-name': lastName,
-            'email': String(data['email'] || ''),
-            'phone': String(data['phone'] || ''),
-            'insurance-type': String(data['insurance-type'] || '')
+            email: data['email'] || '',
+            phone: data['phone'] || '',
+            'insurance-type': data['insurance-type'] || ''
           });
           window.location.href = `/personal-lines-quote?${params.toString()}`;
           return;
@@ -88,14 +87,13 @@
 
         alert('Thank you for your interest! We will contact you within 24 hours with your free quote.');
         form.reset();
-
       } catch (error) {
         console.error('FORM SUBMISSION ERROR:', error);
         alert('There was an error submitting your form. Please try again or call (877) 717-7234.');
       } finally {
         submitButton.disabled = false;
         submitButton.textContent = originalButtonText;
-        submitButton.className = submitButton.className.replace('bg-green-600', 'bg-primary');
+        submitButton.classList.replace('bg-green-600', 'bg-primary');
       }
     });
   });
@@ -104,7 +102,7 @@
     try {
       let attempts = 0;
       while (!window.locationUtils && attempts < 50) {
-        await new Promise(resolve => setTimeout(resolve, 100));
+        await new Promise((resolve) => setTimeout(resolve, 100));
         attempts++;
       }
       if (!window.locationUtils) return;
