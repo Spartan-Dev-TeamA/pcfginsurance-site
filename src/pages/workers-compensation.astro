@@ -7,45 +7,62 @@ import Footer from '../components/Footer.astro';
 <Layout title="Workers' Compensation Insurance - PCFG Insurance Services" description="Expert workers' compensation insurance for businesses across 15 states. Competitive rates, exceptional service, and specialized coverage for high-risk industries. Get your free quote today.">
   <Header />
   
-  <!-- Hero Section -->
-  <section class="py-20 bg-gradient-to-br from-navy-50 to-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Workers' Compensation Insurance</h1>
-          <p class="text-xl text-gray-600 mb-8">
-            Protect your employees and your business with comprehensive workers' compensation coverage. We specialize in high-risk industries and provide competitive rates across 15 states.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <a href="#quote-form" class="bg-navy-600 hover:bg-navy-700 text-white px-8 py-3 rounded-md font-semibold text-center transition-colors duration-200">
-              Get Free Quote
-            </a>
-            <a href="tel:877-717-7234" class="border-2 border-navy-600 text-navy-600 hover:bg-navy-600 hover:text-white px-8 py-3 rounded-md font-semibold text-center transition-colors duration-200">
-              Call (877) 717-7234
-            </a>
-          </div>
+ <!-- Hero Section -->
+<section class="py-20 bg-gradient-to-br from-navy-50 to-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      
+      <!-- Left: Copy -->
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          Workers' Compensation Insurance
+        </h1>
+        <p class="text-xl text-gray-600 mb-8">
+          Protect your employees and your business with comprehensive workers' compensation coverage. 
+          We specialize in high-risk industries and provide competitive rates across 15 states.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="#quote-form" class="bg-navy-600 hover:bg-navy-700 text-white px-8 py-3 rounded-md font-semibold text-center transition-colors duration-200">
+            Get Free Quote
+          </a>
+          <a href="tel:877-717-7234" class="border-2 border-navy-600 text-navy-600 hover:bg-navy-600 hover:text-white px-8 py-3 rounded-md font-semibold text-center transition-colors duration-200">
+            Call (877) 717-7234
+          </a>
         </div>
-        
-        <!-- Simplified Lead Form -->
-<div id="quote-form" class="bg-white p-8 rounded-lg shadow-xl">
-  <h3 class="text-2xl font-semibold text-gray-900 mb-6">Get Your Workers' Comp Quote</h3>
-
-  <div class="relative w-full" style="padding-top: 800px;"> <!-- Adjust height -->
-    <iframe
-      src="https://link.spartan-crm.com/widget/form/M0PWOXapIeQLm41fmLc1"
-      class="absolute top-0 left-0 w-full h-full border-none rounded-md"
-      id="inline-M0PWOXapIeQLm41fmLc1"
-      title="Workers Comp - Website"
-      loading="lazy"
-    ></iframe>
-  </div>
-
-  <script src="https://link.spartan-crm.com/js/form_embed.js"></script>
-</div>
-
       </div>
+
+      <!-- Right: Form -->
+      <div id="quote-form" class="bg-white p-8 rounded-lg shadow-xl flex flex-col justify-start min-h-[800px]">
+        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Get Your Workers' Comp Quote</h3>
+
+        <div class="relative w-full min-h-[700px]"> 
+          <iframe
+            src="https://link.spartan-crm.com/widget/form/M0PWOXapIeQLm41fmLc1"
+            class="absolute top-0 left-0 w-full h-full border-none rounded-md"
+            id="inline-M0PWOXapIeQLm41fmLc1"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Workers Comp - Website"
+            data-height="700"
+            data-layout-iframe-id="inline-M0PWOXapIeQLm41fmLc1"
+            data-form-id="M0PWOXapIeQLm41fmLc1"
+            title="Workers Comp - Website"
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <script src="https://link.spartan-crm.com/js/form_embed.js"></script>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
   
   <!-- Licensed States Banner -->
   <section class="py-12 bg-navy-600">
