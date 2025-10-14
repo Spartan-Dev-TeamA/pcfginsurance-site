@@ -37,11 +37,23 @@ export default {
           DEFAULT: '#1976D2',
           light: '#BBDEFB',
           dark: '#0D47A1',
-        }
+        },
+        navy: {
+          50: '#f5f8fa',
+          100: '#e6eef5',
+          200: '#ccddeb',
+          300: '#99bbd7',
+          400: '#6698c3',
+          500: '#3375af',
+          600: '#00418c',
+          700: '#00366f',
+          800: '#002a52',
+          900: '#001d36',
+        },
       },
       fontFamily: {
         sans: ['Open Sans', 'system-ui', 'sans-serif'],
-        heading: ['Poppins', 'system-ui', 'sans-serif']
+        heading: ['Poppins', 'system-ui', 'sans-serif'],
       },
       fontSize: {
         'xs': ['0.75rem', { lineHeight: '1.6' }],
@@ -68,7 +80,7 @@ export default {
         'reading': '1.6',
         'heading': '1.3',
         'relaxed': '1.8',
-      }
+      },
     },
   },
   plugins: [],
