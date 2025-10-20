@@ -7,10 +7,10 @@ import Footer from '../components/Footer.astro';
 <Layout title="General Liability Insurance - PCFG Insurance Services" description="Essential general liability insurance protection for businesses across 15 states. Protect against third-party claims, lawsuits, and unexpected liabilities. Get your free quote today.">
   <Header />
   
- <!-- Hero Section -->
+<!-- Hero Section -->
 <section class="py-20 bg-gradient-to-br from-navy-50 to-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <!-- Left Column -->
       <div>
         <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -28,25 +28,29 @@ import Footer from '../components/Footer.astro';
         </div>
       </div>
 
-      <!-- Right Column (Form with header above iframe) -->
-      <div id="quote-form" class="bg-white p-8 rounded-lg shadow-xl">
+      <!-- Right Column (Fixed Form) -->
+      <div id="quote-form" class="bg-white p-8 rounded-lg shadow-xl overflow-visible">
         <h3 class="text-2xl font-semibold text-gray-900 mb-6 text-center">
           Get Your General Liability Quote
         </h3>
-        <iframe
-          src="https://link.spartan-crm.com/widget/form/xOVCI4Wvy7sIPBsjTZ1i"
-          class="w-full min-h-[850px] rounded-md"
-          style="border:none"
-          id="inline-xOVCI4Wvy7sIPBsjTZ1i"
-          data-layout="{'id':'INLINE'}"
-          data-trigger-type="alwaysShow"
-          data-form-name="General Liability - Website"
-          data-height="885"
-          data-layout-iframe-id="inline-xOVCI4Wvy7sIPBsjTZ1i"
-          data-form-id="xOVCI4Wvy7sIPBsjTZ1i"
-          title="General Liability - Website"
-        ></iframe>
-        <script src="https://link.spartan-crm.com/js/form_embed.js"></script>
+        <div class="relative w-full" style="min-height: 950px;">
+          <iframe
+            src="https://link.spartan-crm.com/widget/form/xOVCI4Wvy7sIPBsjTZ1i"
+            id="inline-xOVCI4Wvy7sIPBsjTZ1i"
+            title="General Liability - Website"
+            style="width: 100%; min-height: 950px; border: none; border-radius: 8px; overflow: visible;"
+            allowtransparency="true"
+            loading="lazy"
+            data-layout='{"id":"INLINE"}'
+            data-trigger-type="alwaysShow"
+            data-activation-type="alwaysActivated"
+            data-deactivation-type="neverDeactivate"
+            data-form-name="General Liability - Website"
+            data-layout-iframe-id="inline-xOVCI4Wvy7sIPBsjTZ1i"
+            data-form-id="xOVCI4Wvy7sIPBsjTZ1i"
+          ></iframe>
+          <script src="https://link.spartan-crm.com/js/form_embed.js" async></script>
+        </div>
       </div>
     </div>
   </div>
