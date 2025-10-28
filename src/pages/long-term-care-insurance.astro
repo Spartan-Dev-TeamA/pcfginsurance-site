@@ -1,0 +1,597 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Long-Term Care Insurance - PCFG Insurance Services" description="Plan for future care needs with long-term care insurance. Protect your assets and independence with coverage for nursing homes, assisted living, and in-home care services.">
+  <Header />
+
+  <!-- Hero Section -->
+  <section class="py-20 bg-gradient-to-br from-blue-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Long-Term Care Insurance</h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Protect your retirement savings, maintain your independence, and ensure quality care in your later years with comprehensive long-term care insurance coverage.
+        </p>
+      </div>
+
+      <!-- Quick Contact CTA -->
+      <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Get Your Long-Term Care Quote</h2>
+        <form id="ltc-quote-form" class="space-y-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+              <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+              <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            </div>
+
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+            </div>
+
+            <div>
+              <label for="age" class="block text-sm font-medium text-gray-700 mb-1">Your Age</label>
+              <select id="age" name="age" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                <option value="">Select Age Range</option>
+                <option value="under-50">Under 50</option>
+                <option value="50-59">50-59</option>
+                <option value="60-69">60-69</option>
+                <option value="70-79">70-79</option>
+                <option value="80-plus">80+</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="health-status" class="block text-sm font-medium text-gray-700 mb-1">Current Health Status</label>
+            <select id="health-status" name="health-status" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+              <option value="">Select Health Status</option>
+              <option value="excellent">Excellent</option>
+              <option value="good">Good</option>
+              <option value="fair">Fair</option>
+              <option value="prefer-not-say">Prefer Not to Say</option>
+            </select>
+          </div>
+
+          <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-md transition-colors duration-200">
+            Get Your Quote
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- What is Long-Term Care -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-gray-900 mb-6">What is Long-Term Care Insurance?</h2>
+          <p class="text-lg text-gray-600 mb-6">
+            Long-term care insurance helps cover the costs of care when you can no longer perform everyday activities independently due to chronic illness, disability, or cognitive impairment like Alzheimer's disease.
+          </p>
+          <p class="text-lg text-gray-600 mb-6">
+            This coverage protects your retirement savings and assets from being depleted by expensive long-term care costs, which can range from $50,000 to over $100,000 per year depending on the type of care needed.
+          </p>
+          <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded">
+            <h3 class="text-xl font-semibold text-gray-900 mb-3">Sobering Statistics</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li>• 70% of people turning 65 will need long-term care services</li>
+              <li>• The average duration of care is 3 years</li>
+              <li>• Women need care longer than men (3.7 years vs 2.2 years)</li>
+              <li>• Average annual cost of nursing home care: $108,405</li>
+              <li>• Medicare does NOT cover most long-term care expenses</li>
+              <li>• Medicaid only covers care after you've depleted your assets</li>
+            </ul>
+          </div>
+        </div>
+        <div class="bg-gray-100 p-8 rounded-lg">
+          <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+            </svg>
+          </div>
+          <h4 class="text-xl font-semibold text-gray-900 mb-4">Long-Term Care Cost Calculator</h4>
+          <div class="space-y-4">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Type of Care</label>
+              <select id="care-type" class="w-full px-3 py-2 border border-gray-300 rounded-md">
+                <option value="108405">Nursing Home (Private Room)</option>
+                <option value="93075">Nursing Home (Semi-Private)</option>
+                <option value="54000">Assisted Living Facility</option>
+                <option value="75504">Home Health Aide (44 hrs/week)</option>
+                <option value="30576">Adult Day Health Care (5 days/week)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Years of Care Needed</label>
+              <input type="number" id="care-years" class="w-full px-3 py-2 border border-gray-300 rounded-md" value="3" min="1" max="10">
+            </div>
+            <button type="button" onclick="calculateLTCCost()" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium transition-colors duration-200">
+              Calculate Total Cost
+            </button>
+            <div id="ltc-calculation-result" class="hidden p-4 bg-white rounded border-l-4 border-blue-600">
+              <p class="text-sm text-gray-600">Total care cost: <span id="total-cost" class="font-semibold text-blue-600"></span></p>
+              <p class="text-sm text-gray-600 mt-2">Monthly cost: <span id="monthly-cost" class="font-semibold text-blue-600"></span></p>
+              <p class="text-xs text-gray-500 mt-3">Based on 2024 national average costs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Does LTC Cover -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">What Does Long-Term Care Insurance Cover?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Long-term care insurance provides coverage for a wide range of care settings and services to help you maintain quality of life.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Nursing Home Care -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Nursing Home Care</h3>
+          <p class="text-gray-600 mb-4">
+            24/7 skilled nursing care and supervision in a licensed facility for those who need constant medical attention.
+          </p>
+          <div class="text-sm text-gray-700 space-y-1">
+            <p><strong>Average Cost:</strong> $108,405/year</p>
+            <p><strong>Includes:</strong> Room, meals, nursing care, medications, therapy</p>
+          </div>
+        </div>
+
+        <!-- Assisted Living -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Assisted Living Facilities</h3>
+          <p class="text-gray-600 mb-4">
+            Residential care with assistance for daily activities in a more independent living environment.
+          </p>
+          <div class="text-sm text-gray-700 space-y-1">
+            <p><strong>Average Cost:</strong> $54,000/year</p>
+            <p><strong>Includes:</strong> Private apartment, meals, personal care, activities</p>
+          </div>
+        </div>
+
+        <!-- Home Health Care -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">In-Home Health Care</h3>
+          <p class="text-gray-600 mb-4">
+            Professional care services provided in the comfort of your own home, allowing you to maintain independence.
+          </p>
+          <div class="text-sm text-gray-700 space-y-1">
+            <p><strong>Average Cost:</strong> $75,504/year (44 hrs/week)</p>
+            <p><strong>Includes:</strong> Personal care, nursing, therapy, homemaking</p>
+          </div>
+        </div>
+
+        <!-- Adult Day Care -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Adult Day Health Care</h3>
+          <p class="text-gray-600 mb-4">
+            Daytime care in a supervised setting providing meals, activities, and health monitoring.
+          </p>
+          <div class="text-sm text-gray-700 space-y-1">
+            <p><strong>Average Cost:</strong> $30,576/year (5 days/week)</p>
+            <p><strong>Includes:</strong> Meals, activities, transportation, supervision</p>
+          </div>
+        </div>
+
+        <!-- Respite Care -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Respite Care</h3>
+          <p class="text-gray-600 mb-4">
+            Temporary care services that give family caregivers a break from their caregiving responsibilities.
+          </p>
+          <div class="text-sm text-gray-700 space-y-1">
+            <p><strong>Typical Coverage:</strong> 30 days per year</p>
+            <p><strong>Includes:</strong> Short-term facility or in-home care</p>
+          </div>
+        </div>
+
+        <!-- Memory Care -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-3">Memory Care</h3>
+          <p class="text-gray-600 mb-4">
+            Specialized care for individuals with Alzheimer's disease, dementia, or other cognitive impairments.
+          </p>
+          <div class="text-sm text-gray-700 space-y-1">
+            <p><strong>Average Cost:</strong> $75,000-$120,000/year</p>
+            <p><strong>Includes:</strong> Secure environment, specialized staff, therapy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How Policies Work -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">How Long-Term Care Policies Work</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Understanding the key components of LTC policies helps you choose the right coverage for your needs and budget.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+
+        <!-- Daily Benefit Amount -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <div class="flex items-start mb-4">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+              <span class="text-2xl font-bold text-blue-600">1</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Daily Benefit Amount</h3>
+              <p class="text-gray-600 mb-4">
+                The maximum dollar amount your policy will pay per day for covered care services.
+              </p>
+              <div class="bg-blue-50 p-4 rounded">
+                <p class="text-sm text-gray-700 mb-2"><strong>Typical Range:</strong> $100 - $400 per day</p>
+                <p class="text-sm text-gray-700 mb-2"><strong>Monthly Equivalent:</strong> $3,000 - $12,000</p>
+                <p class="text-sm text-gray-700"><strong>Tip:</strong> Choose based on care costs in your area. Higher benefits = higher premiums.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Benefit Period -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <div class="flex items-start mb-4">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+              <span class="text-2xl font-bold text-green-600">2</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Benefit Period</h3>
+              <p class="text-gray-600 mb-4">
+                The maximum length of time the policy will pay benefits for your care.
+              </p>
+              <div class="bg-green-50 p-4 rounded">
+                <p class="text-sm text-gray-700 mb-2"><strong>Common Options:</strong> 2, 3, 4, 5 years, or lifetime</p>
+                <p class="text-sm text-gray-700 mb-2"><strong>Average Need:</strong> 3 years</p>
+                <p class="text-sm text-gray-700"><strong>Tip:</strong> 3-5 year coverage provides good protection for most situations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Elimination Period -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <div class="flex items-start mb-4">
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+              <span class="text-2xl font-bold text-purple-600">3</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Elimination Period</h3>
+              <p class="text-gray-600 mb-4">
+                The waiting period before benefits begin after you become eligible for care.
+              </p>
+              <div class="bg-purple-50 p-4 rounded">
+                <p class="text-sm text-gray-700 mb-2"><strong>Common Options:</strong> 0, 30, 60, 90, or 180 days</p>
+                <p class="text-sm text-gray-700 mb-2"><strong>Out-of-Pocket:</strong> You pay during this period</p>
+                <p class="text-sm text-gray-700"><strong>Tip:</strong> Longer elimination = lower premiums. Choose what you can afford.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inflation Protection -->
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <div class="flex items-start mb-4">
+            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+              <span class="text-2xl font-bold text-orange-600">4</span>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Inflation Protection</h3>
+              <p class="text-gray-600 mb-4">
+                Increases your daily benefit over time to keep pace with rising care costs.
+              </p>
+              <div class="bg-orange-50 p-4 rounded">
+                <p class="text-sm text-gray-700 mb-2"><strong>Options:</strong> 3% simple, 3% compound, 5% compound, CPI</p>
+                <p class="text-sm text-gray-700 mb-2"><strong>Impact:</strong> $150/day becomes $242 in 15 years (3% compound)</p>
+                <p class="text-sm text-gray-700"><strong>Tip:</strong> Essential if buying before age 70. Care costs rise 3-5% annually.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Benefit Pool Example -->
+      <div class="bg-blue-600 rounded-lg p-8 text-white">
+        <h3 class="text-2xl font-bold mb-6 text-center">Understanding Your Benefit Pool</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">$200</div>
+            <div class="text-blue-100">Daily Benefit</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">× 3</div>
+            <div class="text-blue-100">Years Coverage</div>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl font-bold mb-2">= $219k</div>
+            <div class="text-blue-100">Total Benefit Pool</div>
+          </div>
+        </div>
+        <p class="text-center text-blue-100 mt-6">
+          You can use your benefit pool flexibly. If you only need $100/day, your coverage lasts 6 years instead of 3.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- When to Buy -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">When Should You Buy Long-Term Care Insurance?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Timing matters. Buy too early and you pay premiums longer. Buy too late and premiums are expensive or you may not qualify.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="text-center mb-4">
+            <div class="inline-block bg-red-100 rounded-full px-4 py-2 mb-3">
+              <span class="text-red-600 font-semibold">Too Early</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Under Age 40</h3>
+          </div>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Pay premiums for 30+ years</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Low immediate risk of needing care</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-red-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Better uses for money at this age</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg border-4 border-green-500">
+          <div class="text-center mb-4">
+            <div class="inline-block bg-green-100 rounded-full px-4 py-2 mb-3">
+              <span class="text-green-600 font-semibold">Sweet Spot</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Ages 50-65</h3>
+          </div>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Most affordable premiums</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Likely healthy enough to qualify</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Enough time before needing care</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Financial stability to pay premiums</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <div class="text-center mb-4">
+            <div class="inline-block bg-orange-100 rounded-full px-4 py-2 mb-3">
+              <span class="text-orange-600 font-semibold">Getting Late</span>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-2">Over Age 70</h3>
+          </div>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-orange-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Very expensive premiums</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-orange-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+              </svg>
+              <span>May not qualify due to health</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-orange-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Limited time to pay premiums</span>
+            </li>
+            <li class="flex items-start">
+              <svg class="w-5 h-5 text-orange-500 mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Inflation protection less effective</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Age vs Premium Chart -->
+      <div class="bg-white rounded-lg shadow-lg p-8">
+        <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">How Age Affects Annual Premiums</h3>
+        <p class="text-center text-gray-600 mb-8">Example: $165/day benefit, 3-year benefit period, 90-day elimination, 3% compound inflation</p>
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Age When Purchased</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Annual Premium</th>
+                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Cost Difference</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Age 45</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">$1,500</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-green-600">Baseline</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Age 50</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">$2,000</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">+33%</td>
+              </tr>
+              <tr class="bg-green-50">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Age 55</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-semibold">$2,700</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">+80%</td>
+              </tr>
+              <tr class="bg-green-50">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Age 60</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-semibold">$3,750</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">+150%</td>
+              </tr>
+              <tr class="bg-green-50">
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Age 65</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 font-semibold">$5,800</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-orange-600">+287%</td>
+              </tr>
+              <tr>
+                <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">Age 70</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">$9,200</td>
+                <td class="px-6 py-4 whitespace-nowrap text-sm text-red-600">+513%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-sm text-gray-500 text-center mt-6">Premiums are estimates and vary by carrier, health status, and coverage details</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-blue-600 rounded-2xl shadow-2xl overflow-hidden">
+        <div class="px-6 py-16 sm:px-16">
+          <div class="text-center">
+            <h2 class="text-3xl font-bold text-white mb-4">Plan for Your Future Today</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+              Don't leave your retirement and independence to chance. Get a personalized long-term care insurance quote and protect what you've worked so hard to build.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="/contact" class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+                Get Your Free Quote
+              </a>
+              <a href="tel:877-717-7234" class="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+                Call (877) 717-7234
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const quoteForm = document.getElementById('ltc-quote-form') as HTMLFormElement;
+
+    if (quoteForm) {
+      quoteForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const formData = new FormData(quoteForm);
+        const data = Object.fromEntries(formData);
+
+        localStorage.setItem('ltcQuote', JSON.stringify(data));
+
+        window.location.href = '/contact';
+      });
+    }
+  });
+
+  function calculateLTCCost() {
+    const careType = parseFloat((document.getElementById('care-type') as HTMLSelectElement)?.value || "0");
+    const careYears = parseInt((document.getElementById('care-years') as HTMLInputElement)?.value || "1");
+
+    if (careType > 0 && careYears > 0) {
+      const totalCost = careType * careYears;
+      const monthlyCost = careType / 12;
+
+      document.getElementById('total-cost')!.textContent =
+        new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
+        .format(totalCost);
+
+      document.getElementById('monthly-cost')!.textContent =
+        new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
+        .format(monthlyCost);
+
+      document.getElementById('ltc-calculation-result')!.classList.remove('hidden');
+    } else {
+      alert('Please select a care type and enter the years of care needed.');
+    }
+  }
+</script>
