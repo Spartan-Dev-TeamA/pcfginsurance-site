@@ -115,13 +115,14 @@ import Footer from '../components/Footer.astro';
               <label class="block text-sm font-medium text-gray-700 mb-1">Years of Care Needed</label>
               <input type="number" id="care-years" class="w-full px-3 py-2 border border-gray-300 rounded-md" value="3" min="1" max="10">
             </div>
-            <button type="button" onclick="calculateLTCCost()" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium transition-colors duration-200">
+            <button type="button" id="calculate-ltc-btn" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md font-medium transition-colors duration-200">
               Calculate Total Cost
             </button>
             <div id="ltc-calculation-result" class="hidden p-4 bg-white rounded border-l-4 border-blue-600">
-              <p class="text-sm text-gray-600">Total care cost: <span id="total-cost" class="font-semibold text-blue-600"></span></p>
+              <p class="text-sm text-gray-600">Annual cost: <span id="annual-cost" class="font-semibold text-blue-600"></span></p>
+              <p class="text-sm text-gray-600 mt-2">Total care cost (<span id="years-display"></span> years): <span id="total-cost" class="font-semibold text-blue-600"></span></p>
               <p class="text-sm text-gray-600 mt-2">Monthly cost: <span id="monthly-cost" class="font-semibold text-blue-600"></span></p>
-              <p class="text-xs text-gray-500 mt-3">Based on 2024 national average costs</p>
+              <p class="text-xs text-gray-500 mt-3">Based on 2024-2025 cost data by state</p>
             </div>
           </div>
         </div>
@@ -571,15 +572,392 @@ import Footer from '../components/Footer.astro';
         window.location.href = '/contact';
       });
     }
+
+    // Setup calculator button
+    const calculateBtn = document.getElementById('calculate-ltc-btn') as HTMLButtonElement;
+    if (calculateBtn) {
+      calculateBtn.addEventListener('click', calculateLTCCost);
+    }
   });
 
   function calculateLTCCost() {
-    const careType = parseFloat((document.getElementById('care-type') as HTMLSelectElement)?.value || "0");
+    const stateCode = (document.getElementById('state-select') as HTMLSelectElement)?.value || "national";
+    const careType = (document.getElementById('care-type') as HTMLSelectElement)?.value;
     const careYears = parseInt((document.getElementById('care-years') as HTMLInputElement)?.value || "1");
 
-    if (careType > 0 && careYears > 0) {
-      const totalCost = careType * careYears;
-      const monthlyCost = careType / 12;
+    // 2024-2025 Long-Term Care Costs by State (annual costs)
+    const ltcCosts: Record<string, Record<string, number>> = {
+      national: {
+        'nursing-private': 127752,
+        'nursing-semi': 111325,
+        'assisted': 70800,
+        'home-health': 77769,
+        'adult-day': 30576
+      },
+      AK: {
+        'nursing-private': 364452,
+        'nursing-semi': 315120,
+        'assisted': 85000,
+        'home-health': 95000,
+        'adult-day': 35000
+      },
+      TX: {
+        'nursing-private': 90288,
+        'nursing-semi': 67668,
+        'assisted': 52000,
+        'home-health': 55000,
+        'adult-day': 24000
+      },
+      OR: {
+        'nursing-private': 205130,
+        'nursing-semi': 180000,
+        'assisted': 75000,
+        'home-health': 85000,
+        'adult-day': 32000
+      },
+      CT: {
+        'nursing-private': 198925,
+        'nursing-semi': 175000,
+        'assisted': 78000,
+        'home-health': 82000,
+        'adult-day': 33000
+      },
+      HI: {
+        'nursing-private': 196370,
+        'nursing-semi': 170000,
+        'assisted': 68000,
+        'home-health': 80000,
+        'adult-day': 31000
+      },
+      MO: {
+        'nursing-private': 85775,
+        'nursing-semi': 70000,
+        'assisted': 48000,
+        'home-health': 52000,
+        'adult-day': 22000
+      },
+      OK: {
+        'nursing-private': 91250,
+        'nursing-semi': 75000,
+        'assisted': 50000,
+        'home-health': 54000,
+        'adult-day': 23000
+      },
+      LA: {
+        'nursing-private': 91250,
+        'nursing-semi': 75000,
+        'assisted': 49000,
+        'home-health': 47124,
+        'adult-day': 22000
+      },
+      AR: {
+        'nursing-private': 92528,
+        'nursing-semi': 76000,
+        'assisted': 51000,
+        'home-health': 55000,
+        'adult-day': 24000
+      },
+      CA: {
+        'nursing-private': 145000,
+        'nursing-semi': 125000,
+        'assisted': 72000,
+        'home-health': 84960,
+        'adult-day': 30000
+      },
+      NY: {
+        'nursing-private': 165000,
+        'nursing-semi': 145000,
+        'assisted': 75000,
+        'home-health': 85000,
+        'adult-day': 34000
+      },
+      FL: {
+        'nursing-private': 110000,
+        'nursing-semi': 95000,
+        'assisted': 60000,
+        'home-health': 65000,
+        'adult-day': 28000
+      },
+      MA: {
+        'nursing-private': 180000,
+        'nursing-semi': 155000,
+        'assisted': 80000,
+        'home-health': 88000,
+        'adult-day': 35000
+      },
+      WA: {
+        'nursing-private': 155000,
+        'nursing-semi': 135000,
+        'assisted': 72000,
+        'home-health': 80000,
+        'adult-day': 32000
+      },
+      AL: {
+        'nursing-private': 95000,
+        'nursing-semi': 78000,
+        'assisted': 52000,
+        'home-health': 50000,
+        'adult-day': 23000
+      },
+      AZ: {
+        'nursing-private': 105000,
+        'nursing-semi': 90000,
+        'assisted': 58000,
+        'home-health': 62000,
+        'adult-day': 27000
+      },
+      CO: {
+        'nursing-private': 135000,
+        'nursing-semi': 115000,
+        'assisted': 68000,
+        'home-health': 72000,
+        'adult-day': 30000
+      },
+      DE: {
+        'nursing-private': 140000,
+        'nursing-semi': 120000,
+        'assisted': 70000,
+        'home-health': 59328,
+        'adult-day': 29000
+      },
+      GA: {
+        'nursing-private': 100000,
+        'nursing-semi': 85000,
+        'assisted': 55000,
+        'home-health': 58000,
+        'adult-day': 25000
+      },
+      ID: {
+        'nursing-private': 115000,
+        'nursing-semi': 98000,
+        'assisted': 62000,
+        'home-health': 65000,
+        'adult-day': 27000
+      },
+      IL: {
+        'nursing-private': 125000,
+        'nursing-semi': 105000,
+        'assisted': 65000,
+        'home-health': 70000,
+        'adult-day': 29000
+      },
+      IN: {
+        'nursing-private': 105000,
+        'nursing-semi': 88000,
+        'assisted': 58000,
+        'home-health': 60000,
+        'adult-day': 26000
+      },
+      IA: {
+        'nursing-private': 95000,
+        'nursing-semi': 80000,
+        'assisted': 54000,
+        'home-health': 57000,
+        'adult-day': 24000
+      },
+      KS: {
+        'nursing-private': 100000,
+        'nursing-semi': 85000,
+        'assisted': 56000,
+        'home-health': 58000,
+        'adult-day': 25000
+      },
+      KY: {
+        'nursing-private': 98000,
+        'nursing-semi': 82000,
+        'assisted': 54000,
+        'home-health': 56000,
+        'adult-day': 24000
+      },
+      ME: {
+        'nursing-private': 145000,
+        'nursing-semi': 125000,
+        'assisted': 72000,
+        'home-health': 120000,
+        'adult-day': 32000
+      },
+      MD: {
+        'nursing-private': 140000,
+        'nursing-semi': 120000,
+        'assisted': 68000,
+        'home-health': 75000,
+        'adult-day': 30000
+      },
+      MI: {
+        'nursing-private': 120000,
+        'nursing-semi': 100000,
+        'assisted': 62000,
+        'home-health': 65000,
+        'adult-day': 28000
+      },
+      MN: {
+        'nursing-private': 130000,
+        'nursing-semi': 110000,
+        'assisted': 66000,
+        'home-health': 70000,
+        'adult-day': 29000
+      },
+      MS: {
+        'nursing-private': 88000,
+        'nursing-semi': 72000,
+        'assisted': 48000,
+        'home-health': 50000,
+        'adult-day': 22000
+      },
+      MT: {
+        'nursing-private': 110000,
+        'nursing-semi': 95000,
+        'assisted': 60000,
+        'home-health': 63000,
+        'adult-day': 26000
+      },
+      NE: {
+        'nursing-private': 105000,
+        'nursing-semi': 88000,
+        'assisted': 58000,
+        'home-health': 60000,
+        'adult-day': 25000
+      },
+      NV: {
+        'nursing-private': 115000,
+        'nursing-semi': 98000,
+        'assisted': 62000,
+        'home-health': 65000,
+        'adult-day': 27000
+      },
+      NH: {
+        'nursing-private': 150000,
+        'nursing-semi': 130000,
+        'assisted': 74000,
+        'home-health': 80000,
+        'adult-day': 32000
+      },
+      NJ: {
+        'nursing-private': 170000,
+        'nursing-semi': 145000,
+        'assisted': 78000,
+        'home-health': 85000,
+        'adult-day': 34000
+      },
+      NM: {
+        'nursing-private': 98000,
+        'nursing-semi': 82000,
+        'assisted': 54000,
+        'home-health': 57000,
+        'adult-day': 24000
+      },
+      NC: {
+        'nursing-private': 108000,
+        'nursing-semi': 92000,
+        'assisted': 60000,
+        'home-health': 63000,
+        'adult-day': 27000
+      },
+      ND: {
+        'nursing-private': 115000,
+        'nursing-semi': 98000,
+        'assisted': 62000,
+        'home-health': 65000,
+        'adult-day': 27000
+      },
+      OH: {
+        'nursing-private': 110000,
+        'nursing-semi': 95000,
+        'assisted': 60000,
+        'home-health': 63000,
+        'adult-day': 26000
+      },
+      PA: {
+        'nursing-private': 135000,
+        'nursing-semi': 115000,
+        'assisted': 66000,
+        'home-health': 70000,
+        'adult-day': 29000
+      },
+      RI: {
+        'nursing-private': 155000,
+        'nursing-semi': 135000,
+        'assisted': 75000,
+        'home-health': 80000,
+        'adult-day': 32000
+      },
+      SC: {
+        'nursing-private': 102000,
+        'nursing-semi': 87000,
+        'assisted': 57000,
+        'home-health': 60000,
+        'adult-day': 26000
+      },
+      SD: {
+        'nursing-private': 112000,
+        'nursing-semi': 95000,
+        'assisted': 62000,
+        'home-health': 103692,
+        'adult-day': 27000
+      },
+      TN: {
+        'nursing-private': 100000,
+        'nursing-semi': 85000,
+        'assisted': 56000,
+        'home-health': 58000,
+        'adult-day': 25000
+      },
+      UT: {
+        'nursing-private': 105000,
+        'nursing-semi': 90000,
+        'assisted': 58000,
+        'home-health': 60000,
+        'adult-day': 25000
+      },
+      VT: {
+        'nursing-private': 145000,
+        'nursing-semi': 125000,
+        'assisted': 72000,
+        'home-health': 108768,
+        'adult-day': 31000
+      },
+      VA: {
+        'nursing-private': 125000,
+        'nursing-semi': 108000,
+        'assisted': 64000,
+        'home-health': 67000,
+        'adult-day': 28000
+      },
+      WV: {
+        'nursing-private': 95000,
+        'nursing-semi': 80000,
+        'assisted': 54000,
+        'home-health': 56000,
+        'adult-day': 24000
+      },
+      WI: {
+        'nursing-private': 118000,
+        'nursing-semi': 100000,
+        'assisted': 62000,
+        'home-health': 65000,
+        'adult-day': 27000
+      },
+      WY: {
+        'nursing-private': 108000,
+        'nursing-semi': 92000,
+        'assisted': 58000,
+        'home-health': 60000,
+        'adult-day': 25000
+      }
+    };
+
+    if (careType && careYears > 0) {
+      const stateCosts = ltcCosts[stateCode] || ltcCosts.national;
+      const annualCost = stateCosts[careType as keyof typeof stateCosts] || 0;
+
+      const totalCost = annualCost * careYears;
+      const monthlyCost = annualCost / 12;
+
+      document.getElementById('annual-cost')!.textContent =
+        new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
+        .format(annualCost);
+
+      document.getElementById('years-display')!.textContent = careYears.toString();
 
       document.getElementById('total-cost')!.textContent =
         new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 })
@@ -591,7 +969,7 @@ import Footer from '../components/Footer.astro';
 
       document.getElementById('ltc-calculation-result')!.classList.remove('hidden');
     } else {
-      alert('Please select a care type and enter the years of care needed.');
+      alert('Please select a state, care type, and enter the years of care needed.');
     }
   }
 </script>
