@@ -103,7 +103,11 @@ const canonicalURL = canonical || `https://pcfginsurance.com${Astro.url.pathname
       .text-neutral-dark { color: #212121; }
 
       /* Critical header styles */
-      header { background-color: white; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+      header { background-color: white; box-shadow: 0 1px 3px rgba(0,0,0,0.1); contain: layout; }
+
+      /* CSS containment for performance */
+      section { contain: layout style; }
+      .card, article { contain: layout style paint; }
 
       @media (min-width: 768px) {
         .md\:text-5xl { font-size: 3rem; line-height: 1; }
@@ -117,135 +121,144 @@ const canonicalURL = canonical || `https://pcfginsurance.com${Astro.url.pathname
 
     <!-- Deferred Tracking and Analytics Scripts -->
     <script is:inline>
-      // Load non-critical scripts after page load
-      window.addEventListener('load', function() {
-        // PageSense Scripts
-        var ps1 = document.createElement('script');
-        ps1.src = 'https://cdn.pagesense.io/js/pcfg/d7d8013d765d436c9a20c289b58751b2.js';
-        ps1.async = true;
-        document.head.appendChild(ps1);
+      // Utility to defer scripts until browser is idle
+      function loadScriptWhenIdle(src, callback) {
+        var idleCallback = window.requestIdleCallback || function(cb) { setTimeout(cb, 1); };
+        idleCallback(function() {
+          var script = document.createElement('script');
+          script.src = src;
+          script.async = true;
+          if (callback) script.onload = callback;
+          document.head.appendChild(script);
+        }, { timeout: 2000 });
+      }
 
-        var ps2 = document.createElement('script');
-        ps2.src = 'https://cdn.pagesense.io/js/pcfg/d8415ea51283443b8a47f1fdd453f67a.js';
-        ps2.async = true;
-        document.head.appendChild(ps2);
+      // Load scripts after user interaction or idle time
+      var scriptsLoaded = false;
+      function loadThirdPartyScripts() {
+        if (scriptsLoaded) return;
+        scriptsLoaded = true;
 
-        // AdRoll Script
-        window.adroll_adv_id = "M3YLYYCHGFFMFELHT2EUAW";
-        window.adroll_pix_id = "CBZLROHJ7BEF7FMWOUWQTR";
-        window.adroll_version = "2.0";
-        (function(w, d, e, o, a) {
-          w.__adroll_loaded = true;
-          w.adroll = w.adroll || [];
-          w.adroll.f = ['setProperties', 'identify', 'track'];
-          var roundtripUrl = "https://s.adroll.com/j/" + window.adroll_adv_id + "/roundtrip.js";
-          for (a = 0; a < w.adroll.f.length; a++) {
-            w.adroll[w.adroll.f[a]] = w.adroll[w.adroll.f[a]] || (function(n) {
-              return function() { w.adroll.push([n, arguments]) }
-            })(w.adroll.f[a])
-          }
-          e = d.createElement('script');
-          o = d.getElementsByTagName('script')[0];
-          e.async = 1;
-          e.src = roundtripUrl;
-          o.parentNode.insertBefore(e, o);
-        })(window, document);
-        if (window.adroll) window.adroll.track("pageView");
+        // Stagger script loading to avoid blocking
+        var idleCallback = window.requestIdleCallback || function(cb) { setTimeout(cb, 1); };
 
-        // Google Tag Manager
-        var gtag = document.createElement('script');
-        gtag.src = 'https://www.googletagmanager.com/gtag/js?id=G-DB7T9QNC21';
-        gtag.async = true;
-        document.head.appendChild(gtag);
+        // Load PageSense (lowest priority)
+        idleCallback(function() {
+          loadScriptWhenIdle('https://cdn.pagesense.io/js/pcfg/d7d8013d765d436c9a20c289b58751b2.js');
+        }, { timeout: 3000 });
 
-        gtag.onload = function() {
-          window.dataLayer = window.dataLayer || [];
-          function gtagFunc(){dataLayer.push(arguments);}
-          window.gtag = gtagFunc;
-          gtagFunc('js', new Date());
-          gtagFunc('config', 'G-DB7T9QNC21');
-          gtagFunc('event', 'conversion', {
-            'send_to': 'AW-16706905838/PyfqCMOzwtQZEO7NvJ4-',
-            'value': 1.0,
-            'currency': 'USD'
+        idleCallback(function() {
+          loadScriptWhenIdle('https://cdn.pagesense.io/js/pcfg/d8415ea51283443b8a47f1fdd453f67a.js');
+        }, { timeout: 3500 });
+
+        // Load Google Tag Manager (medium priority)
+        idleCallback(function() {
+          loadScriptWhenIdle('https://www.googletagmanager.com/gtag/js?id=G-DB7T9QNC21', function() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-DB7T9QNC21');
+            gtag('event', 'conversion', {
+              'send_to': 'AW-16706905838/PyfqCMOzwtQZEO7NvJ4-',
+              'value': 1.0,
+              'currency': 'USD'
+            });
           });
-        };
+        }, { timeout: 2000 });
 
-        // Netlify Identity Widget
-        var netlifyId = document.createElement('script');
-        netlifyId.src = 'https://identity.netlify.com/v1/netlify-identity-widget.js';
-        netlifyId.async = true;
-        document.head.appendChild(netlifyId);
+        // Load AdRoll (medium priority)
+        idleCallback(function() {
+          window.adroll_adv_id = "M3YLYYCHGFFMFELHT2EUAW";
+          window.adroll_pix_id = "CBZLROHJ7BEF7FMWOUWQTR";
+          window.adroll_version = "2.0";
+          window.__adroll_loaded = true;
+          window.adroll = window.adroll || [];
+          window.adroll.f = ['setProperties', 'identify', 'track'];
+          var roundtripUrl = "https://s.adroll.com/j/" + window.adroll_adv_id + "/roundtrip.js";
+          for (var i = 0; i < window.adroll.f.length; i++) {
+            window.adroll[window.adroll.f[i]] = window.adroll[window.adroll.f[i]] || (function(n) {
+              return function() { window.adroll.push([n, arguments]) }
+            })(window.adroll.f[i])
+          }
+          loadScriptWhenIdle(roundtripUrl, function() {
+            if (window.adroll && window.adroll.track) window.adroll.track("pageView");
+          });
+        }, { timeout: 2500 });
+
+        // Load Netlify Identity (lowest priority)
+        idleCallback(function() {
+          loadScriptWhenIdle('https://identity.netlify.com/v1/netlify-identity-widget.js');
+        }, { timeout: 4000 });
+      }
+
+      // Trigger script loading on user interaction OR after 3 seconds
+      var events = ['mousedown', 'keydown', 'touchstart', 'scroll'];
+      events.forEach(function(event) {
+        window.addEventListener(event, loadThirdPartyScripts, { once: true, passive: true });
       });
+
+      // Fallback: load after 3 seconds if no interaction
+      setTimeout(loadThirdPartyScripts, 3000);
     </script>
 
     <script is:inline>
+      // Service Worker registration - deferred to idle time
       if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
+        var idleCallback = window.requestIdleCallback || function(cb) { setTimeout(cb, 1); };
+        idleCallback(function() {
           navigator.serviceWorker.register('/sw.js')
-            .then((registration) => {
+            .then(function(registration) {
               console.log('Service Worker registered:', registration);
             })
-            .catch((error) => {
+            .catch(function(error) {
               console.log('Service Worker registration failed:', error);
             });
-        });
+        }, { timeout: 5000 });
       }
 
-      let deferredPrompt;
-      window.addEventListener('beforeinstallprompt', (e) => {
+      // PWA Install Banner - minimal blocking
+      var deferredPrompt;
+      window.addEventListener('beforeinstallprompt', function(e) {
         e.preventDefault();
         deferredPrompt = e;
 
-        const installBanner = document.createElement('div');
-        installBanner.id = 'install-banner';
-        installBanner.className = 'fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t-2 border-primary p-4 z-50 transform translate-y-0 transition-transform duration-300';
-        installBanner.innerHTML = `
-          <div class="max-w-4xl mx-auto flex items-center justify-between">
-            <div class="flex items-center">
-              <img src="/icons/icon-192x192.png" alt="PCFG Insurance" class="w-12 h-12 mr-4 rounded-lg">
-              <div>
-                <p class="font-semibold text-gray-900">Install PCFG Insurance App</p>
-                <p class="text-sm text-gray-600">Quick access from your home screen</p>
-              </div>
-            </div>
-            <div class="flex gap-2">
-              <button id="install-button" class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-lg font-semibold transition-colors">
-                Install
-              </button>
-              <button id="dismiss-button" class="text-gray-600 hover:text-gray-900 px-4 py-2">
-                Later
-              </button>
-            </div>
-          </div>
-        `;
+        // Defer banner creation to idle time
+        var idleCallback = window.requestIdleCallback || function(cb) { setTimeout(cb, 1); };
+        idleCallback(function() {
+          if (localStorage.getItem('installPromptDismissed')) return;
 
-        if (!localStorage.getItem('installPromptDismissed')) {
+          var installBanner = document.createElement('div');
+          installBanner.id = 'install-banner';
+          installBanner.className = 'fixed bottom-0 left-0 right-0 bg-white shadow-lg border-t-2 border-primary p-4 z-50 transform translate-y-0 transition-transform duration-300';
+          installBanner.innerHTML = '<div class="max-w-4xl mx-auto flex items-center justify-between"><div class="flex items-center"><img src="/icons/icon-192x192.png" alt="PCFG Insurance" class="w-12 h-12 mr-4 rounded-lg" loading="lazy"><div><p class="font-semibold text-gray-900">Install PCFG Insurance App</p><p class="text-sm text-gray-600">Quick access from your home screen</p></div></div><div class="flex gap-2"><button id="install-button" class="bg-primary hover:bg-primary-dark text-white px-6 py-2 rounded-lg font-semibold transition-colors">Install</button><button id="dismiss-button" class="text-gray-600 hover:text-gray-900 px-4 py-2">Later</button></div></div>';
+
           document.body.appendChild(installBanner);
 
-          document.getElementById('install-button').addEventListener('click', async () => {
+          document.getElementById('install-button').addEventListener('click', function() {
             if (deferredPrompt) {
               deferredPrompt.prompt();
-              const { outcome } = await deferredPrompt.userChoice;
-              console.log(`User response: ${outcome}`);
-              deferredPrompt = null;
-              installBanner.remove();
+              deferredPrompt.userChoice.then(function(result) {
+                console.log('User response: ' + result.outcome);
+                deferredPrompt = null;
+                installBanner.remove();
+              });
             }
           });
 
-          document.getElementById('dismiss-button').addEventListener('click', () => {
+          document.getElementById('dismiss-button').addEventListener('click', function() {
             installBanner.remove();
             localStorage.setItem('installPromptDismissed', 'true');
-            setTimeout(() => {
+            setTimeout(function() {
               localStorage.removeItem('installPromptDismissed');
             }, 7 * 24 * 60 * 60 * 1000);
           });
-        }
+        }, { timeout: 3000 });
       });
 
-      window.addEventListener('appinstalled', () => {
+      window.addEventListener('appinstalled', function() {
         console.log('PWA installed successfully');
-        const banner = document.getElementById('install-banner');
+        var banner = document.getElementById('install-banner');
         if (banner) banner.remove();
       });
     </script>
@@ -253,8 +266,11 @@ const canonicalURL = canonical || `https://pcfginsurance.com${Astro.url.pathname
 </html>
 
 <style is:global>
-  html {
-    scroll-behavior: smooth;
+  /* Reduce motion for accessibility and performance */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
   
   body {
@@ -353,10 +369,16 @@ const canonicalURL = canonical || `https://pcfginsurance.com${Astro.url.pathname
     text-decoration-thickness: 2px;
     text-underline-offset: 3px;
     transition: all 0.2s ease;
+    will-change: text-decoration-thickness;
   }
-  
+
   a:hover {
     text-decoration-thickness: 3px;
+  }
+
+  /* Optimize animations */
+  * {
+    will-change: auto;
   }
   
   a:focus {

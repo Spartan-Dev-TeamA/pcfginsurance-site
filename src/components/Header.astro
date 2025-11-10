@@ -152,36 +152,45 @@
 </header>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  // Defer header JavaScript to idle time
+  var idleCallback = window.requestIdleCallback || function(cb) { setTimeout(cb, 1); };
+  idleCallback(function() {
     const mobileMenuButton = document.querySelector('.mobile-menu-button');
     const mobileMenu = document.querySelector('.mobile-menu');
-    
+
     if (mobileMenuButton && mobileMenu) {
       mobileMenuButton.addEventListener('click', function() {
         mobileMenu.classList.toggle('hidden');
         const isExpanded = !mobileMenu.classList.contains('hidden');
         mobileMenuButton.setAttribute('aria-expanded', isExpanded.toString());
-      });
+      }, { passive: true });
     }
-    
-    // Hide header on scroll down, show on scroll up
+
+    // Hide header on scroll - optimized with passive listener and throttling
     let lastScrollTop = 0;
     const header = document.querySelector('header');
-    
+    let ticking = false;
+
     window.addEventListener('scroll', function() {
-      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      
-      if (scrollTop > lastScrollTop && scrollTop > 100) {
-        // Scrolling down
-        header.style.transform = 'translateY(-100%)';
-        header.style.transition = 'transform 0.3s ease-in-out';
-      } else {
-        // Scrolling up
-        header.style.transform = 'translateY(0)';
-        header.style.transition = 'transform 0.3s ease-in-out';
+      if (!ticking) {
+        window.requestAnimationFrame(function() {
+          const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+          if (scrollTop > lastScrollTop && scrollTop > 100) {
+            // Scrolling down
+            header.style.transform = 'translateY(-100%)';
+            header.style.transition = 'transform 0.3s ease-in-out';
+          } else {
+            // Scrolling up
+            header.style.transform = 'translateY(0)';
+            header.style.transition = 'transform 0.3s ease-in-out';
+          }
+
+          lastScrollTop = scrollTop;
+          ticking = false;
+        });
+        ticking = true;
       }
-      
-      lastScrollTop = scrollTop;
-    });
-  });
+    }, { passive: true });
+  }, { timeout: 1000 });
 </script>
