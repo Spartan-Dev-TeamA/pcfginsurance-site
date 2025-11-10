@@ -3,9 +3,12 @@ export interface Props {
   title: string;
   description?: string;
   keywords?: string;
+  canonical?: string;
 }
 
-const { title, description = "PCFG Insurance Services - Protecting what matters most to your business and family across 15 states. Workers' comp, commercial auto, general liability, and more.", keywords = "insurance, workers compensation, commercial auto, general liability, business insurance, employee benefits" } = Astro.props;
+const { title, description = "PCFG Insurance Services - Protecting what matters most to your business and family across 15 states. Workers' comp, commercial auto, general liability, and more.", keywords = "insurance, workers compensation, commercial auto, general liability, business insurance, employee benefits", canonical } = Astro.props;
+
+const canonicalURL = canonical || `https://pcfginsurance.com${Astro.url.pathname}`;
 ---
 
 <!doctype html>
@@ -18,7 +21,13 @@ const { title, description = "PCFG Insurance Services - Protecting what matters 
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="keywords" content={keywords} />
-    
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
     <!-- PWA Meta Tags -->
     <meta name="theme-color" content="#4CAF50" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -36,6 +45,8 @@ const { title, description = "PCFG Insurance Services - Protecting what matters 
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:site_name" content="PCFG Insurance Services" />
     
     <!-- Schema.org markup for Local Business -->
     <script type="application/ld+json">
