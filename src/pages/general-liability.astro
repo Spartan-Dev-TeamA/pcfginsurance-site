@@ -2,9 +2,60 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does general liability insurance cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "General liability insurance covers third-party bodily injury, property damage, personal injury (libel/slander), advertising injury, and legal defense costs. It protects your business when someone sues for injuries or damages that occur on your premises or because of your business operations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is general liability insurance required by law?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "While not legally required in most states, general liability insurance is often mandatory for contracts, leases, and licenses. Many clients won't work with uninsured businesses, and landlords typically require it. Some industries like construction may have specific requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much general liability insurance do I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Coverage needs vary by business size, industry, and risk level. Small businesses typically need $1-2 million per occurrence. High-risk industries or businesses with significant assets may need $5 million or more. PCFG Insurance can assess your specific needs and recommend appropriate coverage limits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does general liability insurance cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "General liability insurance typically costs $400-$1,500 annually for small businesses, depending on industry, location, coverage limits, claims history, and business size. Low-risk office businesses pay less; high-risk construction or manufacturing businesses pay more. Contact PCFG for a customized quote."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between general liability and professional liability?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "General liability covers physical injuries and property damage from accidents. Professional liability (E&O) covers financial losses from professional mistakes, errors, or negligence in services you provide. Many businesses need both types of coverage for complete protection."
+      }
+    }
+  ]
+};
 ---
 
-<Layout title="General Liability Insurance - PCFG Insurance Services" description="Essential general liability insurance protection for businesses across 15 states. Protect against third-party claims, lawsuits, and unexpected liabilities. Get your free quote today." ogImage="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630" ogType="article">
+<Layout title="General Liability Insurance NY | Business Liability Coverage | PCFG" description="General liability insurance for businesses in NY & 14 states. Protection against bodily injury, property damage & personal injury claims. Veteran-owned agency. Free quotes! Call (877) 717-7234." ogImage="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630" ogType="article" keywords="general liability insurance NY, business liability insurance, commercial general liability, third party liability insurance, small business liability coverage">
+  
+  <!-- JSON-LD Schema for FAQ -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  
   <Header />
   
 <!-- Hero Section -->

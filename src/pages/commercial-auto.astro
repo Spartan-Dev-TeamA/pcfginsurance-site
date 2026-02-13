@@ -2,9 +2,60 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between commercial auto and personal auto insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Commercial auto insurance covers vehicles used for business purposes, including higher liability limits, coverage for employees driving company vehicles, and protection for specialized equipment. Personal auto policies exclude business use and won't cover accidents that occur while conducting business activities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does commercial auto insurance cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Commercial auto insurance typically costs $1,200 to $2,400 per vehicle annually, but varies based on vehicle type, driving records, business industry, coverage limits, and location. High-risk industries like construction may pay more. Contact PCFG Insurance for a customized quote."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of vehicles need commercial auto insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Any vehicle used primarily for business needs commercial coverage: delivery trucks, service vans, company cars, heavy equipment, food trucks, tow trucks, and fleet vehicles. Even personal vehicles used for business purposes like client visits or deliveries require commercial coverage."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does commercial auto insurance cover employees driving their own cars?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard commercial auto policies don't cover employee-owned vehicles. However, you can add 'hired and non-owned auto coverage' to protect your business when employees use their personal vehicles for work or when you rent vehicles for business purposes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I bundle commercial auto with other business insurance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! Bundling commercial auto with general liability, workers' compensation, or a Business Owner's Policy (BOP) can save you 10-20% on premiums. PCFG Insurance can create a customized package that covers all your business insurance needs while maximizing savings."
+      }
+    }
+  ]
+};
 ---
 
-<Layout title="Commercial Auto Insurance - PCFG Insurance Services" description="Comprehensive commercial auto insurance for fleets and business vehicles across 15 states. Competitive rates, exceptional service, and specialized coverage for all vehicle types. Get your free quote today." ogImage="https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630" ogType="article">
+<Layout title="Commercial Auto Insurance NY | Fleet & Business Vehicle Coverage | PCFG" description="Commercial auto insurance for business vehicles & fleets in NY & 14 states. Cover trucks, vans, company cars & specialty vehicles. Veteran-owned agency. Competitive rates, free quotes! Call (877) 717-7234." ogImage="https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630" ogType="article" keywords="commercial auto insurance NY, fleet insurance, business vehicle insurance, commercial truck insurance, company car insurance, delivery vehicle insurance">
+  
+  <!-- JSON-LD Schema for FAQ -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  
   <Header />
   
  <!-- Hero Section -->

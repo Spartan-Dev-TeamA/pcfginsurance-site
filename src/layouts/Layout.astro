@@ -79,7 +79,86 @@ const ogImageURL = ogImage.startsWith('http') ? ogImage : `https://pcfginsurance
     
     <!-- Critical Schema.org markup for Local Business -->
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"InsuranceAgency","name":"PCFG Insurance Services","telephone":"+1-877-717-7234","address":{"@type":"PostalAddress","streetAddress":"PO Box 609","addressLocality":"Parish","addressRegion":"NY","postalCode":"13131","addressCountry":"US"},"url":"https://pcfginsurance.com"}
+    {
+      "@context": "https://schema.org",
+      "@type": "InsuranceAgency",
+      "name": "PCFG Insurance Services",
+      "alternateName": "PCFG Insurance",
+      "description": "Veteran-owned insurance agency serving businesses across 15 states with workers' compensation, commercial auto, general liability, and employee benefits.",
+      "url": "https://pcfginsurance.com",
+      "telephone": "+1-877-717-7234",
+      "email": "info@pcfginsurance.com",
+      "foundingDate": "2018-12-01",
+      "founder": {
+        "@type": "Person",
+        "name": "Liam O'Brien",
+        "jobTitle": "Founder & President"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1429 County Route 38, PO Box 609",
+        "addressLocality": "Parish",
+        "addressRegion": "NY",
+        "postalCode": "13131",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "43.4045",
+        "longitude": "-76.1272"
+      },
+      "areaServed": [
+        {"@type": "State", "name": "New York"},
+        {"@type": "State", "name": "Pennsylvania"},
+        {"@type": "State", "name": "Florida"},
+        {"@type": "State", "name": "Texas"},
+        {"@type": "State", "name": "Virginia"},
+        {"@type": "State", "name": "New Jersey"},
+        {"@type": "State", "name": "Ohio"},
+        {"@type": "State", "name": "Georgia"},
+        {"@type": "State", "name": "North Carolina"},
+        {"@type": "State", "name": "Maryland"},
+        {"@type": "State", "name": "Alabama"},
+        {"@type": "State", "name": "Arizona"},
+        {"@type": "State", "name": "Indiana"},
+        {"@type": "State", "name": "Maine"},
+        {"@type": "State", "name": "Tennessee"}
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Insurance Services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Workers' Compensation Insurance"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Auto Insurance"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "General Liability Insurance"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Business Owner's Policy"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cyber Liability Insurance"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Employee Benefits"}}
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "500",
+        "bestRating": "5"
+      },
+      "sameAs": [
+        "https://www.facebook.com/pcfginsurance",
+        "https://www.linkedin.com/company/pcfginsurance",
+        "https://www.yelp.com/biz/preferred-choice-financial-group-parish"
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "priceRange": "$$",
+      "paymentAccepted": "Cash, Credit Card, Check, ACH",
+      "currenciesAccepted": "USD"
+    }
     </script>
     
     
