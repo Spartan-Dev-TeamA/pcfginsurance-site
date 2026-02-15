@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Publish Date", name: "pubDate", widget: "datetime" }
+      - { label: "Author", name: "author", widget: "string", default: "PCFG Insurance Services" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["insurance"] }
+      - { label: "Featured Image", name: "heroImage", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+  
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "General Settings"
+        name: "general"
+        file: "src/data/settings.json"
+        fields:
+          - { label: "Site Title", name: "title", widget: "string" }
+          - { label: "Site Description", name: "description", widget: "text" }
+          - { label: "Phone Number", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Address", name: "address", widget: "text" }

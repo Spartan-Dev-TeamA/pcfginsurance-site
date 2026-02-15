@@ -1,0 +1,13 @@
+# Netlify redirects file
+
+# Sitemap and Robots.txt - serve as plain files
+/robots.txt /robots.txt/index.html 200
+/sitemap.xml /sitemap.xml 200
+
+# Form submissions
+/forms/* /thank-you.html 200
+
+# Admin panel
+/admin /admin/index.html 200
+
+# Fallback for SPA routing
