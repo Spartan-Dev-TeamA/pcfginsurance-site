@@ -19,7 +19,13 @@ const ogImageURL = ogImage.startsWith('http') ? ogImage : `https://pcfginsurance
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/public/assets/PCFGI Favicon.png" />
+    
+    <!-- Cache Control - Prevent aggressive caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    
+    <link rel="icon" type="image/svg+xml" href="/public/assets/PCFGI Favicon.png?v=20250221" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -174,8 +180,8 @@ const ogImageURL = ogImage.startsWith('http') ? ogImage : `https://pcfginsurance
     
     
     <!-- Self-Hosted Fonts - Optimized & Minified -->
-    <link rel="preload" href="/fonts.css" as="style" />
-    <link rel="stylesheet" href="/fonts.css" />
+    <link rel="preload" href="/fonts.css?v=20250221" as="style" />
+    <link rel="stylesheet" href="/fonts.css?v=20250221" />
     
     <!-- Critical CSS Inline - Above the fold only -->
     <style>
