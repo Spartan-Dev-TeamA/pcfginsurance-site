@@ -162,6 +162,20 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2026-03-20-commercial-auto-vs-personal-auto.md": {
+	id: "2026-03-20-commercial-auto-vs-personal-auto.md";
+  slug: "2026-03-20-commercial-auto-vs-personal-auto";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-20-commercial-insurance-glossary-terms.md": {
+	id: "2026-03-20-commercial-insurance-glossary-terms.md";
+  slug: "2026-03-20-commercial-insurance-glossary-terms";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "2026-03-20-cyber-insurance-small-business-necessary.md": {
 	id: "2026-03-20-cyber-insurance-small-business-necessary.md";
   slug: "2026-03-20-cyber-insurance-small-business-necessary";
@@ -172,6 +186,27 @@ declare module 'astro:content' {
 "2026-03-20-how-to-choose-commercial-insurance-deductible.md": {
 	id: "2026-03-20-how-to-choose-commercial-insurance-deductible.md";
   slug: "2026-03-20-how-to-choose-commercial-insurance-deductible";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-20-how-to-file-insurance-claim.md": {
+	id: "2026-03-20-how-to-file-insurance-claim.md";
+  slug: "2026-03-20-how-to-file-insurance-claim";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-20-nysif-workers-comp-rates-drop-28-percent.md": {
+	id: "2026-03-20-nysif-workers-comp-rates-drop-28-percent.md";
+  slug: "2026-03-20-nysif-workers-comp-rates-drop-28-percent";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-20-restaurant-insurance-syracuse.md": {
+	id: "2026-03-20-restaurant-insurance-syracuse.md";
+  slug: "2026-03-20-restaurant-insurance-syracuse";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
