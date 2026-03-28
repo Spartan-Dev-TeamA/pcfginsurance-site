@@ -561,6 +561,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"independent-insurance-agent-ny.md": {
+	id: "independent-insurance-agent-ny.md";
+  slug: "independent-insurance-agent-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "rochester-workplace-risks.md": {
 	id: "rochester-workplace-risks.md";
   slug: "rochester-workplace-risks";
