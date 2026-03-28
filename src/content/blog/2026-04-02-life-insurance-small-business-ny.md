@@ -1,22 +1,11 @@
 ---
-title: "Life Insurance for Small Business Owners in NY: 2026 Guide"
-description: "Life insurance guide for NY small business owners. Key person insurance, buy-sell agreements, and succession planning."
-pubDate: 2026-04-02
-targetKeyword: "life insurance small business New York"
-author: "PCFG Insurance Services"
-category: "Business Insurance"
-cta: "Get a life insurance quote"
+title: "Untitled"
+description: "This guide covers everything NY small business owners need to know about business life insurance in 2026."
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
 
-# Life Insurance for Small Business Owners in NY: 2026 Guide
 
-*Updated April 2026 | Target: life insurance small business New York*
-
----
-
-As a small business owner in New York, your business is likely your largest financial asset. But have you thought about what happens to your business—and your family—if something happens to you?
-
-Life insurance isn't just about death benefits. It's about protecting your business, your employees, and your family's future.
 
 This guide covers everything NY small business owners need to know about business life insurance in 2026.
 

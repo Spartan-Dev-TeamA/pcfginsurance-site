@@ -1,22 +1,14 @@
 ---
-title: "Trucking Insurance in New York: Complete 2026 Guide"
-description: "Trucking insurance guide for New York. FMCSA compliance, cargo coverage, and fleet insurance for truckers."
-pubDate: 2026-04-02
-targetKeyword: "trucking insurance New York"
-author: "PCFG Insurance Services"
-category: "Commercial Auto"
-cta: "Get a trucking insurance quote"
+title: "Untitled"
+description: "'"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
+---
+"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
 
-# Trucking Insurance in New York: Complete 2026 Guide
-
-*Updated April 2026 | Target: trucking insurance New York*
-
----
-
-The trucking industry is the backbone of New York's economy—from delivery trucks in Syracuse to freight carriers serving Rochester and Buffalo. If you operate trucks for business, you need specialized insurance that goes beyond standard commercial auto.
-
-This guide covers everything New York trucking business owners need to know about trucking insurance in 2026.
 
 ---
 
