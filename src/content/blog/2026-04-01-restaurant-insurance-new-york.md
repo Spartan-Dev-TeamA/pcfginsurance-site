@@ -1,9 +1,10 @@
 ---
 title: "Restaurant Insurance in New York: Complete 2026 Guide"
-description: "Complete guide to restaurant insurance in New York. Coverage requirements, costs, and how to protect your restaurant in 2026."
-pubDate: 2026-04-01
-author: "PCFG Insurance Services"
+description: "*Updated March 2026 | Target, restaurant insurance New York*"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Restaurant Insurance in New York: Complete 2026 Guide
 

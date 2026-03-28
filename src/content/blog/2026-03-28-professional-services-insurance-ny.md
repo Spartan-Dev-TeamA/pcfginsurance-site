@@ -1,9 +1,10 @@
 ---
-title: "Professional Services Insurance in New York: 2026 Guide"
-description: "Complete guide to professional services insurance in New York. Coverage for accountants, consultants, lawyers, and designers."
+title: "Professional Services Insurance in New York: Complete 2026 Guide"
+description: "*Updated March 2026 | Target, professional services insurance New York*"
 pubDate: 2026-03-28
-author: "PCFG Insurance Services"
+author: "PCFG Insurance"
 ---
+
 
 # Professional Services Insurance in New York: Complete 2026 Guide
 

@@ -1,9 +1,10 @@
 ---
 title: "Top 5 Workplace Risks for Rochester's Optics & Manufacturing Sector"
-description: "A guide for Rochester, NY business owners. Discover the top 5 workplace risks in the optics and manufacturing industries and learn key safety tips to protect your employees."
-pubDate: 2026-02-06
-heroImage: "/images/blog/rochester-manufacturing.jpg"
+description: "Rochester, NY, isn't just a city; it's a global hub of innovation built on a legacy of optics, imaging, and advanced manufacturing. From precision cle"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 Rochester, NY, isn't just a city; it's a global hub of innovation built on a legacy of optics, imaging, and advanced manufacturing. From precision cleanrooms in Eastman Business Park to bustling factory floors across Monroe County, the work done here is specialized—and so are the risks.
 

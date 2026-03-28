@@ -1,9 +1,10 @@
 ---
 title: "5 Insurance Mistakes Syracuse Businesses Make (And How to Avoid Them)"
-description: "5 insurance mistakes Syracuse businesses make and how to avoid them. Protect your business properly."
-pubDate: 2026-03-20
-author: "PCFG Insurance Services"
+description: "**Meta Title,** 5 Insurance Mistakes Syracuse Businesses Make | PCFG"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # 5 Insurance Mistakes Syracuse Businesses Make (And How to Avoid Them)
 

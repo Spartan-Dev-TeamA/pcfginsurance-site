@@ -1,9 +1,10 @@
 ---
 title: "Business Insurance Syracuse NY: Complete Guide for Small Businesses (2026)"
-description: "Find the right business insurance in Syracuse NY. Compare quotes for workers comp, general liability, BOP, and more. Local expert guidance for 2026."
+description: "Syracuse, New York is a city on the rise. From the growing tech hub downtown to established small businesses in the surrounding neighborhoods, Syracus"
 pubDate: 2026-03-28
-author: "PCFG Insurance Services"
+author: "PCFG Insurance"
 ---
+
 
 
 # Business Insurance Syracuse NY: Complete Guide for Small Businesses (2026)

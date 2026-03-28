@@ -1,9 +1,10 @@
 ---
 title: "What Does General Liability Insurance Cover? 2026 Guide"
-description: "What does general liability insurance cover? Complete guide for Syracuse business owners."
-pubDate: 2026-03-20
-author: "PCFG Insurance Services"
+description: "**Meta Title,** What Does General Liability Insurance Cover? | PCFG"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # What Does General Liability Insurance Actually Cover? A Syracuse Business Owner's Guide
 

@@ -1,9 +1,10 @@
 ---
 title: "Commercial Insurance for Rochester NY Businesses: 2026 Guide"
-description: "Complete guide to commercial insurance for Rochester businesses. Protect your Rochester company with the right coverage."
+description: "*Updated March 2026 | Target, commercial insurance Rochester NY*"
 pubDate: 2026-03-28
-author: "PCFG Insurance Services"
+author: "PCFG Insurance"
 ---
+
 
 # Commercial Insurance for Rochester NY Businesses: 2026 Guide
 

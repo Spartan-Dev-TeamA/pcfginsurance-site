@@ -1,9 +1,10 @@
 ---
 title: "Why Syracuse Businesses Need Business Interruption Insurance"
-description: "Business interruption insurance protects your revenue when disaster strikes. Learn why Syracuse businesses need coverage."
-pubDate: 2026-03-20
-author: "PCFG Insurance Services"
+description: "**Meta Title,** Business Interruption Insurance Syracuse NY | Protect Your Revenue | PCFG"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Why Syracuse Businesses Need Business Interruption Insurance
 

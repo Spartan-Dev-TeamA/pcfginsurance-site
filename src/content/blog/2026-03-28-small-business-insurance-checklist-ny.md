@@ -1,9 +1,10 @@
 ---
-title: "Business Insurance Checklist for NY Small Businesses: 2026 Guide"
-description: "Complete checklist of insurance coverages every NY small business needs. Ensure your business is properly protected."
+title: "Business Insurance Checklist for NY Small Businesses: What You Need in 2026"
+description: "*Updated March 2026 | Target, small business insurance checklist New York*"
 pubDate: 2026-03-28
-author: "PCFG Insurance Services"
+author: "PCFG Insurance"
 ---
+
 
 # Business Insurance Checklist for NY Small Businesses: What You Need in 2026
 

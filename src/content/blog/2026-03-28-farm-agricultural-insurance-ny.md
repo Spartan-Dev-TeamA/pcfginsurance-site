@@ -1,11 +1,10 @@
 ---
 title: "Farm and Agricultural Business Insurance in New York: 2026 Guide"
-description: "Comprehensive guide to farm insurance in New York covering property, liability, workers' comp, crop insurance, and more for dairy farms, orchards, and agricultural businesses."
+description: "*Updated March 2026 | Target, farm insurance New York*"
 pubDate: 2026-03-28
-heroImage: "/images/blog/farm-ag-insurance-ny.jpg"
-category: "Commercial Insurance"
-author: "PCFG Insurance Services"
+author: "PCFG Insurance"
 ---
+
 
 # Farm and Agricultural Business Insurance in New York: 2026 Guide
 

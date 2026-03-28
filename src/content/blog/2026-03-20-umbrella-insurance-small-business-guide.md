@@ -1,9 +1,10 @@
 ---
 title: "Do You Need Umbrella Insurance? Small Business Owner's Guide"
-description: "Umbrella insurance adds extra liability protection for small businesses. Learn what it costs and when you need it."
-pubDate: 2026-03-20
-author: "PCFG Insurance Services"
+description: "**Meta Title,** Do You Need Umbrella Insurance? | Small Business Guide 2026"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Do You Need Umbrella Insurance? A Small Business Owner's Guide
 

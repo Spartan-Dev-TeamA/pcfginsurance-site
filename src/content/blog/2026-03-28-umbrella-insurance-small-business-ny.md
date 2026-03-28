@@ -1,9 +1,10 @@
 ---
-title: "Umbrella Insurance for NY Small Businesses: 2026 Guide"
-description: "Complete guide to umbrella insurance for NY small businesses. Do you need extra liability coverage?"
+title: "Umbrella Insurance for NY Small Businesses: Do You Need It?"
+description: "*Updated March 2026 | Target, umbrella insurance small business New York*"
 pubDate: 2026-03-28
-author: "PCFG Insurance Services"
+author: "PCFG Insurance"
 ---
+
 
 # Umbrella Insurance for NY Small Businesses: Do You Need It?
 

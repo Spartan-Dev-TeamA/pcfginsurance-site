@@ -1,22 +1,11 @@
 ---
-title: "Workers Comp Insurance: Upstate NY Businesses Must Have Coverage in 2026"
-description: "Workers comp insurance requirements for Upstate NY businesses. Stay compliant with NY State Department of Labor regulations."
-pubDate: 2026-03-31
-targetKeyword: "workers comp insurance Upstate NY"
-author: "PCFG Insurance Services"
-category: "Workers Compensation"
-cta: "Get a free workers comp quote"
+title: "Untitled"
+description: "Workers' compensation pays 100% of necessary and reasonable medical treatment costs for covered work injuries, including,"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
 
-# Workers Comp Insurance: Upstate NY Businesses Must Have Coverage in 2026
 
-**Target Keyword**: workers comp insurance Upstate NY
-
-New York state law requires all employers with two or more employees (full or part-time) to carry workers' compensation insurance. This includes sole proprietors who have hired any assistants at all. For Upstate NY businesses in 2026, this coverage is essential for:
-
-- Legal compliance with NY State Department of Labor regulations
-- Financial protection against workplace injury claims
-- Preserving business continuity after an employee-related incident
 
 ## What Workers Comp Covers in Upstate NY
 

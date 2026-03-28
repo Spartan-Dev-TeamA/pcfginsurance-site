@@ -1,13 +1,10 @@
 ---
 title: "Business Insurance Buffalo NY: Complete Guide for Small Businesses (2026)"
-description: "Find the right business insurance in Buffalo NY. Compare quotes for workers comp, general liability, BOP, and more. Local expert guidance."
-targetKeyword: "business insurance Buffalo NY"
+description: "Buffalo, New York is a city of resilience. From the industrial roots to the growing tech scene, Buffalo small businesses are the backbone of the local"
 pubDate: 2026-03-24
-author: "PCFG Insurance Services"
-date: "2026-03-24"
-category: "Location Guides"
-cta: "Get a free business insurance quote"
+author: "PCFG Insurance"
 ---
+
 
 # Business Insurance Buffalo NY: Complete Guide for Small Businesses (2026)
 

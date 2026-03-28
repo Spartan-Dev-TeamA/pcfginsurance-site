@@ -1,9 +1,10 @@
 ---
 title: "Commercial Auto vs Personal Auto Insurance: What Businesses Need to Know"
-description: "Commercial auto vs personal auto insurance. Learn which coverage your Syracuse business needs."
-pubDate: 2026-03-20
-author: "PCFG Insurance Services"
+description: "**Meta Title,** Commercial Auto vs Personal Auto Insurance | Syracuse Business Guide | PCFG"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Commercial Auto Insurance vs. Personal Auto: What Syracuse Businesses Need to Know
 

@@ -1,9 +1,10 @@
 ---
 title: "Restaurant Insurance Syracuse NY: Complete Guide"
-description: "What Syracuse restaurant owners need to know about insurance coverage."
-pubDate: 2026-03-20
-author: "PCFG Insurance Services"
+description: "**Meta Title,** Restaurant Insurance Syracuse NY | Complete Coverage Guide | PCFG"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Insurance for Restaurants: What Syracuse Restaurant Owners Need to Know
 

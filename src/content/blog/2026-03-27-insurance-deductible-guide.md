@@ -1,12 +1,10 @@
 ---
 title: "How to Choose the Right Insurance Deductible for Your NY Business"
-description: "Insurance deductible guide for NY small businesses. Learn how to balance premiums and out-of-pocket costs."
-pubDate: 2026-03-27
-targetKeyword: "choosing insurance deductible small business"
-author: "PCFG Insurance Services"
-category: "Insurance Education"
-cta: "Review your coverage options"
+description: "*Updated March 2026 | Target, choosing insurance deductible small business*"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # How to Choose the Right Insurance Deductible for Your NY Business
 

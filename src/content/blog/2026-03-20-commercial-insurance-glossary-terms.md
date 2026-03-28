@@ -1,9 +1,10 @@
 ---
 title: "Commercial Insurance Glossary: Key Terms Syracuse Business Owners Need to Know"
-description: "Learn essential commercial insurance terms: premium, deductible, limit, claim, and more."
-pubDate: 2026-03-20
-author: "PCFG Insurance Services"
+description: "**Meta Title,** Commercial Insurance Glossary, Key Terms Explained | PCFG"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Understanding Commercial Insurance: A Glossary of Key Terms Syracuse Business Owners Need to Know
 

@@ -1,22 +1,11 @@
 ---
-title: "Business Owner's Policy (BOP) for NY Small Businesses: 2026 Guide"
-description: "BOP guide for New York small businesses. Learn what's covered and whether a BOP is right for your business."
-pubDate: 2026-03-31
-targetKeyword: "business owner's policy New York small business"
-author: "PCFG Insurance Services"
-category: "Small Business Insurance"
-cta: "Get a BOP quote"
+title: "Untitled"
+description: "This guide explains everything you need to know about BOPs for New York small businesses in 2026."
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
 
-# Business Owner's Policy (BOP) for NY Small Businesses: 2026 Guide
 
-*Updated March 2026 | Target: business owner's policy New York small business*
-
----
-
-If you own a small business in New York, you've probably heard of a Business Owner's Policy (BOP). But do you know what it actually covers—and whether you need one?
-
-A BOP is one of the most cost-effective insurance packages available for small businesses, combining general liability and property coverage into a single policy. For many upstate NY businesses, it's the foundation of a solid insurance program.
 
 This guide explains everything you need to know about BOPs for New York small businesses in 2026.
 

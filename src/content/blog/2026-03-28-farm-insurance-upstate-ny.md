@@ -1,8 +1,8 @@
 ---
 title: "Farm Insurance Upstate NY: Protecting Your Agricultural Business in 2026"
-description: "Comprehensive farm insurance for upstate NY agricultural businesses. Learn about coverage for property, liability, livestock, crops, and equipment. Get a free quote."
+description: "Upstate New York's agricultural sector is the backbone of many rural communities, contributing significantly to the state's economy. From dairy farms"
 pubDate: 2026-03-28
-author: "PCFG Insurance Services"
+author: "PCFG Insurance"
 ---
 
 
@@ -91,3 +91,5 @@ Protect your livelihood and legacy with the right farm insurance. Don't wait for
 
 **[Contact PCFG Insurance Services today for a free, no-obligation farm insurance quote!](/contact)** — Serving farms across Central and Upstate New York since 2018.
 
+---
+*Disclaimer: This guide is for informational purposes only and does not constitute legal or insurance advice. Consult with a licensed insurance professional for specific coverage recommendations.*

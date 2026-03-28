@@ -1,9 +1,10 @@
 ---
 title: "Workers Comp Insurance for Upstate NY Small Business: 2026 Guide"
-description: "Workers comp insurance requirements and costs for upstate NY small businesses. Learn how to save money and stay compliant in 2026."
-pubDate: 2026-03-23
-author: "PCFG Insurance Services"
+description: "If you run a small business anywhere in upstate New York — Syracuse, Rochester, Buffalo, or the surrounding areas — you need workers compensation insu"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 
 # Workers Comp Insurance for Upstate NY Small Business: 2026 Guide

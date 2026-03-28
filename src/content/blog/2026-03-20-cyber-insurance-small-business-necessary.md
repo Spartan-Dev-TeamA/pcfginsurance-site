@@ -1,9 +1,10 @@
 ---
 title: "Cyber Insurance for Small Business: Is It Really Necessary? 2026 Guide"
-description: "Learn if your small business needs cyber insurance. Protect against data breaches and ransomware."
-pubDate: 2026-03-20
-author: "PCFG Insurance Services"
+description: "**Meta Title,** Does Your Small Business Need Cyber Insurance? | PCFG"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Cyber Insurance for Small Business: Is It Really Necessary?
 

@@ -1,9 +1,10 @@
 ---
 title: "Why Syracuse Businesses Should Use an Independent Insurance Agent"
-description: "Independent insurance agents in Syracuse NY vs. captive agents. Learn why working with an independent agent saves money."
-pubDate: 2026-03-22
-author: "PCFG Insurance Services"
+description: "When it comes to business insurance, you have a choice, go directly to one insurance company (captive agent) or work with an independent insurance age"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Why Syracuse Businesses Should Use an Independent Insurance Agent
 

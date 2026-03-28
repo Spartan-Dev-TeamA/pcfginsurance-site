@@ -1,9 +1,10 @@
 ---
-title: "Workers Comp for Contractors NY: 2026 Guide"
-description: "Complete guide to workers compensation insurance for NY contractors. Learn requirements, rates, and how to save."
+title: "Workers Comp for Contractors NY: A Complete Guide for New York Contractors (2026)"
+description: "For contractors operating in New York State, workers' compensation insurance is more than just a good idea—it's a legal mandate. Whether you're a gene"
 pubDate: 2026-03-28
-author: "PCFG Insurance Services"
+author: "PCFG Insurance"
 ---
+
 
 # Workers Comp for Contractors NY: A Complete Guide for New York Contractors (2026)
 

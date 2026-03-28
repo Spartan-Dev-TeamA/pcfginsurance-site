@@ -1,9 +1,10 @@
 ---
 title: "Insurance for Small Business Startups in New York: 2026 Guide"
-description: "Complete guide to insurance for NY small business startups. Coverage requirements and recommendations."
+description: "*Updated March 2026 | Target, small business startup insurance New York*"
 pubDate: 2026-03-28
-author: "PCFG Insurance Services"
+author: "PCFG Insurance"
 ---
+
 
 # Insurance for Small Business Startups in New York: 2026 Guide
 

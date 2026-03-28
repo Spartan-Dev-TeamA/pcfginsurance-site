@@ -1,9 +1,10 @@
 ---
 title: "Commercial Insurance for Buffalo NY Businesses: 2026 Guide"
-description: "Complete guide to commercial insurance for Buffalo businesses. Protect your Buffalo company with the right coverage."
+description: "*Updated March 2026 | Target, commercial insurance Buffalo NY*"
 pubDate: 2026-03-28
-author: "PCFG Insurance Services"
+author: "PCFG Insurance"
 ---
+
 
 # Commercial Insurance for Buffalo NY Businesses: 2026 Guide
 

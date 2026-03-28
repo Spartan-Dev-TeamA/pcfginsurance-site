@@ -1,12 +1,10 @@
 ---
 title: "Manufacturing Business Insurance in New York: 2026 Guide"
-description: "Manufacturing business insurance guide for New York. Coverage for equipment, liability, workers comp, and product recalls."
-pubDate: 2026-03-27
-targetKeyword: "manufacturing business insurance New York"
-author: "PCFG Insurance Services"
-category: "Commercial Insurance"
-cta: "Get a manufacturing insurance quote"
+description: "*Updated March 2026 | Target, manufacturing business insurance New York*"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Manufacturing Business Insurance in New York: 2026 Guide
 

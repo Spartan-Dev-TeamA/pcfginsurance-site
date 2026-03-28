@@ -1,9 +1,10 @@
 ---
 title: "Business Insurance Rochester NY: Complete Guide for Small Businesses (2026)"
-description: "Find the right business insurance in Rochester NY. Compare quotes for workers comp, general liability, BOP, and more."
-pubDate: 2026-03-23
-author: "PCFG Insurance Services"
+description: "Running a business in Rochester, NY means dealing with unique challenges — from harsh winters to the local economy's specific demands. Whether you own"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Business Insurance Rochester NY: Complete Guide for Small Businesses (2026)
 

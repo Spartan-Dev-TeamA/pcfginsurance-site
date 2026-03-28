@@ -1,9 +1,10 @@
 ---
 title: "Home Insurance in Upstate NY: Complete 2026 Guide"
-description: "Complete guide to home insurance in upstate NY. Protect your Syracuse, Rochester, Buffalo home with the right coverage."
-pubDate: 2026-04-01
-author: "PCFG Insurance Services"
+description: "*Updated March 2026 | Target, home insurance upstate NY*"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Home Insurance in Upstate NY: Complete 2026 Guide
 

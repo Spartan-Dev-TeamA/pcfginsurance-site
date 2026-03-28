@@ -1,9 +1,10 @@
 ---
 title: "7 Questions Every Business Owner Should Ask About Insurance"
-description: "7 questions every Syracuse business owner should ask about insurance. Get the coverage you need."
-pubDate: 2026-03-20
-author: "PCFG Insurance Services"
+description: "**Meta Title,** 7 Questions Every Business Owner Should Ask About Insurance | PCFG"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # 7 Questions Every Syracuse Business Owner Should Ask About Insurance
 

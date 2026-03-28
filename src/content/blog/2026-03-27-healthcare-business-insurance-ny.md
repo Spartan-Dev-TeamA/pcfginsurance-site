@@ -1,12 +1,10 @@
 ---
 title: "Healthcare Business Insurance in New York: 2026 Guide"
-description: "Healthcare business insurance guide for New York. Professional liability, property coverage, and compliance for medical practices."
-pubDate: 2026-03-27
-targetKeyword: "healthcare business insurance New York"
-author: "PCFG Insurance Services"
-category: "Commercial Insurance"
-cta: "Get a healthcare insurance quote"
+description: "*Updated March 2026 | Target, healthcare business insurance New York*"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Healthcare Business Insurance in New York: 2026 Guide
 

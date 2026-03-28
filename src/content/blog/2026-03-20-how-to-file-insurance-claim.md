@@ -1,9 +1,10 @@
 ---
 title: "How to File an Insurance Claim: Step-by-Step Guide"
-description: "Step-by-step guide to filing an insurance claim for Syracuse businesses."
-pubDate: 2026-03-20
-author: "PCFG Insurance Services"
+description: "**Meta Title,** How to File an Insurance Claim | Business Insurance Claims Guide | PCFG"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # How to File an Insurance Claim: A Step-by-Step Guide for Syracuse Businesses
 

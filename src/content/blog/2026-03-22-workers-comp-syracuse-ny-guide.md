@@ -1,9 +1,10 @@
 ---
 title: "Workers Compensation Insurance Syracuse NY: 2026 Guide"
-description: "Workers comp requirements for Syracuse NY businesses. Learn what's required, how rates work, and how to lower your costs."
-pubDate: 2026-03-22
-author: "PCFG Insurance Services"
+description: "If you have employees in New York State, you need workers compensation insurance. It's not optional—it's the law. But beyond compliance, workers comp"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Workers Compensation Insurance Syracuse NY: Everything Business Owners Need to Know in 2026
 

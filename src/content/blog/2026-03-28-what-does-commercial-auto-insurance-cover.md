@@ -1,9 +1,10 @@
 ---
-title: "What Does Commercial Auto Insurance Cover in New York? 2026 Guide"
-description: "Complete guide to what commercial auto insurance covers for NY businesses. Learn about coverage options."
+title: "What Does Commercial Auto Insurance Cover in New York?"
+description: "*Updated March 2026 | Target, what does commercial auto insurance cover New York*"
 pubDate: 2026-03-28
-author: "PCFG Insurance Services"
+author: "PCFG Insurance"
 ---
+
 
 # What Does Commercial Auto Insurance Cover in New York?
 

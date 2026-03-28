@@ -1,12 +1,10 @@
 ---
 title: "Construction Business Insurance in New York: Complete 2026 Guide"
-description: "Construction business insurance guide for New York. Coverage for general liability, workers comp, tools, and equipment."
-pubDate: 2026-03-27
-targetKeyword: "construction business insurance New York"
-author: "PCFG Insurance Services"
-category: "Commercial Insurance"
-cta: "Get a construction insurance quote"
+description: "*Updated March 2026 | Target, construction business insurance New York*"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Construction Business Insurance in New York: Complete 2026 Guide
 

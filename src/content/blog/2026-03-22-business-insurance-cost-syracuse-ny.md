@@ -1,9 +1,10 @@
 ---
 title: "How Much Does Business Insurance Cost in Syracuse NY? (2026 Guide)"
-description: "Average business insurance costs for Syracuse small businesses in 2026. Get free quotes for workers comp, general liability, BOP, and more."
-pubDate: 2026-03-22
-author: "PCFG Insurance Services"
+description: "If you own a small business in Syracuse, you've probably asked yourself, 'How much is business insurance going to cost me?' It's one of the most commo"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # How Much Does Business Insurance Cost in Syracuse NY? (2026 Guide)
 

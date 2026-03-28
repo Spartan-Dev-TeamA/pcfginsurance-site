@@ -1,12 +1,10 @@
 ---
 title: "Independent Insurance Agent vs. Captive Agent: Which is Better for NY Businesses?"
-description: "Compare independent insurance agents vs captive agents. Find the right representation for your NY business."
-pubDate: 2026-03-27
-targetKeyword: "independent insurance agent vs captive agent"
-author: "PCFG Insurance Services"
-category: "Insurance Education"
-cta: "Talk to an insurance expert"
+description: "*Updated March 2026 | Target, independent insurance agent vs captive agent*"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Independent Insurance Agent vs. Captive Agent: Which is Better for NY Businesses?
 

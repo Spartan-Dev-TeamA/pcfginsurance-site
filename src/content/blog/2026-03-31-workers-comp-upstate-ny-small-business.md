@@ -1,11 +1,10 @@
 ---
 title: "Workers' Comp Insurance for Upstate NY Small Businesses: 2026 Guide"
-description: "Complete guide to workers compensation insurance for upstate NY small businesses. Learn about costs, requirements, and how to get the best rates."
-pubDate: 2026-03-31
-author: "PCFG Insurance Services"
+description: "*Updated March 2026 | Target, workers comp insurance upstate NY small business*"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
 
-# Workers' Comp Insurance for Upstate NY Small Businesses: 2026 Guide
 
 *Updated March 2026 | Target: workers comp insurance upstate NY small business*
 

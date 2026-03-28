@@ -1,12 +1,10 @@
 ---
 title: "Flood Insurance for Upstate New York Businesses"
-description: "Flood insurance guide for Upstate NY businesses. Protect your Syracuse, Rochester, or Buffalo business from spring storm damage."
-pubDate: 2026-03-25
-targetKeyword: "flood insurance upstate NY business"
-author: "PCFG Insurance Services"
-category: "Flood Insurance"
-cta: "Get a free flood insurance quote"
+description: "**Target Keyword,** flood insurance upstate NY business, Syracuse flood insurance, Rochester flood insurance"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Flood Insurance for Upstate New York Businesses: What You Need to Know Before Spring Storms Hit
 

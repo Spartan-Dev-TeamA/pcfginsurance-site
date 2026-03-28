@@ -1,9 +1,10 @@
 ---
 title: "NY Workers' Comp Rates Drop 28% in 2026"
-description: "NY workers comp rates drop 28% in 2026. What your business needs to know."
-pubDate: 2026-03-20
-author: "PCFG Insurance Services"
+description: "**Meta Title,** NY Workers' Comp Rates Drop 28% in 2026 | PCFG Insurance"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # NY Workers' Comp Rates Drop 28% in 2026 — What Your Business Needs to Know
 

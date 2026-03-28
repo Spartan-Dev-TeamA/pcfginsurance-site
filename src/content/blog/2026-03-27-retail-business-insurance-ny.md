@@ -1,12 +1,10 @@
 ---
 title: "Retail Business Insurance in New York: Complete 2026 Guide"
-description: "Retail business insurance guide for New York. Coverage for inventory, property, liability, and business interruption."
-pubDate: 2026-03-27
-targetKeyword: "retail business insurance New York"
-author: "PCFG Insurance Services"
-category: "Commercial Insurance"
-cta: "Get a retail insurance quote"
+description: "*Updated March 2026 | Target, retail business insurance New York*"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Retail Business Insurance in New York: Complete 2026 Guide
 

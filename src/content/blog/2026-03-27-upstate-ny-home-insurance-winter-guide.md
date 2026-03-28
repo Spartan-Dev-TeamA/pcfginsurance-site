@@ -1,12 +1,10 @@
 ---
 title: "Upstate New York Homeowners Insurance: Winter Preparedness Guide"
-description: "Protect your Upstate NY home this winter. Learn about homeowners insurance coverage for snow, ice, frozen pipes, and more. Get tips to prevent damage and lower costs."
-targetKeyword: "Upstate NY home insurance winter preparedness"
-pubDate: 2026-03-27
-author: "PCFG Insurance Services"
-category: "Home Insurance / Location Guides"
-cta: "Get a free home insurance quote"
+description: "Upstate New York is beautiful, especially in winter. But that picturesque snowscape can bring serious risks to your home – from ice dams and frozen pi"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Upstate New York Homeowners Insurance: Winter Preparedness Guide
 

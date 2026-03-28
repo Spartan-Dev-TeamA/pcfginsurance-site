@@ -1,9 +1,10 @@
 ---
 title: "Workers' Comp Insurance for Upstate NY Small Businesses: 2026 Guide"
-description: "Workers comp insurance for upstate NY small businesses. Complete guide for Syracuse, Rochester, Buffalo."
-pubDate: 2026-03-23
-author: "PCFG Insurance Services"
+description: "*Updated March 2026 | Target, workers comp insurance upstate NY small business*"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Workers' Comp Insurance for Upstate NY Small Businesses: 2026 Guide
 

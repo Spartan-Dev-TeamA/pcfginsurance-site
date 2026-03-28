@@ -1,9 +1,10 @@
 ---
 title: "5 Signs Your Business Needs More Insurance Coverage"
-description: "5 signs your Syracuse business needs more insurance coverage. Don't underinsure your business."
-pubDate: 2026-03-20
-author: "PCFG Insurance Services"
+description: "**Meta Title,** 5 Signs Your Business Needs More Insurance | PCFG"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # 5 Signs Your Syracuse Business Needs More Insurance Coverage
 

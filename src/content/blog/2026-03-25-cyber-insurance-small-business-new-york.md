@@ -1,12 +1,10 @@
 ---
 title: "Cyber Insurance for Small Business in New York: 2026 Requirements and Coverage Guide"
-description: "Cyber insurance guide for NY small businesses. Learn about coverage requirements, costs, and how to protect your business from cyber threats."
-pubDate: 2026-03-25
-targetKeyword: "cyber insurance small business New York"
-author: "PCFG Insurance Services"
-category: "Cyber Insurance"
-cta: "Get a free cyber insurance quote"
+description: "**Target Keyword,** cyber insurance small business New York, cybersecurity insurance NY small business"
+pubDate: 2026-03-28
+author: "PCFG Insurance"
 ---
+
 
 # Cyber Insurance for Small Business in New York: 2026 Requirements and Coverage Guide
 

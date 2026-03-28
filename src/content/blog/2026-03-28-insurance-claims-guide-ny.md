@@ -1,9 +1,10 @@
 ---
-title: "Insurance Claims Guide for NY Small Businesses: 2026 Guide"
-description: "Complete guide to filing insurance claims for NY small businesses. Learn the process and what to expect."
+title: "Insurance Claims Guide for NY Small Businesses: How to File and What to Expect"
+description: "*Updated March 2026 | Target, how to file insurance claim small business New York*"
 pubDate: 2026-03-28
-author: "PCFG Insurance Services"
+author: "PCFG Insurance"
 ---
+
 
 # Insurance Claims Guide for NY Small Businesses: How to File and What to Expect
 
