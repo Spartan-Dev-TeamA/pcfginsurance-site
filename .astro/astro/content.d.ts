@@ -260,6 +260,34 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2026-03-23-workers-comp-upstate-ny-small-business.md": {
+	id: "2026-03-23-workers-comp-upstate-ny-small-business.md";
+  slug: "2026-03-23-workers-comp-upstate-ny-small-business";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-23-workers-comp-upstate-ny.md": {
+	id: "2026-03-23-workers-comp-upstate-ny.md";
+  slug: "2026-03-23-workers-comp-upstate-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-24-bop-guide-ny.md": {
+	id: "2026-03-24-bop-guide-ny.md";
+  slug: "2026-03-24-bop-guide-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-24-buffalo-ny-business-insurance.md": {
+	id: "2026-03-24-buffalo-ny-business-insurance.md";
+  slug: "2026-03-24-buffalo-ny-business-insurance";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "2026-03-28-business-insurance-syracuse-ny.md": {
 	id: "2026-03-28-business-insurance-syracuse-ny.md";
   slug: "2026-03-28-business-insurance-syracuse-ny";
