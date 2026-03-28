@@ -1,6 +1,6 @@
 ---
 title: "How Much Does Business Insurance Cost in New York? 2026 Guide"
-description: "*Updated March 2026 | Target, how much does business insurance cost New York*"
+description: "*Updated March 2026 | Target: how much does business insurance cost New York*"
 pubDate: 2026-03-28
 author: "PCFG Insurance"
 ---
