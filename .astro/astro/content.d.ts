@@ -288,6 +288,83 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2026-03-24-business-owners-policy-bop-guide-ny.md": {
+	id: "2026-03-24-business-owners-policy-bop-guide-ny.md";
+  slug: "2026-03-24-business-owners-policy-bop-guide-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-25-cyber-insurance-small-business-new-york.md": {
+	id: "2026-03-25-cyber-insurance-small-business-new-york.md";
+  slug: "2026-03-25-cyber-insurance-small-business-new-york";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-25-flood-insurance-upstate-ny-business.md": {
+	id: "2026-03-25-flood-insurance-upstate-ny-business.md";
+  slug: "2026-03-25-flood-insurance-upstate-ny-business";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-25-spring-business-insurance-checklist.md": {
+	id: "2026-03-25-spring-business-insurance-checklist.md";
+  slug: "2026-03-25-spring-business-insurance-checklist";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-27-construction-business-insurance-ny.md": {
+	id: "2026-03-27-construction-business-insurance-ny.md";
+  slug: "2026-03-27-construction-business-insurance-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-27-healthcare-business-insurance-ny.md": {
+	id: "2026-03-27-healthcare-business-insurance-ny.md";
+  slug: "2026-03-27-healthcare-business-insurance-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-27-independent-vs-captive-agent.md": {
+	id: "2026-03-27-independent-vs-captive-agent.md";
+  slug: "2026-03-27-independent-vs-captive-agent";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-27-insurance-deductible-guide.md": {
+	id: "2026-03-27-insurance-deductible-guide.md";
+  slug: "2026-03-27-insurance-deductible-guide";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-27-manufacturing-business-insurance-ny.md": {
+	id: "2026-03-27-manufacturing-business-insurance-ny.md";
+  slug: "2026-03-27-manufacturing-business-insurance-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-27-retail-business-insurance-ny.md": {
+	id: "2026-03-27-retail-business-insurance-ny.md";
+  slug: "2026-03-27-retail-business-insurance-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-27-upstate-ny-home-insurance-winter-guide.md": {
+	id: "2026-03-27-upstate-ny-home-insurance-winter-guide.md";
+  slug: "2026-03-27-upstate-ny-home-insurance-winter-guide";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "2026-03-28-business-insurance-syracuse-ny.md": {
 	id: "2026-03-28-business-insurance-syracuse-ny.md";
   slug: "2026-03-28-business-insurance-syracuse-ny";
@@ -414,9 +491,23 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2026-03-31-commercial-insurance-syracuse.md": {
+	id: "2026-03-31-commercial-insurance-syracuse.md";
+  slug: "2026-03-31-commercial-insurance-syracuse";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "2026-03-31-workers-comp-upstate-ny-small-business.md": {
 	id: "2026-03-31-workers-comp-upstate-ny-small-business.md";
   slug: "2026-03-31-workers-comp-upstate-ny-small-business";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-31-workers-comp-upstate-ny.md": {
+	id: "2026-03-31-workers-comp-upstate-ny.md";
+  slug: "2026-03-31-workers-comp-upstate-ny";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -452,6 +543,20 @@ declare module 'astro:content' {
 "2026-04-02-general-liability-insurance-ny.md": {
 	id: "2026-04-02-general-liability-insurance-ny.md";
   slug: "2026-04-02-general-liability-insurance-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-04-02-life-insurance-small-business-ny.md": {
+	id: "2026-04-02-life-insurance-small-business-ny.md";
+  slug: "2026-04-02-life-insurance-small-business-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-04-02-trucking-insurance-new-york.md": {
+	id: "2026-04-02-trucking-insurance-new-york.md";
+  slug: "2026-04-02-trucking-insurance-new-york";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

@@ -2,9 +2,11 @@
 title: "Business Owner's Policy (BOP) for New York Small Business: Complete Guide"
 description: "What is a Business Owner's Policy (BOP)? Learn what's covered, costs, and whether your NY small business needs one."
 pubDate: 2026-03-24
+targetKeyword: "business owner's policy New York small business"
 author: "PCFG Insurance Services"
+category: "Small Business Insurance"
+cta: "Get a free BOP quote"
 ---
-
 
 # Business Owner's Policy (BOP) for New York Small Business: Complete Guide
 
@@ -141,3 +143,6 @@ Not sure if a BOP is right for you? Let's talk it through.
 
 **[Get a free BOP quote](/contact)** — Serving small businesses across New York since 2018.
 
+---
+
+*Ready to protect your business with a comprehensive BOP? [Contact PCFG Insurance Services](/contact) for a free consultation and quote comparison.*
