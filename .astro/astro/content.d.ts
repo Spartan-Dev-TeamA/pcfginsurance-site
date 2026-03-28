@@ -141,6 +141,48 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"2026-03-20-5-insurance-mistakes-syracuse-businesses.md": {
+	id: "2026-03-20-5-insurance-mistakes-syracuse-businesses.md";
+  slug: "2026-03-20-5-insurance-mistakes-syracuse-businesses";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-20-5-signs-business-needs-more-insurance.md": {
+	id: "2026-03-20-5-signs-business-needs-more-insurance.md";
+  slug: "2026-03-20-5-signs-business-needs-more-insurance";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-20-7-questions-business-owners-insurance.md": {
+	id: "2026-03-20-7-questions-business-owners-insurance.md";
+  slug: "2026-03-20-7-questions-business-owners-insurance";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-20-cyber-insurance-small-business-necessary.md": {
+	id: "2026-03-20-cyber-insurance-small-business-necessary.md";
+  slug: "2026-03-20-cyber-insurance-small-business-necessary";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-20-how-to-choose-commercial-insurance-deductible.md": {
+	id: "2026-03-20-how-to-choose-commercial-insurance-deductible.md";
+  slug: "2026-03-20-how-to-choose-commercial-insurance-deductible";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-20-what-does-general-liability-insurance-cover.md": {
+	id: "2026-03-20-what-does-general-liability-insurance-cover.md";
+  slug: "2026-03-20-what-does-general-liability-insurance-cover";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "2026-03-22-business-insurance-cost-syracuse-ny.md": {
 	id: "2026-03-22-business-insurance-cost-syracuse-ny.md";
   slug: "2026-03-22-business-insurance-cost-syracuse-ny";
