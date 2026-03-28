@@ -141,6 +141,27 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"2026-03-22-business-insurance-cost-syracuse-ny.md": {
+	id: "2026-03-22-business-insurance-cost-syracuse-ny.md";
+  slug: "2026-03-22-business-insurance-cost-syracuse-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-28-commercial-insurance-watertown-ny.md": {
+	id: "2026-03-28-commercial-insurance-watertown-ny.md";
+  slug: "2026-03-28-commercial-insurance-watertown-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-31-business-owners-policy-bop-guide-ny.md": {
+	id: "2026-03-31-business-owners-policy-bop-guide-ny.md";
+  slug: "2026-03-31-business-owners-policy-bop-guide-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "rochester-workplace-risks.md": {
 	id: "rochester-workplace-risks.md";
   slug: "rochester-workplace-risks";
