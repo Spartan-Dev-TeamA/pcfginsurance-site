@@ -211,6 +211,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2026-03-20-umbrella-insurance-small-business-guide.md": {
+	id: "2026-03-20-umbrella-insurance-small-business-guide.md";
+  slug: "2026-03-20-umbrella-insurance-small-business-guide";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "2026-03-20-what-does-general-liability-insurance-cover.md": {
 	id: "2026-03-20-what-does-general-liability-insurance-cover.md";
   slug: "2026-03-20-what-does-general-liability-insurance-cover";
@@ -218,9 +225,37 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2026-03-20-why-syracuse-businesses-need-business-interruption-insurance.md": {
+	id: "2026-03-20-why-syracuse-businesses-need-business-interruption-insurance.md";
+  slug: "2026-03-20-why-syracuse-businesses-need-business-interruption-insurance";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "2026-03-22-business-insurance-cost-syracuse-ny.md": {
 	id: "2026-03-22-business-insurance-cost-syracuse-ny.md";
   slug: "2026-03-22-business-insurance-cost-syracuse-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-22-independent-insurance-agent-syracuse-ny.md": {
+	id: "2026-03-22-independent-insurance-agent-syracuse-ny.md";
+  slug: "2026-03-22-independent-insurance-agent-syracuse-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-22-workers-comp-syracuse-ny-guide.md": {
+	id: "2026-03-22-workers-comp-syracuse-ny-guide.md";
+  slug: "2026-03-22-workers-comp-syracuse-ny-guide";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-23-rochester-ny-business-insurance.md": {
+	id: "2026-03-23-rochester-ny-business-insurance.md";
+  slug: "2026-03-23-rochester-ny-business-insurance";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
