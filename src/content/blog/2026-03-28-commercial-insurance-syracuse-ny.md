@@ -1,10 +1,9 @@
 ---
 title: "Commercial Insurance for Syracuse NY Businesses: 2026 Guide"
-description: "*Updated March 2026 | Target, commercial insurance Syracuse NY*"
+description: "Comprehensive guide to commercial insurance for Syracuse businesses. Learn about workers comp, general liability, BOP, property insurance and more."
 pubDate: 2026-03-28
-author: "PCFG Insurance"
+author: "PCFG Insurance Services"
 ---
-
 
 # Commercial Insurance for Syracuse NY Businesses: 2026 Guide
 
