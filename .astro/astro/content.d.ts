@@ -148,6 +148,34 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2026-03-28-business-insurance-syracuse-ny.md": {
+	id: "2026-03-28-business-insurance-syracuse-ny.md";
+  slug: "2026-03-28-business-insurance-syracuse-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-28-commercial-insurance-buffalo-ny.md": {
+	id: "2026-03-28-commercial-insurance-buffalo-ny.md";
+  slug: "2026-03-28-commercial-insurance-buffalo-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-28-commercial-insurance-rochester-ny.md": {
+	id: "2026-03-28-commercial-insurance-rochester-ny.md";
+  slug: "2026-03-28-commercial-insurance-rochester-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-28-commercial-insurance-syracuse-ny.md": {
+	id: "2026-03-28-commercial-insurance-syracuse-ny.md";
+  slug: "2026-03-28-commercial-insurance-syracuse-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "2026-03-28-commercial-insurance-watertown-ny.md": {
 	id: "2026-03-28-commercial-insurance-watertown-ny.md";
   slug: "2026-03-28-commercial-insurance-watertown-ny";
@@ -155,9 +183,72 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2026-03-28-farm-insurance-upstate-ny.md": {
+	id: "2026-03-28-farm-insurance-upstate-ny.md";
+  slug: "2026-03-28-farm-insurance-upstate-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-28-how-much-does-business-insurance-cost-ny.md": {
+	id: "2026-03-28-how-much-does-business-insurance-cost-ny.md";
+  slug: "2026-03-28-how-much-does-business-insurance-cost-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-28-small-business-insurance-checklist-ny.md": {
+	id: "2026-03-28-small-business-insurance-checklist-ny.md";
+  slug: "2026-03-28-small-business-insurance-checklist-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "2026-03-31-business-owners-policy-bop-guide-ny.md": {
 	id: "2026-03-31-business-owners-policy-bop-guide-ny.md";
   slug: "2026-03-31-business-owners-policy-bop-guide-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-03-31-workers-comp-upstate-ny-small-business.md": {
+	id: "2026-03-31-workers-comp-upstate-ny-small-business.md";
+  slug: "2026-03-31-workers-comp-upstate-ny-small-business";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-04-01-home-insurance-upstate-ny.md": {
+	id: "2026-04-01-home-insurance-upstate-ny.md";
+  slug: "2026-04-01-home-insurance-upstate-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-04-01-restaurant-insurance-new-york.md": {
+	id: "2026-04-01-restaurant-insurance-new-york.md";
+  slug: "2026-04-01-restaurant-insurance-new-york";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-04-02-commercial-auto-insurance-ny.md": {
+	id: "2026-04-02-commercial-auto-insurance-ny.md";
+  slug: "2026-04-02-commercial-auto-insurance-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-04-02-cyber-insurance-small-business-ny.md": {
+	id: "2026-04-02-cyber-insurance-small-business-ny.md";
+  slug: "2026-04-02-cyber-insurance-small-business-ny";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"2026-04-02-general-liability-insurance-ny.md": {
+	id: "2026-04-02-general-liability-insurance-ny.md";
+  slug: "2026-04-02-general-liability-insurance-ny";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
