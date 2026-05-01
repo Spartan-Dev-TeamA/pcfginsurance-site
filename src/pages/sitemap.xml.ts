@@ -23,6 +23,7 @@ export const GET: APIRoute = async () => {
     { url: '/contact', lastmod: currentDate, changefreq: 'monthly', priority: '0.9' },
     { url: '/commercial-quote', lastmod: currentDate, changefreq: 'weekly', priority: '0.9' },
     { url: '/personal-lines-quote', lastmod: currentDate, changefreq: 'weekly', priority: '0.9' },
+    { url: '/complete-protection-review', lastmod: currentDate, changefreq: 'monthly', priority: '0.8' },
 
     // About pages
     { url: '/about', lastmod: currentDate, changefreq: 'monthly', priority: '0.8' },
@@ -36,24 +37,49 @@ export const GET: APIRoute = async () => {
     { url: '/life-insurance', lastmod: currentDate, changefreq: 'weekly', priority: '0.8' },
     { url: '/health-insurance', lastmod: currentDate, changefreq: 'weekly', priority: '0.8' },
     { url: '/long-term-care-insurance', lastmod: currentDate, changefreq: 'weekly', priority: '0.8' },
-    { url: '/critical-illness-insurance', lastmod: currentDate, changefreq: 'weekly', priority: '0.7' },
+    { url: '/critical-illness-insurance', lastmod: currentDate, changefreq: 'weekly', priority: '0.9' },
+    { url: '/disability-insurance', lastmod: currentDate, changefreq: 'weekly', priority: '0.8' },
     { url: '/annuities', lastmod: currentDate, changefreq: 'weekly', priority: '0.7' },
     { url: '/life-insurance-needs-analysis', lastmod: currentDate, changefreq: 'monthly', priority: '0.7' },
+    { url: '/umbrella-insurance', lastmod: currentDate, changefreq: 'weekly', priority: '0.7' },
 
     // Commercial Insurance
     { url: '/business-owners-policy', lastmod: currentDate, changefreq: 'weekly', priority: '0.8' },
     { url: '/commercial-auto', lastmod: currentDate, changefreq: 'weekly', priority: '0.8' },
     { url: '/general-liability', lastmod: currentDate, changefreq: 'weekly', priority: '0.8' },
     { url: '/workers-compensation', lastmod: currentDate, changefreq: 'weekly', priority: '0.8' },
+    { url: '/professional-liability', lastmod: currentDate, changefreq: 'weekly', priority: '0.7' },
+    { url: '/directors-officers', lastmod: currentDate, changefreq: 'weekly', priority: '0.7' },
+    { url: '/cyber-liability', lastmod: currentDate, changefreq: 'weekly', priority: '0.7' },
+    { url: '/builders-risk', lastmod: currentDate, changefreq: 'weekly', priority: '0.7' },
+    { url: '/farm-owners-insurance', lastmod: currentDate, changefreq: 'weekly', priority: '0.7' },
 
-    // Employee Benefits
+    // Industry-specific
+    { url: '/restaurant-bar-insurance', lastmod: currentDate, changefreq: 'weekly', priority: '0.7' },
+    { url: '/truckers-insurance', lastmod: currentDate, changefreq: 'weekly', priority: '0.7' },
+
+    // Group / Affinity
+    { url: '/affinity-programs', lastmod: currentDate, changefreq: 'monthly', priority: '0.8' },
     { url: '/employee-benefits', lastmod: currentDate, changefreq: 'weekly', priority: '0.8' },
+    { url: '/ichra', lastmod: currentDate, changefreq: 'weekly', priority: '0.7' },
     { url: '/vitaledge', lastmod: currentDate, changefreq: 'monthly', priority: '0.7' },
     { url: '/cyberpartners', lastmod: currentDate, changefreq: 'monthly', priority: '0.7' },
 
-    // Other pages
+    // NY Geo SEO pages - high local-search value
+    { url: '/new-york/business-insurance-syracuse', lastmod: currentDate, changefreq: 'monthly', priority: '0.8' },
+    { url: '/new-york/business-insurance-rochester', lastmod: currentDate, changefreq: 'monthly', priority: '0.8' },
+    { url: '/new-york/business-insurance-watertown', lastmod: currentDate, changefreq: 'monthly', priority: '0.8' },
+    { url: '/new-york/syracuse-workers-compensation', lastmod: currentDate, changefreq: 'monthly', priority: '0.8' },
+    { url: '/new-york/rochester-workers-compensation', lastmod: currentDate, changefreq: 'monthly', priority: '0.8' },
+    { url: '/new-york/buffalo-workers-compensation', lastmod: currentDate, changefreq: 'monthly', priority: '0.8' },
+    { url: '/new-york/albany-workers-compensation', lastmod: currentDate, changefreq: 'monthly', priority: '0.8' },
+
+    // Resources / Knowledge
     { url: '/industries', lastmod: currentDate, changefreq: 'monthly', priority: '0.7' },
     { url: '/client-services', lastmod: currentDate, changefreq: 'monthly', priority: '0.7' },
+    { url: '/resources', lastmod: currentDate, changefreq: 'weekly', priority: '0.6' },
+    { url: '/insurance-glossary', lastmod: currentDate, changefreq: 'monthly', priority: '0.6' },
+    { url: '/ai-knowledge-base', lastmod: currentDate, changefreq: 'weekly', priority: '0.6' },
     { url: '/blog', lastmod: currentDate, changefreq: 'weekly', priority: '0.6' },
 
     // Legal pages
